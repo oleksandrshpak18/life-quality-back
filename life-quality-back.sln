@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "life-quality-back", "life-quality-back\life-quality-back.csproj", "{189A0B93-DA1A-4E57-BF49-F1512EAB9753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "life-quality-back.Test", "life-quality-back.Test\life-quality-back.Test.csproj", "{411A62E2-C058-4E6B-B7E8-57DC97F361A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{189A0B93-DA1A-4E57-BF49-F1512EAB9753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189A0B93-DA1A-4E57-BF49-F1512EAB9753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189A0B93-DA1A-4E57-BF49-F1512EAB9753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189A0B93-DA1A-4E57-BF49-F1512EAB9753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411A62E2-C058-4E6B-B7E8-57DC97F361A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411A62E2-C058-4E6B-B7E8-57DC97F361A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411A62E2-C058-4E6B-B7E8-57DC97F361A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411A62E2-C058-4E6B-B7E8-57DC97F361A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4063CC47-6B38-4E29-99C4-6C82A5DE5B04}
+	EndGlobalSection
+EndGlobal
