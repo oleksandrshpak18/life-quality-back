@@ -1,9 +1,10 @@
 # life-quality-back
 
 ## Table of Contents
-- [Introduction](#authors)
-- [Installation](#introduction)
-- [Usage](#important)
+- [Authors](#authors)
+- [Prerequisites](#prerequisites)
+- [Introduction](#introduction)
+- [Important](#important)
 
 ## <a name="authors"></a> Authors:
 
