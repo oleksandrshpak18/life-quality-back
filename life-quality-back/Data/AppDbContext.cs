@@ -12,5 +12,6 @@ namespace life_quality_back.Data
 
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Disease> Diseases { get; set; }
+        public DbSet<TreatmentStrategy> TreatmentStrategies { get; set; }
     }
 }

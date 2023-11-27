@@ -65,6 +65,30 @@ namespace life_quality_back.Data
                     }
                 );
                 context.SaveChanges();
+
+                if (context.TreatmentStrategies.Any())
+                {
+                    foreach (var treatmentStrategy in context.TreatmentStrategies)
+                    {
+                        context.TreatmentStrategies.Remove(treatmentStrategy);
+                    }
+                    context.SaveChanges();
+                }
+
+                context.TreatmentStrategies.AddRange(
+                    new TreatmentStrategy
+                    {
+                        TreatmentStrategyName = "Strategy 1",
+                        TreatmentStrategyDescription = "A robust description for strategy 1."
+                    },
+                    new TreatmentStrategy
+                    {
+                        TreatmentStrategyName = "Strategy 2",
+                        TreatmentStrategyDescription = "A robust description for strategy 2. And some additional info here."
+                    }
+                );
+
+                context.SaveChanges();
             }
         }
     }
