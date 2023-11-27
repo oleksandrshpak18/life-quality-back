@@ -40,7 +40,30 @@ namespace life_quality_back.Data
                     }
                 );
 
-                // don't forget to save tha changes
+                // don't forget to save the changes
+                context.SaveChanges();
+
+                if (context.Diseases.Any())
+                {
+                    foreach (var disease in context.Diseases)
+                    {
+                        context.Diseases.Remove(disease);
+                    }
+                    context.SaveChanges();
+                }
+
+                context.Diseases.AddRange(
+                    new Disease
+                    {
+                        DiseaseName = "Disease 1",
+                        DiseaseDescription = "A robust description for disease 1."
+                    },
+                    new Disease
+                    {
+                        DiseaseName = "Disease 2",
+                        DiseaseDescription = "A robust description for disease 2. And some additional info here."
+                    }
+                );
                 context.SaveChanges();
             }
         }
