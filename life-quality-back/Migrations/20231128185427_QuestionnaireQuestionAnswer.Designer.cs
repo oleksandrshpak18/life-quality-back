@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using life_quality_back.Data;
 
@@ -11,9 +12,10 @@ using life_quality_back.Data;
 namespace life_quality_back.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231128185427_QuestionnaireQuestionAnswer")]
+    partial class QuestionnaireQuestionAnswer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,7 @@ namespace life_quality_back.Migrations
 
                     b.HasIndex("QuestionId");
 
-                    b.ToTable("Answers", (string)null);
+                    b.ToTable("Answers");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Disease", b =>
@@ -65,7 +67,7 @@ namespace life_quality_back.Migrations
 
                     b.HasKey("DiseaseId");
 
-                    b.ToTable("Diseases", (string)null);
+                    b.ToTable("Diseases");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Doctor", b =>
@@ -113,7 +115,7 @@ namespace life_quality_back.Migrations
 
                     b.HasKey("DoctorId");
 
-                    b.ToTable("Doctors", (string)null);
+                    b.ToTable("Doctors");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Patient", b =>
@@ -170,7 +172,7 @@ namespace life_quality_back.Migrations
 
                     b.HasIndex("TreatmentStrategyId");
 
-                    b.ToTable("Patients", (string)null);
+                    b.ToTable("Patients");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Question", b =>
@@ -180,6 +182,9 @@ namespace life_quality_back.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionId"), 1L, 1);
+
+                    b.Property<int>("QuesionnaireId")
+                        .HasColumnType("int");
 
                     b.Property<string>("QuestionText")
                         .IsRequired()
@@ -192,7 +197,7 @@ namespace life_quality_back.Migrations
 
                     b.HasIndex("QuestionnaireId");
 
-                    b.ToTable("Questions", (string)null);
+                    b.ToTable("Questions");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Questionnaire", b =>
@@ -209,7 +214,7 @@ namespace life_quality_back.Migrations
 
                     b.HasKey("QuestionnaireId");
 
-                    b.ToTable("Questionnaires", (string)null);
+                    b.ToTable("Questionnaires");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.TreatmentStrategy", b =>
@@ -230,13 +235,13 @@ namespace life_quality_back.Migrations
 
                     b.HasKey("TreatmentStrategyId");
 
-                    b.ToTable("TreatmentStrategies", (string)null);
+                    b.ToTable("TreatmentStrategies");
                 });
 
             modelBuilder.Entity("life_quality_back.Data.Models.Answer", b =>
                 {
                     b.HasOne("life_quality_back.Data.Models.Question", "Question")
-                        .WithMany("Answers")
+                        .WithMany()
                         .HasForeignKey("QuestionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -274,22 +279,12 @@ namespace life_quality_back.Migrations
             modelBuilder.Entity("life_quality_back.Data.Models.Question", b =>
                 {
                     b.HasOne("life_quality_back.Data.Models.Questionnaire", "Questionnaire")
-                        .WithMany("Questions")
+                        .WithMany()
                         .HasForeignKey("QuestionnaireId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Questionnaire");
-                });
-
-            modelBuilder.Entity("life_quality_back.Data.Models.Question", b =>
-                {
-                    b.Navigation("Answers");
-                });
-
-            modelBuilder.Entity("life_quality_back.Data.Models.Questionnaire", b =>
-                {
-                    b.Navigation("Questions");
                 });
 #pragma warning restore 612, 618
         }

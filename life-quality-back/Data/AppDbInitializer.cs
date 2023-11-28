@@ -9,12 +9,15 @@ namespace life_quality_back.Data
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
-
+                context.Database.EnsureCreated();
                 // remove all the previous data from the tables on startup
                 context.Doctors.RemoveRange(context.Doctors);
                 context.Diseases.RemoveRange(context.Diseases);
                 context.TreatmentStrategies.RemoveRange(context.TreatmentStrategies);
                 context.Patients.RemoveRange(context.Patients);
+                context.Answers.RemoveRange(context.Answers);
+                context.Questions.RemoveRange(context.Questions);
+                context.Questionnaires.RemoveRange(context.Questionnaires);
 
                 // add a template data to the tables
                 context.Doctors.AddRange(
@@ -25,7 +28,8 @@ namespace life_quality_back.Data
                         Email = "mike.dolfino@gmail.com",
                         Education = "Lviv National Medical University",
                         Gender = "Male",
-                        Speciality = "Dentist"
+                        Speciality = "Dentist",
+                        Password = "plaintextpassword",
                     },
                     new Doctor
                     {
@@ -34,7 +38,8 @@ namespace life_quality_back.Data
                         Email = "mary.alice@gmail.com",
                         Education = "University of Fairview",
                         Gender = "Female",
-                        Speciality = "Therapist"
+                        Speciality = "Therapist",
+                        Password = "just not null"
                     }
                 );
 
@@ -131,6 +136,52 @@ namespace life_quality_back.Data
                 );
 
                 context.SaveChanges();
+
+                context.Questionnaires.Add(
+                    new Questionnaire
+                    {
+                        QuestionnaireName = "Questionnaire 1",
+                        Questions = new List<Question>
+                        {
+                            new Question
+                            {
+                                QuestionText = "Question 1 | Questionnaire 1",
+                                Answers = new List<Answer>
+                                {
+                                    new Answer
+                                    {
+                                        AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                        AnswerValue = 1
+                                    },
+                                    new Answer
+                                    {
+                                        AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                        AnswerValue = 2
+                                    }
+                                }
+                            },
+                            new Question
+                            {
+                                QuestionText = "Question 2 | Questionnaire 1",
+                                Answers = new List<Answer>
+                                {
+                                    new Answer
+                                    {
+                                        AnswerText = "Answer 1 | Question 2 | Questionnaire 1",
+                                        AnswerValue = 1
+                                    },
+                                    new Answer
+                                    {
+                                        AnswerText = "Answer 2 | Question 2 | Questionnaire 1",
+                                        AnswerValue = 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                );
+                context.SaveChanges();
+
             }
         }
     }

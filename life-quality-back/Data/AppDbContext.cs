@@ -14,5 +14,8 @@ namespace life_quality_back.Data
         public DbSet<Disease> Diseases { get; set; }
         public DbSet<TreatmentStrategy> TreatmentStrategies { get; set; }
         public DbSet<Patient> Patients { get; set; }
+        public DbSet<Questionnaire> Questionnaires { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
     }
 }
