@@ -64,13 +64,152 @@ namespace life_quality_back.Data
                     new TreatmentStrategy
                     {
                         TreatmentStrategyName = "Strategy 1",
-                        TreatmentStrategyDescription = "A robust description for strategy 1."
+                        TreatmentStrategyDescription = "A robust description for strategy 1.",
+                        QuestionnaireTreatmentStrategy = new List<QuestionnaireTreatmentStrategy>
+                        {
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Questionnaire 1",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 1",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 1",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 2 | Questionnaire 1",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 2 | Questionnaire 1",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Questionnaire 2",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 2",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 2",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 2",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 2",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 2 | Questionnaire 2",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 2 | Questionnaire 2",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                     },
                     new TreatmentStrategy
                     {
                         TreatmentStrategyName = "Strategy 2",
-                        TreatmentStrategyDescription = "A robust description for strategy 2. And some additional info here."
-                    }
+                        TreatmentStrategyDescription = "Another treatment strategy description for strategy 2.",
+                        QuestionnaireTreatmentStrategy = new List<QuestionnaireTreatmentStrategy>
+                        {
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Questionnaire 3",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 3",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 3",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 1 | Question 2 | Questionnaire 3",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answer 2 | Question 2 | Questionnaire 3",
+                                                    AnswerValue = 2
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                     }
                 );
 
                 context.SaveChanges();
@@ -135,51 +274,6 @@ namespace life_quality_back.Data
                     }
                 );
 
-                context.SaveChanges();
-
-                context.Questionnaires.Add(
-                    new Questionnaire
-                    {
-                        QuestionnaireName = "Questionnaire 1",
-                        Questions = new List<Question>
-                        {
-                            new Question
-                            {
-                                QuestionText = "Question 1 | Questionnaire 1",
-                                Answers = new List<Answer>
-                                {
-                                    new Answer
-                                    {
-                                        AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                        AnswerValue = 1
-                                    },
-                                    new Answer
-                                    {
-                                        AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                        AnswerValue = 2
-                                    }
-                                }
-                            },
-                            new Question
-                            {
-                                QuestionText = "Question 2 | Questionnaire 1",
-                                Answers = new List<Answer>
-                                {
-                                    new Answer
-                                    {
-                                        AnswerText = "Answer 1 | Question 2 | Questionnaire 1",
-                                        AnswerValue = 1
-                                    },
-                                    new Answer
-                                    {
-                                        AnswerText = "Answer 2 | Question 2 | Questionnaire 1",
-                                        AnswerValue = 2
-                                    }
-                                }
-                            }
-                        }
-                    }
-                );
                 context.SaveChanges();
 
             }

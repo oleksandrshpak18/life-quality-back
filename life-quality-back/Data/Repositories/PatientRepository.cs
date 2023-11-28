@@ -16,6 +16,8 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Patients
                 .Include(p => p.TreatmentStrategy)
+                .ThenInclude(p => p.QuestionnaireTreatmentStrategy)
+                .ThenInclude(p => p.Questionnaire)
                 .Include(p => p.Disease)
                 .Include(p => p.Doctor)
                 .ToList();
@@ -25,6 +27,8 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Patients
                 .Include(p => p.TreatmentStrategy)
+                .ThenInclude(p => p.QuestionnaireTreatmentStrategy)
+                .ThenInclude(p => p.Questionnaire)
                 .Include(p => p.Disease)
                 .Include(p => p.Doctor)
                 .FirstOrDefault(x => x.PatientId == id);

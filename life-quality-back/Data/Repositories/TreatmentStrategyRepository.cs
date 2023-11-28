@@ -1,5 +1,6 @@
 ﻿using life_quality_back.Data.Interfaces;
 using life_quality_back.Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace life_quality_back.Data.Repositories
 {
@@ -13,12 +14,18 @@ namespace life_quality_back.Data.Repositories
 
         public IEnumerable<TreatmentStrategy> GetAll()
         {
-            return _context.TreatmentStrategies.ToList();
+            return _context.TreatmentStrategies
+                .Include(x => x.QuestionnaireTreatmentStrategy)
+                .ThenInclude(x => x.Questionnaire)
+                .ToList();
         }
 
         public TreatmentStrategy GetById(int id)
         {
-            return _context.TreatmentStrategies.FirstOrDefault(x => x.TreatmentStrategyId == id);
+            return _context.TreatmentStrategies
+                .Include(x => x.QuestionnaireTreatmentStrategy)
+                .ThenInclude(x => x.Questionnaire)
+                .FirstOrDefault(x => x.TreatmentStrategyId == id);
         }
     }
 }
