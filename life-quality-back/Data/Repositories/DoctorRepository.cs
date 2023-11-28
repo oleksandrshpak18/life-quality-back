@@ -19,5 +19,11 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Doctors.FirstOrDefault(x => x.DoctorId == id);
         }
+
+        // цей метод дасть можливість отримати айдішку лікаря за його email-ом
+        public int GetIdByEmail(string email)
+        {
+            return _context.Doctors.Where(x => string.Equals(x.Email, email)).Select(x => x.DoctorId).FirstOrDefault();
+        }
     }
 }

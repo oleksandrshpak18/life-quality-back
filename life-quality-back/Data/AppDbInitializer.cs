@@ -1,4 +1,6 @@
-﻿using life_quality_back.Data.Models;
+﻿using life_quality_back.Controllers.Authorization;
+using life_quality_back.Data.Models;
+using life_quality_back.Data.Repositories;
 
 namespace life_quality_back.Data
 {
@@ -18,28 +20,37 @@ namespace life_quality_back.Data
                 context.Answers.RemoveRange(context.Answers);
                 context.Questions.RemoveRange(context.Questions);
                 context.Questionnaires.RemoveRange(context.Questionnaires);
+                context.QuestionnaireTreatmentStrategy.RemoveRange(context.QuestionnaireTreatmentStrategy);
+                context.Users.RemoveRange(context.Users);
 
                 // add a template data to the tables
-                context.Doctors.AddRange(
-                    new Doctor
+                
+                context.Users.AddRange(
+                    new User
                     {
-                        FirstName = "Mike",
-                        LastName = "Dolfino",
-                        Email = "mike.dolfino@gmail.com",
-                        Education = "Lviv National Medical University",
-                        Gender = "Male",
-                        Speciality = "Dentist",
-                        Password = "plaintextpassword",
+                        Password = "7c6a180b36896a0a8c02787eeafb0e4c", // додаючи користувача згенеруйте MD-5 хеш онайлн та вставте тут 
+                        Doctor = new Doctor                            // безпека користувачів понад усе!
+                        {
+                            FirstName = "Mike",
+                            LastName = "Dolfino",
+                            Email = "mike.dolfino@gmail.com",
+                            Education = "Lviv National Medical University",
+                            Gender = "Male",
+                            Speciality = "Dentist"
+                        }
                     },
-                    new Doctor
+                    new User
                     {
-                        FirstName = "Mary",
-                        LastName = "Alice",
-                        Email = "mary.alice@gmail.com",
-                        Education = "University of Fairview",
-                        Gender = "Female",
-                        Speciality = "Therapist",
-                        Password = "just not null"
+                        Password = "6cb75f652a9b52798eb6cf2201057c73",
+                        Doctor = new Doctor
+                        {
+                            FirstName = "Mary",
+                            LastName = "Alice",
+                            Email = "mary.alice@gmail.com",
+                            Education = "University of Fairview, Visteria-Lane",
+                            Gender = "Female",
+                            Speciality = "Therapist"
+                        }
                     }
                 );
 
@@ -275,7 +286,6 @@ namespace life_quality_back.Data
                 );
 
                 context.SaveChanges();
-
             }
         }
     }

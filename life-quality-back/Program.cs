@@ -17,6 +17,7 @@ builder.Services.AddTransient<PatientRepository>();
 builder.Services.AddTransient<AnswerRepository>();
 builder.Services.AddTransient<QuestionRepository>();
 builder.Services.AddTransient<QuestionnaireRepository>();
+builder.Services.AddTransient<UserRepository>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
