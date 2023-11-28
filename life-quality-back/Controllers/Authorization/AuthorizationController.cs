@@ -15,7 +15,7 @@ namespace life_quality_back.Controllers
             this.handlers = handlers ?? throw new ArgumentNullException(nameof(handlers));
         }
 
-        public RespondAnswer ProcessAuthentication(string username, string password)
+        public RespondAnswer ProcessAuthentication(string? username, string? password)
         {
             foreach (var handler in handlers)
             {
@@ -44,7 +44,7 @@ namespace life_quality_back.Controllers
     public class AuthorizationController : ControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<int>> AuthorizationDoctor(string login, string password)
+        public async Task<ActionResult<int>> AuthorizationDoctor(string? login, string? password)
         {
             // Створення ланцюжка обробників
             var handlers = new List<IAuthenticationHandler>
@@ -65,10 +65,8 @@ namespace life_quality_back.Controllers
             }
             else
             {
-                BadRequest(respond.isOperationSuccess);
+                return BadRequest(respond.outcomeMessage);
             }
-
-            return respond.idUser;
         }
     }
 }
