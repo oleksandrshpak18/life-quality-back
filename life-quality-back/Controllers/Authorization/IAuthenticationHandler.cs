@@ -2,6 +2,6 @@
 {
     public interface IAuthenticationHandler
     {
-        RespondAnswer Authenticate(string username, string password);
+        RespondAnswer Authenticate(string? login, string? password);
     }
 }

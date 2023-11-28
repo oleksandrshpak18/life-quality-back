@@ -2,7 +2,7 @@
 {
     public class InputValidationHandler : IAuthenticationHandler
     {
-        public RespondAnswer Authenticate(string login, string password)
+        public RespondAnswer Authenticate(string? login, string? password)
         {
             // 1. Перевірка на пустоту
             RespondAnswer checkEmptyStrings = StringsCheck(login, password);
@@ -34,7 +34,7 @@
             };
         }
 
-        private RespondAnswer StringsCheck(string login, string password)
+        private RespondAnswer StringsCheck(string? login, string? password)
         {
             if (string.IsNullOrEmpty(login))
             {
@@ -63,9 +63,9 @@
             };
         }
 
-        private RespondAnswer LoginCheck(string login)
+        private RespondAnswer LoginCheck(string? login)
         {
-            if (!login.Contains("@lq"))
+            if (login != null && !login.Contains("@lq"))
             {
                 return new RespondAnswer
                 {
@@ -74,7 +74,7 @@
                     outcomeMessage = "Login string is incorrect!"
                 };
             }
-            else if (login.IndexOf('@') != login.LastIndexOf('@'))
+            else if (login != null && login.IndexOf('@') != login.LastIndexOf('@'))
             {
                 return new RespondAnswer
                 {
@@ -101,9 +101,9 @@
             };
         }
         
-        private RespondAnswer PasswordCheck(string password)
+        private RespondAnswer PasswordCheck(string? password)
         {
-            if (password.Length <= 4)
+            if (password != null && password.Length <= 4)
             {
                 return new RespondAnswer
                 {
@@ -121,12 +121,12 @@
             };
         }
 
-        private bool StringContainsASKIISymbols(string line)
+        private bool StringContainsASKIISymbols(string? line)
         {
             // Якщо символ не є друкованим ASCII символом, повертаємо false.
             bool isASKII = true;
 
-            foreach (char c in line)
+            foreach (char c in line ?? "")
             {
                 if ((int)c < 32 || (int)c > 127)
                 {

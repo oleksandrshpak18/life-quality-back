@@ -10,29 +10,24 @@ namespace life_quality_back.Controllers.Authorization
         {
             // Наразі стоїть ЗАГЛУШКА
             // Простий приклад бази даних (логін, пароль та ідентифікатор користувача)
-            //userDatabase = new Dictionary<string, (string, int)>
-            //{
-            //    {"john_doe", ("7c6a180b36896a0a8c02787eeafb0e4c", 0)},
-            //    {"alice", ("6cb75f652a9b52798eb6cf2201057c73", 1)}
-            //};
             userDatabase = new Dictionary<string, (string, int)>
             {
-                {"john_doe", ("password1", 0)},
-                {"alice", ("password2", 1)}
+                {"john_doe@lq.com", ("7c6a180b36896a0a8c02787eeafb0e4c", 0)},
+                {"alice@lq.com", ("6cb75f652a9b52798eb6cf2201057c73", 1)}
             };
         }
-        public RespondAnswer Authenticate(string login, string password)
+        public RespondAnswer Authenticate(string? login, string? password)
         {
             //Хешуємо пароль
-            var hashPassword = HashPassword(Encoding.UTF8.GetBytes(password));
+            var hashPassword = HashPassword(Encoding.UTF8.GetBytes(password ?? ""));
 
             // Перевірка користувача в базі даних
-            if (userDatabase.ContainsKey(login) && userDatabase[login].password == hashPassword)
+            if (userDatabase.ContainsKey(login ?? "") && userDatabase[login ?? ""].password == hashPassword)
             {
                 return new RespondAnswer
                 {
                     isOperationSuccess = true,
-                    idUser = userDatabase[login].userId,
+                    idUser = userDatabase[login ?? ""].userId,
                     outcomeMessage = "Authorization complete successfully!"
                 };
             }
