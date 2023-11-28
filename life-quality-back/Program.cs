@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<DoctorRepository>();
 builder.Services.AddTransient<DiseaseRepository>();
 builder.Services.AddTransient<TreatmentStrategyRepository>();
+builder.Services.AddTransient<PatientRepository>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>

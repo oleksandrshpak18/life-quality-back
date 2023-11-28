@@ -10,15 +10,13 @@ namespace life_quality_back.Data
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
 
-                if(context.Doctors.Any()) 
-                {
-                    foreach (var doctor in context.Doctors)
-                    {
-                        context.Doctors.Remove(doctor);
-                    }
-                    context.SaveChanges();
-                }
+                // remove all the previous data from the tables on startup
+                context.Doctors.RemoveRange(context.Doctors);
+                context.Diseases.RemoveRange(context.Diseases);
+                context.TreatmentStrategies.RemoveRange(context.TreatmentStrategies);
+                context.Patients.RemoveRange(context.Patients);
 
+                // add a template data to the tables
                 context.Doctors.AddRange(
                     new Doctor
                     {
@@ -43,15 +41,6 @@ namespace life_quality_back.Data
                 // don't forget to save the changes
                 context.SaveChanges();
 
-                if (context.Diseases.Any())
-                {
-                    foreach (var disease in context.Diseases)
-                    {
-                        context.Diseases.Remove(disease);
-                    }
-                    context.SaveChanges();
-                }
-
                 context.Diseases.AddRange(
                     new Disease
                     {
@@ -66,15 +55,6 @@ namespace life_quality_back.Data
                 );
                 context.SaveChanges();
 
-                if (context.TreatmentStrategies.Any())
-                {
-                    foreach (var treatmentStrategy in context.TreatmentStrategies)
-                    {
-                        context.TreatmentStrategies.Remove(treatmentStrategy);
-                    }
-                    context.SaveChanges();
-                }
-
                 context.TreatmentStrategies.AddRange(
                     new TreatmentStrategy
                     {
@@ -85,6 +65,68 @@ namespace life_quality_back.Data
                     {
                         TreatmentStrategyName = "Strategy 2",
                         TreatmentStrategyDescription = "A robust description for strategy 2. And some additional info here."
+                    }
+                );
+
+                context.SaveChanges();
+
+                context.Patients.AddRange(
+                    new Patient
+                    {
+                        FirstName = "John",
+                        LastName = "Doe",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "john.doe@example.com",
+                        Gender = "Male",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName == "Strategy 1") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName == "Disease 1") // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.LastName == "Dolfino") // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "John",
+                        LastName = "Doe",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "john.doe@example.com",
+                        Gender = "Male",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName == "Strategy 2") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName == "Disease 1") // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.LastName == "Dolfino") // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "John",
+                        LastName = "Doe",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "john.doe@example.com",
+                        Gender = "Male",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName == "Strategy 2") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName == "Disease 2") // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.LastName == "Alice") // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
                     }
                 );
 
