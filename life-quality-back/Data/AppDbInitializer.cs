@@ -62,8 +62,8 @@ namespace life_quality_back.Data
                 context.Diseases.AddRange(
                     new Disease
                     {
-                        DiseaseName = "Disease 1",
-                        DiseaseDescription = "A robust description for disease 1."
+                        DiseaseName = "Stroke",
+                        DiseaseDescription = "Stroke (brain attack) is a medical condition in which poor blood flow to the brain causes cell death. There are two main types of stroke: ischemic, due to lack of blood flow, and hemorrhagic, due to bleeding. Both cause parts of the brain to stop functioning properly."
                     },
                     new Disease
                     {
@@ -84,43 +84,395 @@ namespace life_quality_back.Data
                             {
                                 Questionnaire = new Questionnaire
                                 {
-                                    QuestionnaireName = "Questionnaire 1",
+                                    QuestionnaireName = "National Institutes of Health stroke scale (NIHSS)",
+                                    QuestionnaireDescription = "The NIHSS is an 11-item scale designed to assess neurologic outcomes and the degree of recovery for stroke patients. The scale evaluates the level consciousness, eyeball movements, field of vision, facial muscle functions, limb strength, sensory functions, coordination (ataxia), language (aphasia), speech (dysarthria) and unilateral spatial ignoring (neglect).",
                                     Questions = new List<Question>
                                     {
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 1",
+                                            QuestionText = "Level of consciousness",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                                    AnswerText = "Conscious, reacts quickly.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Drowsy, but can be brought to consciousness by light stimuli, and then\r\ncarries out orders, answers, reacts.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                                    AnswerText = "Reacts only with reflex movements or vegetative manifestations or does not react at all.",
                                                     AnswerValue = 2
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 1",
+                                            QuestionText = "Level of consciousness: questions (Ask the patient what month it is now and how old he is.)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 1 | Question 2 | Questionnaire 1",
+                                                    AnswerText = "Answered both questions correctly or there is a language barrier.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Answered one question correctly.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 2 | Question 2 | Questionnaire 1",
+                                                    AnswerText = "Did not give any correct answer or cannot answer.",
                                                     AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Level of consciousness: commands (Ask the patient to close his eyes and make a fist)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Executed both commands correctly.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Completed one command correctly.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Did not execute any of the commands.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Eye movements",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Full range of eye movements.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Partial paralysis of gaze or isolated paresis of the nerve.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Tonic abduction of the eyes or complete paralysis of the gaze, which persists during the test of the oculocephalic reflex.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Fields of vision (Evaluate all fields of vision using simultaneous finger movements)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Fields of vision are preserved or old blindness.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Asymmetric or partial hemianopsia.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Complete hemianopsia.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Bilateral hemianopsia (blindness, including cortical blindness) or coma.",
+                                                    AnswerValue = 3
                                                 }
                                             }
-                                        }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Facial muscle weakness",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Normal facial expressions or sedation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild paresis (only smoothing of the nasolabial fold).",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Partial paresis (complete or almost complete paralysis of the lower facial muscles).",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Complete paresis (absence of facial expressions in the upper and lower parts of the face) or coma.",
+                                                    AnswerValue = 3
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Assessment of the motor function of the left hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "The hand is held in the initial position for 10 seconds, joint effusion or amputation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The arm remains in the initial position (90°), but begins to move downward during the first 10 seconds.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The patient cannot hold the hand in the initial position (90°) for 10 seconds, but there are certain efforts against gravity.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Рука одразу падає, немає спроб подолати силу тяжіння.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "No movement whatsoever.",
+                                                    AnswerValue = 4
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Assessment of the motor function of the right hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "The hand is held in the initial position for 10 seconds, joint effusion or amputation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The arm remains in the initial position (90°), but begins to move downward during the first 10 seconds.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The patient cannot hold the hand in the initial position (90°) for 10 seconds, but there are certain efforts against gravity.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Рука одразу падає, немає спроб подолати силу тяжіння.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "No movement whatsoever.",
+                                                    AnswerValue = 4
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Assessment of the motor function of the left leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg is held at an angle of 30° for 5 seconds, joint effusion or amputation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg lowers to an intermediate position during the first 5 seconds.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg falls on the bed during the first 5 seconds, some effort against gravity.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg immediately falls on the bed, there is no attempt to overcome the force of gravity.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "No movement whatsoever.",
+                                                    AnswerValue = 4
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Assessment of the motor function of the right leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg is held at an angle of 30° for 5 seconds, joint effusion or amputation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg lowers to an intermediate position during the first 5 seconds.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg falls on the bed during the first 5 seconds, some effort against gravity.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "The leg immediately falls on the bed, there is no attempt to overcome the force of gravity.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "No movement whatsoever.",
+                                                    AnswerValue = 4
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Language: Naming ordinary things",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Norm.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild to moderate aphasia, errors in naming objects, or paraphasia. Impaired speech and/or language comprehension.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe aphasia. Complete aphasia expressive (Broca) or receptive (Wernicke).",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Dumbness, complete aphasia or coma.",
+                                                    AnswerValue = 3
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Dysarthria",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Norm.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild or moderate dysarthria; the patient \"smears\" some words, and sometimes it is difficult to understand him.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe dysarthria; the pronunciation is so distorted that the patient cannot be understood.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Ataxia in the limbs",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None (no limb movements), impossible to assess.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Ataxia is present in one limb.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Ataxia is present in two limbs.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Sensitivity: injections with a disposable needle. In case of impaired consciousness, give points only if there is a grimace or asymmetric manifestations.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Norm; sedation or amputation.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild or moderate loss of sensitivity; the patient feels the touch as less sharp or dull; but feels when it is touched.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe or complete loss of sensitivity; the patient does not feel touch.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Neglect (lack of attention)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "There are no violations.",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Lack of attention to visual, tactile, auditory stimuli on one side.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe lack of attention or exclusion (selective perception) of stimuli of more than one modality.",
+                                                    AnswerValue = 2
+                                                },
+                                            }
+                                        },
                                     }
                                 }
                             },
