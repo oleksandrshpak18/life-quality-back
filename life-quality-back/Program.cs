@@ -18,6 +18,7 @@ builder.Services.AddTransient<AnswerRepository>();
 builder.Services.AddTransient<QuestionRepository>();
 builder.Services.AddTransient<QuestionnaireRepository>();
 builder.Services.AddTransient<UserRepository>();
+builder.Services.AddTransient<ResultsRepository>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>

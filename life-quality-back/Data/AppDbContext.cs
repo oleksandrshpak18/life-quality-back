@@ -19,5 +19,7 @@ namespace life_quality_back.Data
         public DbSet<Answer> Answers { get; set; }
         public DbSet<QuestionnaireTreatmentStrategy> QuestionnaireTreatmentStrategy { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Models.Results> Results { get; set; }
+        public DbSet<PatientAnswer> PatientAnswers { get; set; }
     }
 }

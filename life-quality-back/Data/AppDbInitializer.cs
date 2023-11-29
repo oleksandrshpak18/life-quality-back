@@ -231,7 +231,7 @@ namespace life_quality_back.Data
                         FirstName = "John",
                         LastName = "Doe",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe@example.com",
+                        Email = "john.doe1@example.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
@@ -250,7 +250,7 @@ namespace life_quality_back.Data
                         FirstName = "John",
                         LastName = "Doe",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe@example.com",
+                        Email = "john.doe2@example.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
@@ -269,7 +269,7 @@ namespace life_quality_back.Data
                         FirstName = "John",
                         LastName = "Doe",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe@example.com",
+                        Email = "john.doe3@example.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
@@ -285,6 +285,43 @@ namespace life_quality_back.Data
                     }
                 );
 
+                context.SaveChanges();
+
+                // перед додаванням результатів витягнемо собі допоміжну інформацію, щоб менше дублювати
+                context.Results.AddRange(
+                    new Models.Results
+                    {
+                        Date = new DateTime(2023, 11, 18),
+                        isSaved = false,
+                        PatientId = context.Patients
+                            .Where(x => x.Email == "john.doe1@example.com")
+                            .Select(x => x.PatientId).First(),
+                        QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName == "Questionnaire 1")
+                            .Select(x => x.QuestionnaireId).First(),
+                        ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                        {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            }
+                        }
+                    }
+                );
                 context.SaveChanges();
             }
         }
