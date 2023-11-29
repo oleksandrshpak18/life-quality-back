@@ -40,7 +40,7 @@ namespace life_quality_back.Controllers.Authorization
                     return new RespondAnswer
                     {
                         isOperationSuccess = true,
-                        idUser = id,
+                        idUser = _repository.GetDoctorIdById(id),
                         outcomeMessage = "Authorization complete successfully!"
                     };
                 }
