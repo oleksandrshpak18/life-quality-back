@@ -59,7 +59,7 @@
             {
                 isOperationSuccess = true,
                 idUser = -1,
-                outcomeMessage = ""
+                outcomeMessage = "Login and password strings are not empty!"
             };
         }
 
@@ -71,7 +71,7 @@
                 {
                     isOperationSuccess = false,
                     idUser = -1,
-                    outcomeMessage = "Login string is incorrect!"
+                    outcomeMessage = "Login string is incorrect! It doesn't contain '@lq'"
                 };
             }
             else if (login != null && login.IndexOf('@') != login.LastIndexOf('@'))
@@ -80,7 +80,7 @@
                 {
                     isOperationSuccess = false,
                     idUser = -1,
-                    outcomeMessage = "Login string contains more than 1 '@'!"
+                    outcomeMessage = "Login string is incorrect! It contains more than 1 '@'!"
                 };
             }
             else if (!StringContainsASKIISymbols(login)) 
@@ -89,7 +89,7 @@
                 {
                     isOperationSuccess = false,
                     idUser = -1,
-                    outcomeMessage = "Login string must contains only ASKII symbols!"
+                    outcomeMessage = "Login string is incorrect! It contains not only ASKII symbols!"
                 };
             }
 
@@ -97,7 +97,7 @@
             {
                 isOperationSuccess = true,
                 idUser = -1,
-                outcomeMessage = ""
+                outcomeMessage = "Login string is validated"
             };
         }
         
