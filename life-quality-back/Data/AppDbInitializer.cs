@@ -100,7 +100,7 @@ namespace life_quality_back.Data
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Drowsy, but can be brought to consciousness by light stimuli, and then\r\ncarries out orders, answers, reacts.",
+                                                    AnswerText = "Drowsy, but can be brought to consciousness by light stimuli, and thencarries out orders, answers, reacts.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
@@ -481,7 +481,7 @@ namespace life_quality_back.Data
                                 Questionnaire = new Questionnaire
                                 {
                                     QuestionnaireName = "Barthel Index (BI)",
-                                    QuestionnaireDescription = "This index measures the degree to which someone can function independently and has mobility in their activities of daily living (ADL), i.e. eating, bathing, hygiene\r\nprocedures, dressing. The index also indicates the need for care assistance.\r\nThe Barthel Index (BI) is a widely used indicator of functional impairment. The index was developed for use in the rehabilitation of stroke patients\r\nand other neuromuscular or musculoskeletal diseases, but also\r\ncan also be used for cancer patients.",
+                                    QuestionnaireDescription = "This index measures the degree to which someone can function independently and has mobility in their activities of daily living (ADL), i.e. eating, bathing, hygieneprocedures, dressing. The index also indicates the need for care assistance.The Barthel Index (BI) is a widely used indicator of functional impairment. The index was developed for use in the rehabilitation of stroke patientsand other neuromuscular or musculoskeletal diseases, but alsocan also be used for cancer patients.",
                                     Questions = new List<Question>
                                     {
                                         new Question
@@ -706,6 +706,465 @@ namespace life_quality_back.Data
                                         },
                                     }
                                 },
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Berg Balance Test (BBS)",
+                                    QuestionnaireDescription = "The Berg Balance Test (BBS) was originally developed to quantify moat novaga in the elderly. Among the functional balance assessment tests, the BBS test, as rule is considered the gold standard.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Встати із сидячого положення (Будь ласка, встаньте. Намагайтеся не використовувати Вашу руку для підтримки.)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може встати без використання рук і стабілізуватись самостійно.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може встати самостійно за допомогою рук",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може встати за допомогою рук після декількох спроб.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує мінімальної допомоги при вставанні або стабілізації.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує помірної або максимальної допомоги при вставанні.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Стояти без підтримки (Будь ласка, простійте протягом двох хвилин без підтримки.)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = " У змозі безпечно стояти протягом 2 хвилин.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі простояти 2 хвилини під наглядом.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі простояти 30 секунд без підтримки.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потрібно кілька спроб, щоб простояти 30 секунд без підтримки.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не може стояти 30 секунд без підтримки.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Сидіння без підтримки спини, але з фіксованими ногами на підлозі або стільчику (Будь ласка, сидіть, склавши руки, протягом 2 хвилин)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі сидіти безпечно і надійно протягом 2 хвилин.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі сидіти 2 хвилини під наглядом.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі сидіти протягом 30 секунд.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі сидіти 10 секунд.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не може сидіти без підтримки 10 секунд.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Сідання із положення стоячи (Будь ласка, сідайте)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Сідає безпечно з мінімальним використанням рук.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Контролює сідання за допомогою рук.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Використовує задню поверхню ніг відносно стільця, щоб контролювати сідання.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Сидить самостійно, але процес сідання неконтрольований.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги при сидінні.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Переміщення (Поставте стілець(і), як орієнтири при переміщенні. Попросіть пацієнта пройти в \r\nодин бік до стільця з підлокітниками і в інший бік до стільця без підлокітників. Ви \r\nможете використовувати два стільці (один з і один без підлокітників) або ліжко і \r\nстілець.)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі пройти безпечно з незначним використанням рук.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Здатний пройти безпечно, необхідна допомога рук.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Здатний пройти зі скигленням і/або під наглядом.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потрібна одна людина, щоб допомогти.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потрібні дві людини, щоб допомогти або контролювати безпечність.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Стояння без підтримки із закритими очима (Будь ласка, закрийте очі і стійте на місці протягом 10 секунд)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може простояти 10 секунд безпечно.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може простояти 10 секунд під контролем.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може простояти 3 секунди.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не в змозі тримати очі закритими протягом 3 секунд, але стоїть безпечно.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб не впасти.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Стояння без підтримки із ногами разом (Поставте ноги разом і стійте без підтримки)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі поставити ноги разом самостійно і простояти 1 хвилину безпечно.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі поставити ноги разом самостійно і простояти 1 хвилину під контролем.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі поставити ноги разом самостійно, але не в змозі стояти протягом 30 секунд.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб досягти необхідної пози, але може стояти 15 секунд, коли ноги разом.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб досягти необхідної пози і не в змозі стояти протягом 15 секунд.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Нахиляння вперед з витягнотою рукою в положенні стоячи (Підійміть руку під кутом 90 градусів. Простягніть пальці і нахиліться, наскільки можете. (Екзаменатор ставить лінійку біля кінчиків пальців, коли рука знаходиться під \r\nкутом 90 градусів. Пальці не повинні торкатися лінійки при нахилі. Контрольний \r\nрезультат — це відстань, якої досягли пальці, коли пацієнт перебуває в положенні \r\nмаксимального нахилу. Якщо це можливо, попросіть пацієнта використовувати \r\nобидві руки при нахилі, щоб уникнути обертання хребта.))",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може впевнено досягти 25 см (10 дюймів).",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може досягти 12 см (5 дюймів).",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може досягти 5 см (2 дюйми).",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Нахиляється вперед, але потребує контролю.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Втрачає рівновагу при спробі / потребує зовнішньої підтримки.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Взяття предмета з підлоги в положенні стоячи (Візьміть туфлю/капець, що знаходиться перед Вашими ногами)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі взяти капець легко і безпечно.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі підняти черевичок, але потребує нагляду.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не може підібрати, але досягає відстані 2–5 см (1–2 дюйми) від капця і самостійно зберігає рівновагу.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не в змозі підібрати і потребує нагляду при спробі.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не може спробувати/потребує допомоги, щоб утриматися від втрати рівноваги або падіння.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Оглядання через ліве і праве плече в положенні стоячи (Озирніться, щоб подивитися прямо через ліве плече. Повторіть вправо. (Екзаме\u0002натор може вибрати будь-який предмет позаду пацієнта, щоб той дивився безпо\u0002середньо на предмет, щоб сприяти кращому повороту.))",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Озирається назад з обох боків, і вага добре зміщується.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "З одного боку виглядає менше, ніж з іншого; менше перенесення ваги.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Тільки повертається боком, але утримує рівновагу.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "При повороті потребує нагляду.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб не втратити рівновагу або уникнути падіння.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Повертання на 360 градусів (Поверніться повністю навколо себе. Пауза. Потім поверніться в іншому напрямку)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі повернутися на 360 градусів безпечно за 4 секунди або менше.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі повернутися на 360 градусів безпечно тільки в один бік за 4 секунди \r\nабо менше.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Здатний повертатися на 360 градусів безпечно, але повільно.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потрібен ретельний нагляд або словесний супровід.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги при повороті.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Поставити ногу на сходинку або стільчик, стоячи без підтримки (Поставте кожну ногу по черзі на сходинку/стільчик. Продовжуйте, поки кожна нога \r\nне торкнеться сходинки/стільчика чотири рази)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може стояти самостійно і безпечно і виконує 8 кроків протягом 20 секунд.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може стояти самостійно і виконує 8 кроків більше ніж за 20 секунд.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі виконати 4 кроки без сторонньої допомоги під наглядом.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі зробити більше 2 кроків, потребує мінімальної допомоги.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб не впасти/не може спробувати.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Стояння без підтримки з однією ногою попереду ((Продемонструйте пацієнту) Поставте одну ногу прямо перед іншою. Якщо Ви \r\nвідчуваєте, що не можете поставити ногу прямо спереду, спробуйте трохи далі, \r\nщоб п’ятка Вашої передньої ноги була попереду пальців іншої ноги. (Для того, \r\nщоб набрати 3 бали довжина кроку не повинна перевищувати довжину іншої ноги \r\nі ширина пози повинна наближатись до нормальної ширини кроку пацієнта.))",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Може розмістити стопи «гусаком» самостійно і утримувати позу 30 секундy.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі помістити ногу попереду самостійно і утримувати позу 30 секунд.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі зробити невеликий крок самостійно і утримувати позу 30 секунд.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Потребує допомоги, щоб зробити крок, але може утримувати позу 15 секунд.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Втрачає рівновагу під час кроку або стояння\r\n.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Стояння на одній нозі (Стійте на одній нозі стільки, скільки Ви можете без підтримки)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись > 10 секунд.",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись 5–10 секунд.",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись менше 3 секунд.",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Намагається підняти ногу, не в силах утримуватись 3 секунди, але стоїть \r\nсамостійно.",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Не може спробувати, потребує допомоги, щоб уникнути падіння.",
+                                                    AnswerValue = 0
+                                                }
+                                            }
+                                        },
+                                    }
+                                }
                             }
                         }
 
@@ -721,6 +1180,7 @@ namespace life_quality_back.Data
                                 Questionnaire = new Questionnaire
                                 {
                                     QuestionnaireName = "Questionnaire 3",
+                                    QuestionnaireDescription = "Description to Questionnaire 3",
                                     Questions = new List<Question>
                                     {
                                         new Question
@@ -780,10 +1240,10 @@ namespace life_quality_back.Data
                                         .Where(x => x.TreatmentStrategyName == "Strategy 1") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName == "Disease 1") // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
-                                        .Where(x => x.LastName == "Dolfino") // replace later with the name of a real doctor from Doctors
+                                        .Where(x => x.Email.Equals("mary.alice@lq.com")) // replace later with the name of a real doctor from Doctors
                                         .Select(x => x.DoctorId).First(),
                     },
                     new Patient
@@ -799,7 +1259,7 @@ namespace life_quality_back.Data
                                         .Where(x => x.TreatmentStrategyName == "Strategy 2") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName == "Disease 1") // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName == "Stroke") // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
                                         .Where(x => x.LastName == "Dolfino") // replace later with the name of a real doctor from Doctors
@@ -838,7 +1298,7 @@ namespace life_quality_back.Data
                             .Where(x => x.Email == "john.doe1@example.com")
                             .Select(x => x.PatientId).First(),
                         QuestionnaireId = context.Questionnaires
-                            .Where(x => x.QuestionnaireName == "Questionnaire 1")
+                            .Where(x => x.QuestionnaireName == "National Institutes of Health stroke scale (NIHSS)")
                             .Select(x => x.QuestionnaireId).First(),
                         ResultsPatientAnswers = new List<ResultsPatientAnswer>
                         {

@@ -28,5 +28,13 @@ namespace life_quality_back.Controllers
             var res = _repository.GetById(id);
             return res == null ? BadRequest($"Results with id {id} not found") : Ok(res);
         }
+
+        [HttpGet("doctor/{doctorId}")]
+        public async Task<ActionResult<List<Data.Models.Results>>> GetAllByDoctorId(int doctorId)
+        {
+            int t = doctorId;
+            var res = _repository.GetAllByDoctorId(doctorId);
+            return ((res == null) || (!res.Any())) ? BadRequest($"Results for this doctor {doctorId} not found") : Ok(res);
+        }
     }
 }

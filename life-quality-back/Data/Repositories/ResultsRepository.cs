@@ -31,5 +31,10 @@ namespace life_quality_back.Data.Repositories
                     .ThenInclude(x => x.PatientAnswer)
                 .FirstOrDefault(x => x.ResultsId == id);
         }
+
+        public IEnumerable<Data.Models.Results> GetAllByDoctorId(int doctorId)
+        {
+            return GetAll().Where(x => x.Patient.DoctorId == doctorId).ToList();
+        }
     }
 }
