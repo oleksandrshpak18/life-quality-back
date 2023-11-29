@@ -10,13 +10,20 @@ namespace life_quality_back.Data.Repositories
             _context = context;
         }
 
-        public string GetPasswordById(int id)
+        public IEnumerable<User> GetAll()
         {
-            return _context.Users.Where(x => x.DoctorId== id).Select(x => x.Password).FirstOrDefault();
+            return _context.Users.ToList();
         }
-        public string GetLoginById(int id)
+        public (string, string) GetAuthorizationDataById(int id)
         {
-            return _context.Users.Where(x => x.DoctorId == id).Select(x => x.Login).FirstOrDefault();
+            return (
+                    _context.Users.Where(x => x.UserId == id).Select(x => x.Login).FirstOrDefault(),
+                    _context.Users.Where(x => x.UserId == id).Select(x => x.Password).FirstOrDefault()
+                );
+        }
+        public int GetDoctorIdById(int id)
+        {
+            return _context.Users.Where(x => x.UserId == id).Select(x => x.DoctorId).FirstOrDefault();
         }
     }
 }

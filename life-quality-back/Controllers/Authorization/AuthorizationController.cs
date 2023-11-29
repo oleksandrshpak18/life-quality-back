@@ -43,14 +43,22 @@ namespace life_quality_back.Controllers
     [ApiController]
     public class AuthorizationController : ControllerBase
     {
+        private UserRepository _repository;
+
+        public AuthorizationController(UserRepository repository)
+        {
+            _repository = repository;
+        }
+
         [HttpGet]
         public async Task<ActionResult<int>> AuthorizationDoctor(string? login, string? password)
         {
+
             // Створення ланцюжка обробників
             var handlers = new List<IAuthenticationHandler>
             {
                 new InputValidationHandler(),
-                new DatabaseAuthenticationHandler()
+                new DatabaseAuthenticationHandler(_repository)
             };
 
             // Створення об'єкту для обробки автентифікації

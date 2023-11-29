@@ -1,35 +1,49 @@
-﻿using System.Text;
+﻿using life_quality_back.Data.Repositories;
+using System.Text;
 
 namespace life_quality_back.Controllers.Authorization
 {
     public class DatabaseAuthenticationHandler : IAuthenticationHandler
     {
-        private readonly Dictionary<string, (string password, int userId)> userDatabase;
+        //private readonly Dictionary<string, (string password, int userId)> userDatabase;
 
-        public DatabaseAuthenticationHandler()
+        private UserRepository _repository;
+
+        public DatabaseAuthenticationHandler(UserRepository repository)
         {
+            _repository = repository;
+
+
+
             // Наразі стоїть ЗАГЛУШКА
             // Простий приклад бази даних (логін, пароль та ідентифікатор користувача)
-            userDatabase = new Dictionary<string, (string, int)>
-            {
-                {"john_doe@lq.com", ("7c6a180b36896a0a8c02787eeafb0e4c", 0)},
-                {"alice@lq.com", ("6cb75f652a9b52798eb6cf2201057c73", 1)}
-            };
+            //userDatabase = new Dictionary<string, (string, int)>
+            //{
+            //    {"john_doe@lq.com", ("7c6a180b36896a0a8c02787eeafb0e4c", 0)},
+            //    {"alice@lq.com", ("6cb75f652a9b52798eb6cf2201057c73", 1)}
+            //};
         }
         public RespondAnswer Authenticate(string? login, string? password)
         {
             //Хешуємо пароль
             var hashPassword = HashPassword(Encoding.UTF8.GetBytes(password ?? ""));
 
-            // Перевірка користувача в базі даних
-            if (userDatabase.ContainsKey(login ?? "") && userDatabase[login ?? ""].password == hashPassword)
+            //Отримуємо усі id наших user в системі
+            var usersId = GetAllUsersId(_repository);
+
+            foreach (var id in  usersId)
             {
-                return new RespondAnswer
+                // Перевірка користувача в базі даних
+                if (string.Equals(_repository.GetAuthorizationDataById(id).Item1, login) && string.Equals(_repository.GetAuthorizationDataById(id).Item2, hashPassword))
                 {
-                    isOperationSuccess = true,
-                    idUser = userDatabase[login ?? ""].userId,
-                    outcomeMessage = "Authorization complete successfully!"
-                };
+
+                    return new RespondAnswer
+                    {
+                        isOperationSuccess = true,
+                        idUser = id,
+                        outcomeMessage = "Authorization complete successfully!"
+                    };
+                }
             }
 
             return new RespondAnswer
@@ -38,6 +52,13 @@ namespace life_quality_back.Controllers.Authorization
                 idUser = -1,
                 outcomeMessage = "Incorrect login or password"
             };
+        }
+
+        private List<int> GetAllUsersId(UserRepository repository)
+        {
+            var users = repository.GetAll();
+
+            return users.Select(user => user.UserId).ToList();
         }
 
         private string HashPassword(byte[] password)
