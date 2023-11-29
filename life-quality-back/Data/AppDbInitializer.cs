@@ -28,12 +28,13 @@ namespace life_quality_back.Data
                 context.Users.AddRange(
                     new User
                     {
+                        Login = "mike.dolfino@lq.com",
                         Password = "7c6a180b36896a0a8c02787eeafb0e4c", // додаючи користувача згенеруйте MD-5 хеш онайлн та вставте тут 
                         Doctor = new Doctor                            // безпека користувачів понад усе!
                         {
                             FirstName = "Mike",
                             LastName = "Dolfino",
-                            Email = "mike.dolfino@gmail.com",
+                            Email = "mike.dolfino@lq.com",
                             Education = "Lviv National Medical University",
                             Gender = "Male",
                             Speciality = "Dentist"
@@ -41,12 +42,13 @@ namespace life_quality_back.Data
                     },
                     new User
                     {
+                        Login = "mary.alice@lq.com",
                         Password = "6cb75f652a9b52798eb6cf2201057c73",
                         Doctor = new Doctor
                         {
                             FirstName = "Mary",
                             LastName = "Alice",
-                            Email = "mary.alice@gmail.com",
+                            Email = "mary.alice@lq.com",
                             Education = "University of Fairview, Visteria-Lane",
                             Gender = "Female",
                             Speciality = "Therapist"

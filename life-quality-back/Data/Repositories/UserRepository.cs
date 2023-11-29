@@ -14,5 +14,9 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Users.Where(x => x.DoctorId== id).Select(x => x.Password).FirstOrDefault();
         }
+        public string GetLoginById(int id)
+        {
+            return _context.Users.Where(x => x.DoctorId == id).Select(x => x.Login).FirstOrDefault();
+        }
     }
 }
