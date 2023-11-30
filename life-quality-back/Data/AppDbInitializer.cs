@@ -1235,7 +1235,7 @@ namespace life_quality_back.Data
                         Email = "ethan.reynolds@lq.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = DateTime.Now,
+                        RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -1251,9 +1251,9 @@ namespace life_quality_back.Data
                         FirstName = "Oliver",
                         LastName = "Mitchell",
                         Anamnesis = "Some anamnesis information",
-                        Email = "oliver.mitchell@example.com",
+                        Email = "oliver.mitchell@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(2023, 8, 20),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -1270,10 +1270,10 @@ namespace life_quality_back.Data
                         FirstName = "Sebastian",
                         LastName = "Carter",
                         Anamnesis = "Some anamnesis information",
-                        Email = "sebastian.carter@example.com",
+                        Email = "sebastian.carter@lq.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = DateTime.Now,
+                        RehabilitationStartDate = new DateTime(2023, 9, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -1292,7 +1292,7 @@ namespace life_quality_back.Data
                         Email = "ava.thompson@lq.com",
                         Gender = "Female",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = DateTime.Now,
+                        RehabilitationStartDate = new DateTime(2023, 7, 20),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -1308,10 +1308,10 @@ namespace life_quality_back.Data
                         FirstName = "Sophia",
                         LastName = "Rodriguez",
                         Anamnesis = "Some anamnesis information",
-                        Email = "sophia.rodriguez@example.com",
+                        Email = "sophia.rodriguez@lq.com",
                         Gender = "Female",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = DateTime.Now,
+                        RehabilitationStartDate = new DateTime(2023, 7, 30),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -1327,10 +1327,10 @@ namespace life_quality_back.Data
                         FirstName = "Sebastian",
                         LastName = "Carter",
                         Anamnesis = "Some anamnesis information",
-                        Email = "sebastian.carter@example.com",
+                        Email = "sebastian.carter@lq.com",
                         Gender = "Female",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = DateTime.Now,
+                        RehabilitationStartDate = new DateTime(2023, 8, 30),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -1349,7 +1349,7 @@ namespace life_quality_back.Data
                 context.Results.AddRange(
                     new Models.Results
                     {
-                        Date = new DateTime(2023, 11, 18),
+                        Date = new DateTime(2023, 8, 11),
                         isSaved = false,
                         PatientId = context.Patients
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
@@ -1359,6 +1359,471 @@ namespace life_quality_back.Data
                             .Select(x => x.QuestionnaireId).First(),
                         ResultsPatientAnswers = new List<ResultsPatientAnswer>
                         {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness",
+                                    AnswerText = "Reacts only with reflex movements or vegetative manifestations or does not react at all.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness: questions (Ask the patient what month it is now and how old he is.)",
+                                    AnswerText = "Answered one question correctly.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness: commands (Ask the patient to close his eyes and make a fist)",
+                                    AnswerText = "Completed one command correctly.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Eye movements",
+                                    AnswerText = "Tonic abduction of the eyes or complete paralysis of the gaze, which persists during the test of the oculocephalic reflex.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Fields of vision (Evaluate all fields of vision using simultaneous finger movements)",
+                                    AnswerText = "Bilateral hemianopsia (blindness, including cortical blindness) or coma.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Facial muscle weakness",
+                                    AnswerText = "Complete paresis (absence of facial expressions in the upper and lower parts of the face) or coma.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "Рука одразу падає, немає спроб подолати силу тяжіння.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "No movement whatsoever.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "The leg immediately falls on the bed, there is no attempt to overcome the force of gravity.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "No movement whatsoever.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Language: Naming ordinary things",
+                                    AnswerText = "Dumbness, complete aphasia or coma.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Dysarthria",
+                                    AnswerText = "Mild or moderate dysarthria; the patient \"smears\" some words, and sometimes it is difficult to understand him.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Ataxia in the limbs",
+                                    AnswerText = "Ataxia is present in two limbs.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sensitivity: injections with a disposable needle. In case of impaired consciousness, give points only if there is a grimace or asymmetric manifestations.",
+                                    AnswerText = "Mild or moderate loss of sensitivity; the patient feels the touch as less sharp or dull; but feels when it is touched.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Neglect (lack of attention)",
+                                    AnswerText = "Severe lack of attention or exclusion (selective perception) of stimuli of more than one modality.",
+                                    AnswerValue = 2
+                                }
+                            }
+                        }
+                    },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 18),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness",
+                                    AnswerText = "Drowsy, but can be brought to consciousness by light stimuli, and thencarries out orders, answers, reacts.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness: questions (Ask the patient what month it is now and how old he is.)",
+                                    AnswerText = "Answered one question correctly.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Eye movements",
+                                    AnswerText = "Partial paralysis of gaze or isolated paresis of the nerve.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Fields of vision (Evaluate all fields of vision using simultaneous finger movements)",
+                                    AnswerText = "Complete hemianopsia.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Facial muscle weakness",
+                                    AnswerText = "Partial paresis (complete or almost complete paralysis of the lower facial muscles).",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "The patient cannot hold the hand in the initial position (90°) for 10 seconds, but there are certain efforts against gravity.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "Рука одразу падає, немає спроб подолати силу тяжіння.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "The leg falls on the bed during the first 5 seconds, some effort against gravity.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "The leg immediately falls on the bed, there is no attempt to overcome the force of gravity.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Language: Naming ordinary things",
+                                    AnswerText = "Severe aphasia. Complete aphasia expressive (Broca) or receptive (Wernicke).",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Dysarthria",
+                                    AnswerText = "Severe dysarthria; the pronunciation is so distorted that the patient cannot be understood.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Ataxia in the limbs",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Ataxia is present in two limbs.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sensitivity: injections with a disposable needle. In case of impaired consciousness, give points only if there is a grimace or asymmetric manifestations.",
+                                    AnswerText = "Norm; sedation or amputation.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Neglect (lack of attention)",
+                                    AnswerText = "Lack of attention to visual, tactile, auditory stimuli on one side.",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 30),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness",
+                                    AnswerText = "Conscious, reacts quickly.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness: questions (Ask the patient what month it is now and how old he is.)",
+                                    AnswerText = "Answered both questions correctly or there is a language barrier.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness: commands (Ask the patient to close his eyes and make a fist)",
+                                    AnswerText = "Executed both commands correctly.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Eye movements",
+                                    AnswerText = "Full range of eye movements.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Fields of vision (Evaluate all fields of vision using simultaneous finger movements)",
+                                    AnswerText = "Asymmetric or partial hemianopsia.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Facial muscle weakness",
+                                    AnswerText = "Mild paresis (only smoothing of the nasolabial fold).",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "The arm remains in the initial position (90°), but begins to move downward during the first 10 seconds.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right hand (The patient holds the hand at an angle of 90° to the body (palm down))",
+                                    AnswerText = "The patient cannot hold the hand in the initial position (90°) for 10 seconds, but there are certain efforts against gravity.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the left leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "The leg lowers to an intermediate position during the first 5 seconds.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Assessment of the motor function of the right leg (The patient holds the leg at an angle of 30° for 5 seconds)",
+                                    AnswerText = "The leg falls on the bed during the first 5 seconds, some effort against gravity.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Language: Naming ordinary things",
+                                    AnswerText = "Mild to moderate aphasia, errors in naming objects, or paraphasia. Impaired speech and/or language comprehension.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Dysarthria",
+                                    AnswerText = "Norm.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Ataxia in the limbs",
+                                    AnswerText = "Ataxia is present in one limb.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sensitivity: injections with a disposable needle. In case of impaired consciousness, give points only if there is a grimace or asymmetric manifestations.",
+                                    AnswerText = "Norm; sedation or amputation.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Neglect (lack of attention)",
+                                    AnswerText = "There are no violations.",
+                                    AnswerValue = 0
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 18),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
@@ -1376,9 +1841,109 @@ namespace life_quality_back.Data
                                     AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
                                     AnswerValue = 1
                                 }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
                             }
-                        }
                     }
+                }
+
                 );
                 context.SaveChanges();
             }
