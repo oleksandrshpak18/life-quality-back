@@ -491,83 +491,83 @@ namespace life_quality_back.Data
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Незалежний — пацієнт може самостійно їсти з підносу або столу, коли хтось подає їжу в межах його досяжності. Він повинен поставити допоміжні прибори, якщо це необхідно, розрізати їжу, використовувати сіль і перець, намастити масло на хліб тощо. Він повинен зробити це за прийнятний час.",
+                                                    AnswerText = "Independent - the patient can eat independently from a tray or table when someone serves food within his reach. He should set up the utensils if necessary, cut the food, use salt and pepper, spread butter on the bread, etc. He must do it in a reasonable amount of time.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібна певна допомога (з розрізанням їжі та ін., що зазначено вище).",
+                                                    AnswerText = "Some help is needed (with cutting food, etc., as mentioned above).",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "безпомічний — пацієнта необхідно годувати.",
+                                                    AnswerText = "Helpless - the patient must be fed.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Переміщення з ліжка на інвалідний візок і назад",
+                                            QuestionText = "Transfer from bed to wheelchair and back",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт незалежний на всіх етапах цього виду діяльності. Пацієнт може безпечно під’їхати до ліжка в своєму інвалідному візку, розблокувати систему гальм, підняти підніжку, безпечно переміститися в ліжко, лягти, привести себе в сидяче положення на ліжку, змінити положення інвалідного візка, щоб при необхідності безпечно переміститися в нього і повернутися до інвалідного візка.",
+                                                    AnswerText = "The patient is independent at all stages of this type of activity. The patient can safely approach the bed in their wheelchair, unlock the brake system, raise the footboard, safely transfer to the bed, lie down, bring themselves to a sitting position on the bed, change the position of the wheelchair to safely transfer to it if necessary and return to wheelchair.",
                                                     AnswerValue = 15
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібна певна мінімальна допомога на якомусь етапі цього виду діяльності або пацієнту треба нагадати чи контролювати для забезпечення безпеки одного або декількох етапів цього виду діяльності.",
+                                                    AnswerText = "Some minimal assistance is required at some stage of the activity or the patient needs to be reminded or supervised to ensure the safety of one or more stages of the activity.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може привести себе в сидяче положення без допомоги іншої людини, але його необхідно підняти з ліжка або, якщо він переміщується, то зі значною допомогою.",
+                                                    AnswerText = "The patient can bring himself to a sitting position without the help of another person, but he must be lifted from the bed or, if he moves, with considerable assistance.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Залежний — пацієнт не може привести себе в сидяче положення.",
+                                                    AnswerText = "Dependent - the patient cannot bring himself to a sitting position.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Персональна гігієна",
+                                            QuestionText = "Personal hygiene",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може самостійно вимити обличчя і руки, розчесати волосся, почистити зуби і поголитися. Він може використовувати будь-який вид бритви, але повинен покласти лезо або ввімкнути бритву без сторонньої допомоги, а також дістати її з ящика або шафи. Пацієнтки повинні самостійно наносити макіяж, якщо він використовується, але не обов’язково заплітати волосся або робити зачіску.",
+                                                    AnswerText = "The patient can independently wash his face and hands, comb his hair, brush his teeth and shave. He can use any type of razor, but must put down the blade or turn on the razor without assistance, and must retrieve it from a drawer or cabinet. Patients should apply their own make-up, if used, but do not have to braid their hair or style their hair.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнту потрібна допомога.",
+                                                    AnswerText = "The patient needs help.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Користування туалетом",
+                                            QuestionText = "Using the toilet",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може самостійно користуватися туалетом, знімати та вдягати одяг, запобігти забрудненню одягу і використовувати туалетний папір без сторонньої допомоги. Він може використовувати поручні на стіні або інший стійкий об’єкт для підтримки в разі необхідності. Якщо необхідно використовувати підкладне судно замість туалету, він повинен бути в змозі помістити його на стілець, очистити і помити.",
+                                                    AnswerText = "The patient can independently use the toilet, take off and put on clothes, prevent soiling of clothes and use toilet paper without help. He can use handrails on the wall or another stable object for support if necessary. If it is necessary to use a tray instead of a toilet, he must be able to place it on the chair, clean and wash it.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт потребує допомоги через порушення рівноваги або при вдяганні та знятті одягу, або при використанні туалетного паперу.",
+                                                    AnswerText = "The patient needs help due to a disturbance in balance or when putting on and taking off clothes, or when using toilet paper.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "пацієнту потрібна допомога.",
+                                                    AnswerText = "The patient needs help.",
                                                     AnswerValue = 0
                                                 },
                                             }
@@ -579,127 +579,127 @@ namespace life_quality_back.Data
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може самостійно приймати ванну, душ або провести повне обтирання тіла губкою. Він повинен бути в змозі зробити всі необхідні етапи в залежності від того, який метод використовується, без допомоги іншої людини.",
+                                                    AnswerText = "The patient can independently take a bath, shower, or completely wipe the body with a sponge. He should be able to do all the necessary steps, depending on which method is used, without the help of another person.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнту потрібна допомога.",
+                                                    AnswerText = "The patient needs help.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Пересування по рівній площині",
+                                            QuestionText = "Moving on a flat plane",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може пройти щонайменше 50 метрів без сторонньої допомоги або нагляду. Він може носити ортопедичний апарат або протези і використовувати милиці, палиці, але не ходунки-опори. Він повинен бути в змозі за необхідності заблокувати і розблокувати ортопедичний апарат, припустимо з положення стоячи, і сісти, привести всі необхідні механізми в належний стан для подальшого використання і звільнитися від них, коли він сидить (одягати і знімати корсет під одягом).",
+                                                    AnswerText = "The patient can walk at least 50 meters without assistance or supervision. He can wear orthotics or prostheses and use crutches, sticks, but not walkers. He must be able, if necessary, to lock and unlock the orthopedic device, let's say from a standing position, and to sit down, bring all the necessary mechanisms into proper condition for further use and get rid of them when he is sitting (put on and take off the corset under clothes).",
                                                     AnswerValue = 15
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт потребує допомоги або нагляду при всіх видах ходьби, що описані вище, але може пройти щонайменше 50 метрів з невеликою допомогою.",
+                                                    AnswerText = "The patient requires assistance or supervision for all of the walking activities described above, but can walk at least 50 meters with little assistance.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Якщо пацієнт не може пересуватися, але може самостійно керувати інвалідним візком. Він повинен бути в змозі оминати кути, розвернутися, маневрувати від стільця до столу, ліжка, туалету та ін. Він повинен бути в змозі проїхати візком принаймні 50 метрів.",
+                                                    AnswerText = "If the patient cannot move, but can drive a wheelchair independently. He must be able to go around corners, turn around, maneuver from a chair to a table, bed, toilet, etc. He must be able to drive a cart at least 50 meters.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Нерухомий — пацієнт потребує допомоги при пересуванні в інвалідному візку.",
+                                                    AnswerText = "Immobile - the patient needs help moving in a wheelchair.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Підняття та спускання сходами",
+                                            QuestionText = "Climbing and descending stairs",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може безпечно піти вгору і вниз сходами без допомоги або нагляду. Він може і повинен використовувати поручні, палиці або милиці, коли це необхідно. Він повинен бути в змозі нести палиці або милиці, коли піднімається або спускається сходами.",
+                                                    AnswerText = "The patient can safely walk up and down stairs without assistance or supervision. He can and should use handrails, canes or crutches when necessary. He must be able to carry sticks or crutches when going up or down stairs.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт потребує допомоги або нагляду при виконанні будь-якого з перерахованих вище пунктів.",
+                                                    AnswerText = "The patient needs help or supervision when performing any of the above items.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт не в змозі йти вгору і вниз сходами. Він потребує ліфта.",
+                                                    AnswerText = "The patient is unable to go up and down stairs. He needs a lift.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Одягання та роздягання (пацієнткам не слід враховувати використання бюстгальтера або пояса, якщо немає вказаних елементів одягу)",
+                                            QuestionText = "Dressing and undressing (patients should not consider wearing a bra or girdle unless specified items of clothing are available)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт здатний надіти і зняти та застібнути весь одяг, зав’язати шнурки взуття (якщо не потрібно використовувати пристосування для цього). Цей вид повсякденної діяльності включає надягання, зняття і кріплення корсета або бандажу, коли вони передбачені. За необхідності можуть бути використані такі спеціальні елементи одягу, як підтяжки, мокасини, сукні, які розстібаються спереду.",
+                                                    AnswerText = "The patient is able to put on and take off and fasten all clothing, tie shoelaces (if no device is required for this). This type of daily activity includes donning, removing, and securing a corset or brace when prescribed. If necessary, such special elements of clothing as suspenders, moccasins, dresses that unfasten in the front can be used.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт потребує допомоги в одяганні, знятті або застібанні будь-якого одягу. Принаймні половину роботи він повинен зробити самостійно. Він повинен зробити це за прийнятний час.",
+                                                    AnswerText = "The patient needs help in putting on, taking off or fastening any clothes. He should do at least half of the work himself. He must do it in a reasonable amount of time.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнту потрібна допомога.",
+                                                    AnswerText = "The patient needs help.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Контроль дефекації",
+                                            QuestionText = "Defecation control",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт здатний контролювати дефекацію і не має жодного проблемного випадку. Він може використовувати свічку або клізму, коли це необхідно (як для пацієнтів з ушкодженнями спинного мозку, що проходили підготовку кишечнику).",
+                                                    AnswerText = "The patient is able to control defecation and does not have any problem cases. He may use a suppository or enema when necessary (as for patients with spinal cord injuries undergoing bowel preparation).",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт потребує допомоги у використанні супозиторіїв чи клізми або час від часу має проблемні випадки.",
+                                                    AnswerText = "The patient needs help using suppositories or enemas or has occasional problem cases.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Нетримання.",
+                                                    AnswerText = "Incontinence.",
                                                     AnswerValue = 0
                                                 },
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Контроль сечовипускання",
+                                            QuestionText = "Urinary control",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт може контролювати сечовипускання вдень і вночі. Пацієнти з ушкодженнями спинного мозку, які носять зовнішній катетер і сумку на нозі, повинні самостійно їх ставити, чистити й опорожнювати мішок і залишитися сухими вдень і вночі.",
+                                                    AnswerText = "The patient can control urination during the day and at night. Patients with spinal cord injuries who wear an external catheter and leg bag must independently insert, clean and empty the bag and stay dry day and night.",
                                                     AnswerValue = 10
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Пацієнт має періодичні проблемні випадки, або не може чекати підкладне судно, або потрапити в туалет вчасно, або потребує допомоги з катетером.",
+                                                    AnswerText = "The patient has intermittent problem cases, or can't wait for the undercarriage, or get to the toilet in time, or needs help with the catheter.",
                                                     AnswerValue = 5
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Нетримання.",
+                                                    AnswerText = "Incontinence.",
                                                     AnswerValue = 0
                                                 },
                                             }
@@ -717,108 +717,108 @@ namespace life_quality_back.Data
                                     {
                                         new Question
                                         {
-                                            QuestionText = "Встати із сидячого положення (Будь ласка, встаньте. Намагайтеся не використовувати Вашу руку для підтримки.)",
+                                            QuestionText = "Stand up from a sitting position (Please stand up. Try not to use your arm for support.)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може встати без використання рук і стабілізуватись самостійно.",
+                                                    AnswerText = "Can stand up without using hands and self-stabilize.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може встати самостійно за допомогою рук",
+                                                    AnswerText = "Can stand up independently with hands.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може встати за допомогою рук після декількох спроб.",
+                                                    AnswerText = "Can stand up with hands after a few tries.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує мінімальної допомоги при вставанні або стабілізації.",
+                                                    AnswerText = "Requires minimal assistance standing up or stabilizing.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує помірної або максимальної допомоги при вставанні.",
+                                                    AnswerText = "Requires moderate to maximum assistance when standing up.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Стояти без підтримки (Будь ласка, простійте протягом двох хвилин без підтримки.)",
+                                            QuestionText = "Stand without support (Please stand for two minutes without support.)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = " У змозі безпечно стояти протягом 2 хвилин.",
+                                                    AnswerText = "Able to stand safely for 2 minutes.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі простояти 2 хвилини під наглядом.",
+                                                    AnswerText = "Able to stand for 2 minutes under supervision.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі простояти 30 секунд без підтримки.",
+                                                    AnswerText = "Able to stand for 30 seconds without support.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібно кілька спроб, щоб простояти 30 секунд без підтримки.",
+                                                    AnswerText = "It takes a few tries to stand for 30 seconds without support.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не може стояти 30 секунд без підтримки.",
+                                                    AnswerText = "Cannot stand for 30 seconds without support.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Сидіння без підтримки спини, але з фіксованими ногами на підлозі або стільчику (Будь ласка, сидіть, склавши руки, протягом 2 хвилин)",
+                                            QuestionText = "Sitting without back support, but with fixed legs on the floor or a chair (Please sit with arms folded for 2 minutes)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі сидіти безпечно і надійно протягом 2 хвилин.",
+                                                    AnswerText = "Able to sit safely and securely for 2 minutes.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі сидіти 2 хвилини під наглядом.",
+                                                    AnswerText = "Able to sit for 2 minutes under supervision.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі сидіти протягом 30 секунд.",
+                                                    AnswerText = "Able to sit for 30 seconds.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі сидіти 10 секунд.",
+                                                    AnswerText = "Able to sit for 10 seconds.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не може сидіти без підтримки 10 секунд.",
+                                                    AnswerText = "Cannot sit unsupported for 10 seconds.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Сідання із положення стоячи (Будь ласка, сідайте)",
+                                            QuestionText = "Sitting down from a standing position (Please sit down)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Сідає безпечно з мінімальним використанням рук.",
+                                                    AnswerText = "Sits securely with minimal use of hands.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
@@ -828,24 +828,24 @@ namespace life_quality_back.Data
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Використовує задню поверхню ніг відносно стільця, щоб контролювати сідання.",
+                                                    AnswerText = "Controls sitting with hands.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Сидить самостійно, але процес сідання неконтрольований.",
+                                                    AnswerText = "Sits independently, but the sitting process is uncontrolled.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги при сидінні.",
+                                                    AnswerText = "Needs help when sitting.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Переміщення (Поставте стілець(і), як орієнтири при переміщенні. Попросіть пацієнта пройти в \r\nодин бік до стільця з підлокітниками і в інший бік до стільця без підлокітників. Ви \r\nможете використовувати два стільці (один з і один без підлокітників) або ліжко і \r\nстілець.)",
+                                            QuestionText = "Переміщення (Поставте стілець(і), як орієнтири при переміщенні. Попросіть пацієнта пройти в один бік до стільця з підлокітниками і в інший бік до стільця без підлокітників. Ви можете використовувати два стільці (один з і один без підлокітників) або ліжко і стілець.)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -941,224 +941,224 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Нахиляння вперед з витягнотою рукою в положенні стоячи (Підійміть руку під кутом 90 градусів. Простягніть пальці і нахиліться, наскільки можете. (Екзаменатор ставить лінійку біля кінчиків пальців, коли рука знаходиться під \r\nкутом 90 градусів. Пальці не повинні торкатися лінійки при нахилі. Контрольний \r\nрезультат — це відстань, якої досягли пальці, коли пацієнт перебуває в положенні \r\nмаксимального нахилу. Якщо це можливо, попросіть пацієнта використовувати \r\nобидві руки при нахилі, щоб уникнути обертання хребта.))",
+                                            QuestionText = "Standing forward bend with outstretched arm (Raise your arm at a 90-degree angle. Extend your fingers and bend as far as you can. (The examiner places a ruler near the fingertips when the arm is at a 90-degree angle. The fingers should not touch the ruler when bent. Control result is the distance reached by the fingers when the patient is in the maximum tilt position.If possible, ask the patient to use both hands when tilting to avoid rotation of the spine.))",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може впевнено досягти 25 см (10 дюймів).",
+                                                    AnswerText = "Can confidently reach 25 cm (10 inches).",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може досягти 12 см (5 дюймів).",
+                                                    AnswerText = "Can reach 12 cm (5 in).",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може досягти 5 см (2 дюйми).",
+                                                    AnswerText = "Can reach 5 cm (2 in).",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Нахиляється вперед, але потребує контролю.",
+                                                    AnswerText = "Leans forward but needs control.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Втрачає рівновагу при спробі / потребує зовнішньої підтримки.",
+                                                    AnswerText = "Loses balance when trying / needs external support.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Взяття предмета з підлоги в положенні стоячи (Візьміть туфлю/капець, що знаходиться перед Вашими ногами)",
+                                            QuestionText = "Picking up an object from the floor while standing (Pick up the shoe/slipper that is in front of your feet)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі взяти капець легко і безпечно.",
+                                                    AnswerText = "Able to take a slipper easily and safely.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі підняти черевичок, але потребує нагляду.",
+                                                    AnswerText = "Able to lift shoe, but needs supervision.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не може підібрати, але досягає відстані 2–5 см (1–2 дюйми) від капця і самостійно зберігає рівновагу.",
+                                                    AnswerText = "Cannot pick up, but reaches within 2–5 cm (1–2 inches) of the slipper and balances independently.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не в змозі підібрати і потребує нагляду при спробі.",
+                                                    AnswerText = "Unable to pick up and needs supervision when trying.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не може спробувати/потребує допомоги, щоб утриматися від втрати рівноваги або падіння.",
+                                                    AnswerText = "Can't try/needs help to keep from losing balance or falling.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Оглядання через ліве і праве плече в положенні стоячи (Озирніться, щоб подивитися прямо через ліве плече. Повторіть вправо. (Екзаме\u0002натор може вибрати будь-який предмет позаду пацієнта, щоб той дивився безпо\u0002середньо на предмет, щоб сприяти кращому повороту.))",
+                                            QuestionText = "Looking over the left and right shoulder while standing (Look back to look directly over the left shoulder. Repeat to the right. (The examiner can choose any object behind the patient to look directly at the object to facilitate better rotation.))",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Озирається назад з обох боків, і вага добре зміщується.",
+                                                    AnswerText = "Looks back from both sides and the weight shifts well.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "З одного боку виглядає менше, ніж з іншого; менше перенесення ваги.",
+                                                    AnswerText = "It looks smaller on one side than on the other; less weight transfer.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Тільки повертається боком, але утримує рівновагу.",
+                                                    AnswerText = "Only turns sideways, but maintains balance.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "При повороті потребує нагляду.",
+                                                    AnswerText = "Needs supervision when turning.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб не втратити рівновагу або уникнути падіння.",
+                                                    AnswerText = "Needs help not to lose balance or avoid falling.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Повертання на 360 градусів (Поверніться повністю навколо себе. Пауза. Потім поверніться в іншому напрямку)",
+                                            QuestionText = "360 Degree Turn (Turn completely around you. Pause. Then turn in the other direction)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі повернутися на 360 градусів безпечно за 4 секунди або менше.",
+                                                    AnswerText = "Able to turn 360 degrees safely in 4 seconds or less.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі повернутися на 360 градусів безпечно тільки в один бік за 4 секунди \r\nабо менше.",
+                                                    AnswerText = "Able to turn 360 degrees safely one way only in 4 seconds or less.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Здатний повертатися на 360 градусів безпечно, але повільно.",
+                                                    AnswerText = "Able to turn 360 degrees safely but slowly.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібен ретельний нагляд або словесний супровід.",
+                                                    AnswerText = "Careful supervision or verbal support is required.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги при повороті.",
+                                                    AnswerText = "Needs help when turning.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Поставити ногу на сходинку або стільчик, стоячи без підтримки (Поставте кожну ногу по черзі на сходинку/стільчик. Продовжуйте, поки кожна нога \r\nне торкнеться сходинки/стільчика чотири рази)",
+                                            QuestionText = "Standing foot on a step or chair without support (Place each foot alternately on the step/chair. Continue until each foot touches the step/chair four times)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може стояти самостійно і безпечно і виконує 8 кроків протягом 20 секунд.",
+                                                    AnswerText = "Can stand independently and safely and takes 8 steps within 20 seconds.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може стояти самостійно і виконує 8 кроків більше ніж за 20 секунд.",
+                                                    AnswerText = "Can stand independently and takes 8 steps in more than 20 seconds.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі виконати 4 кроки без сторонньої допомоги під наглядом.",
+                                                    AnswerText = "Able to perform 4 steps unaided under supervision.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі зробити більше 2 кроків, потребує мінімальної допомоги.",
+                                                    AnswerText = "Able to take more than 2 steps, needs minimal assistance.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб не впасти/не може спробувати.",
+                                                    AnswerText = "Needs help to keep from falling/can't try.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Стояння без підтримки з однією ногою попереду ((Продемонструйте пацієнту) Поставте одну ногу прямо перед іншою. Якщо Ви \r\nвідчуваєте, що не можете поставити ногу прямо спереду, спробуйте трохи далі, \r\nщоб п’ятка Вашої передньої ноги була попереду пальців іншої ноги. (Для того, \r\nщоб набрати 3 бали довжина кроку не повинна перевищувати довжину іншої ноги \r\nі ширина пози повинна наближатись до нормальної ширини кроку пацієнта.))",
+                                            QuestionText = "Standing without support with one foot in front ((Demonstrate to the patient) Place one foot directly in front of the other. If you feel that you cannot place the foot directly in front, try a little further so that the heel of your front foot is in front of the toes of the other foot. (For in order to score 3 points, the length of the step should not exceed the length of the other leg and the width of the posture should be close to the normal width of the patient's step.))",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може розмістити стопи «гусаком» самостійно і утримувати позу 30 секундy.",
+                                                    AnswerText = "Can place the feet \"goose\" independently and hold the pose for 30 seconds.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі помістити ногу попереду самостійно і утримувати позу 30 секунд.",
+                                                    AnswerText = "Able to place one foot in front independently and hold the pose for 30 seconds.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі зробити невеликий крок самостійно і утримувати позу 30 секунд.",
+                                                    AnswerText = "Able to take a small step independently and hold the pose for 30 seconds.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб зробити крок, але може утримувати позу 15 секунд.",
+                                                    AnswerText = "Needs help to take a step, but can hold a pose for 15 seconds.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Втрачає рівновагу під час кроку або стояння\r\n.",
+                                                    AnswerText = "Loses balance while walking or standing.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Стояння на одній нозі (Стійте на одній нозі стільки, скільки Ви можете без підтримки)",
+                                            QuestionText = "Standing on one leg (Stand on one leg as long as you can without support)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись > 10 секунд.",
+                                                    AnswerText = "Able to lift leg independently and hold for > 10 seconds.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись 5–10 секунд.",
+                                                    AnswerText = "Able to raise the leg independently and hold for 5-10 seconds.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі підняти ногу самостійно і утримуватись менше 3 секунд.",
+                                                    AnswerText = "Able to raise a leg independently and hold for less than 3 seconds.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Намагається підняти ногу, не в силах утримуватись 3 секунди, але стоїть \r\nсамостійно.",
+                                                    AnswerText = "Tries to raise a leg, unable to hold for 3 seconds, but stands on his own.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не може спробувати, потребує допомоги, щоб уникнути падіння.",
+                                                    AnswerText = "Can't try, needs help to avoid falling.",
                                                     AnswerValue = 0
                                                 }
                                             }
@@ -1796,7 +1796,305 @@ namespace life_quality_back.Data
                 },
                 new Models.Results
                 {
-                    Date = new DateTime(2023, 8, 18),
+                    Date = new DateTime(2023, 8, 12),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Barthel Index (BI)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Meal",
+                                    AnswerText = "безпомічний — пацієнта необхідно годувати.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 5),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Level of consciousness",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 1 | Questionnaire 1",
+                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Question 2 | Questionnaire 1",
+                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 5),
                     isSaved = false,
                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
