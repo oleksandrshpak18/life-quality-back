@@ -37,18 +37,18 @@ namespace life_quality_back.Data
                             Email = "mike.dolfino@lq.com",
                             Education = "Lviv National Medical University",
                             Gender = "Male",
-                            Speciality = "Dentist"
+                            Speciality = "Cardiologist"
                         }
                     },
                     new User
                     {
-                        Login = "mary.alice@lq.com",
+                        Login = "john.doe@lq.com",
                         Password = "6cb75f652a9b52798eb6cf2201057c73",
                         Doctor = new Doctor
                         {
-                            FirstName = "Mary",
-                            LastName = "Alice",
-                            Email = "mary.alice@lq.com",
+                            FirstName = "John",
+                            LastName = "Doe",
+                            Email = "john.doe@lq.com",
                             Education = "University of Fairview, Visteria-Lane",
                             Gender = "Female",
                             Speciality = "Therapist"
@@ -1229,59 +1229,116 @@ namespace life_quality_back.Data
                 context.Patients.AddRange(
                     new Patient
                     {
-                        FirstName = "John",
-                        LastName = "Doe",
+                        FirstName = "Ethan",
+                        LastName = "Reynolds",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe1@example.com",
+                        Email = "ethan.reynolds@lq.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName == "Strategy 1") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
                                         .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
-                                        .Where(x => x.Email.Equals("mary.alice@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Where(x => x.Email.Equals("mike.dolfino@lq.com")) // replace later with the name of a real doctor from Doctors
                                         .Select(x => x.DoctorId).First(),
                     },
                     new Patient
                     {
-                        FirstName = "John",
-                        LastName = "Doe",
+                        FirstName = "Oliver",
+                        LastName = "Mitchell",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe2@example.com",
+                        Email = "oliver.mitchell@example.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName == "Strategy 2") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName == "Stroke") // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
-                                        .Where(x => x.LastName == "Dolfino") // replace later with the name of a real doctor from Doctors
+                                        .Where(x => x.Email.Equals("mike.dolfino@lq.com")) // replace later with the name of a real doctor from Doctors
                                         .Select(x => x.DoctorId).First(),
                     },
                     new Patient
                     {
-                        FirstName = "John",
-                        LastName = "Doe",
+                        FirstName = "Sebastian",
+                        LastName = "Carter",
                         Anamnesis = "Some anamnesis information",
-                        Email = "john.doe3@example.com",
+                        Email = "sebastian.carter@example.com",
                         Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName == "Strategy 2") // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName == "Disease 2") // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
-                                        .Where(x => x.LastName == "Alice") // replace later with the name of a real doctor from Doctors
+                                        .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Ava",
+                        LastName = "Thompson",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "ava.thompson@lq.com",
+                        Gender = "Female",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Sophia",
+                        LastName = "Rodriguez",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "sophia.rodriguez@example.com",
+                        Gender = "Female",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Sebastian",
+                        LastName = "Carter",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "sebastian.carter@example.com",
+                        Gender = "Female",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = DateTime.Now,
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("mike.dolfino@lq.com")) // replace later with the name of a real doctor from Doctors
                                         .Select(x => x.DoctorId).First(),
                     }
                 );
@@ -1295,10 +1352,10 @@ namespace life_quality_back.Data
                         Date = new DateTime(2023, 11, 18),
                         isSaved = false,
                         PatientId = context.Patients
-                            .Where(x => x.Email == "john.doe1@example.com")
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
                             .Select(x => x.PatientId).First(),
                         QuestionnaireId = context.Questionnaires
-                            .Where(x => x.QuestionnaireName == "National Institutes of Health stroke scale (NIHSS)")
+                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
                             .Select(x => x.QuestionnaireId).First(),
                         ResultsPatientAnswers = new List<ResultsPatientAnswer>
                         {
