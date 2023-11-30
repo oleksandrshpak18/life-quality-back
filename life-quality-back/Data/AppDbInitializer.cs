@@ -574,7 +574,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Прийом ванни",
+                                            QuestionText = "Taking a bath",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -1811,7 +1811,7 @@ namespace life_quality_back.Data
                                 PatientAnswer = new PatientAnswer
                                 {
                                     QuestionText = "Meal",
-                                    AnswerText = "безпомічний — пацієнта необхідно годувати.",
+                                    AnswerText = "Helpless - the patient must be fed.",
                                     AnswerValue = 0
                                 }
                             },
@@ -1819,133 +1819,88 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Transfer from bed to wheelchair and back",
+                                    AnswerText = "Dependent - the patient cannot bring himself to a sitting position.",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Personal hygiene",
+                                    AnswerText = "The patient needs help.",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Using the toilet",
+                                    AnswerText = "The patient needs help due to a disturbance in balance or when putting on and taking off clothes, or when using toilet paper.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Taking a bath",
+                                    AnswerText = "The patient can independently take a bath, shower, or completely wipe the body with a sponge. He should be able to do all the necessary steps, depending on which method is used, without the help of another person.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Moving on a flat plane",
+                                    AnswerText = "If the patient cannot move, but can drive a wheelchair independently. He must be able to go around corners, turn around, maneuver from a chair to a table, bed, toilet, etc. He must be able to drive a cart at least 50 meters.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Climbing and descending stairs",
+                                    AnswerText = "The patient is unable to go up and down stairs. He needs a lift.",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Dressing and undressing (patients should not consider wearing a bra or girdle unless specified items of clothing are available)",
+                                    AnswerText = "The patient needs help.",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Defecation control",
+                                    AnswerText = "The patient needs help using suppositories or enemas or has occasional problem cases.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Urinary control",
+                                    AnswerText = "Incontinence.",
+                                    AnswerValue = 0
                                 }
                             }
                     }
                 },
                 new Models.Results
                 {
-                    Date = new DateTime(2023, 9, 5),
+                    Date = new DateTime(2023, 8, 20),
                     isSaved = false,
                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
@@ -1959,142 +1914,97 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Level of consciousness",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Meal",
+                                    AnswerText = "Some help is needed (with cutting food, etc., as mentioned above).",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Transfer from bed to wheelchair and back",
+                                    AnswerText = "The patient can bring himself to a sitting position without the help of another person, but he must be lifted from the bed or, if he moves, with considerable assistance.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Personal hygiene",
+                                    AnswerText = "The patient can independently wash his face and hands, comb his hair, brush his teeth and shave. He can use any type of razor, but must put down the blade or turn on the razor without assistance, and must retrieve it from a drawer or cabinet. Patients should apply their own make-up, if used, but do not have to braid their hair or style their hair.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Using the toilet",
+                                    AnswerText = "The patient needs help due to a disturbance in balance or when putting on and taking off clothes, or when using toilet paper.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Taking a bath",
+                                    AnswerText = "The patient can independently take a bath, shower, or completely wipe the body with a sponge. He should be able to do all the necessary steps, depending on which method is used, without the help of another person.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Moving on a flat plane",
+                                    AnswerText = "The patient requires assistance or supervision for all of the walking activities described above, but can walk at least 50 meters with little assistance.",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Climbing and descending stairs",
+                                    AnswerText = "The patient needs help or supervision when performing any of the above items.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Dressing and undressing (patients should not consider wearing a bra or girdle unless specified items of clothing are available)",
+                                    AnswerText = "The patient needs help in putting on, taking off or fastening any clothes. He should do at least half of the work himself. He must do it in a reasonable amount of time.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Defecation control",
+                                    AnswerText = "The patient needs help using suppositories or enemas or has occasional problem cases.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Urinary control",
+                                    AnswerText = "The patient has intermittent problem cases, or can't wait for the undercarriage, or get to the toilet in time, or needs help with the catheter.",
+                                    AnswerValue = 5
                                 }
                             }
                     }
                 },
                 new Models.Results
                 {
-                    Date = new DateTime(2023, 9, 5),
+                    Date = new DateTime(2023, 8, 31),
                     isSaved = false,
                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
@@ -2108,135 +2018,90 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Level of consciousness",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Meal",
+                                    AnswerText = "Independent - the patient can eat independently from a tray or table when someone serves food within his reach. He should set up the utensils if necessary, cut the food, use salt and pepper, spread butter on the bread, etc. He must do it in a reasonable amount of time.",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Transfer from bed to wheelchair and back",
+                                    AnswerText = "Some minimal assistance is required at some stage of the activity or the patient needs to be reminded or supervised to ensure the safety of one or more stages of the activity.",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Personal hygiene",
+                                    AnswerText = "The patient can independently wash his face and hands, comb his hair, brush his teeth and shave. He can use any type of razor, but must put down the blade or turn on the razor without assistance, and must retrieve it from a drawer or cabinet. Patients should apply their own make-up, if used, but do not have to braid their hair or style their hair.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Using the toilet",
+                                    AnswerText = "The patient can independently use the toilet, take off and put on clothes, prevent soiling of clothes and use toilet paper without help. He can use handrails on the wall or another stable object for support if necessary. If it is necessary to use a tray instead of a toilet, he must be able to place it on the chair, clean and wash it.",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Taking a bath",
+                                    AnswerText = "The patient can independently take a bath, shower, or completely wipe the body with a sponge. He should be able to do all the necessary steps, depending on which method is used, without the help of another person.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Moving on a flat plane",
+                                    AnswerText = "The patient can walk at least 50 meters without assistance or supervision. He can wear orthotics or prostheses and use crutches, sticks, but not walkers. He must be able, if necessary, to lock and unlock the orthopedic device, let's say from a standing position, and to sit down, bring all the necessary mechanisms into proper condition for further use and get rid of them when he is sitting (put on and take off the corset under clothes).",
+                                    AnswerValue = 15
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Climbing and descending stairs",
+                                    AnswerText = "The patient needs help or supervision when performing any of the above items.",
+                                    AnswerValue = 5
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
+                                    QuestionText = "Dressing and undressing (patients should not consider wearing a bra or girdle unless specified items of clothing are available)",
+                                    AnswerText = "The patient is able to put on and take off and fasten all clothing, tie shoelaces (if no device is required for this). This type of daily activity includes donning, removing, and securing a corset or brace when prescribed. If necessary, such special elements of clothing as suspenders, moccasins, dresses that unfasten in the front can be used.",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Defecation control",
+                                    AnswerText = "The patient is able to control defecation and does not have any problem cases. He may use a suppository or enema when necessary (as for patients with spinal cord injuries undergoing bowel preparation).",
+                                    AnswerValue = 10
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 1 | Questionnaire 1",
-                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Question 2 | Questionnaire 1",
-                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 1",
-                                    AnswerValue = 1
+                                    QuestionText = "Urinary control",
+                                    AnswerText = "The patient can control urination during the day and at night. Patients with spinal cord injuries who wear an external catheter and leg bag must independently insert, clean and empty the bag and stay dry day and night.",
+                                    AnswerValue = 10
                                 }
                             }
                     }
