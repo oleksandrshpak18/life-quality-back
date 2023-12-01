@@ -1,6 +1,7 @@
 ﻿using life_quality_back.Data.Interfaces;
 using life_quality_back.Data.Models;
 using life_quality_back.Data.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace life_quality_back.Data.Repositories
@@ -47,6 +48,18 @@ namespace life_quality_back.Data.Repositories
         public IEnumerable<ResultsVM> GetAllByDoctorId(int doctorId)
         {
             return GetAll().Where(x => x.DoctorId == doctorId).ToList();
+        }
+
+        public Models.Results ToggleSavedResult (int id)
+        {
+            var result = _context.Results.Find(id);
+
+            if (result != null)
+            {
+                result.isSaved = !result.isSaved;
+                _context.SaveChanges();
+            }
+            return result;
         }
     }
 }

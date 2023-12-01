@@ -37,5 +37,12 @@ namespace life_quality_back.Controllers
             var res = _repository.GetAllByDoctorId(doctorId);
             return ((res == null) || (!res.Any())) ? BadRequest($"Results for this doctor {doctorId} not found") : Ok(res);
         }
+
+        [HttpPut("toggle-saved/{id}")]
+        public async Task<ActionResult<Data.Models.Results>> ToggleSavedResult(int id)
+        {
+            var res = _repository.ToggleSavedResult(id);
+            return res == null ? BadRequest($"Error updating result with id = {id}") : Ok(res);
+        }
     }
 }
