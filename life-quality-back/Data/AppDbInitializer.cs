@@ -823,12 +823,12 @@ namespace life_quality_back.Data
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Контролює сідання за допомогою рук.",
+                                                    AnswerText = "Controls sitting with hands.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Controls sitting with hands.",
+                                                    AnswerText = "uses the back of the feet relative to the chair to control sitting.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
@@ -845,96 +845,96 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Переміщення (Поставте стілець(і), як орієнтири при переміщенні. Попросіть пацієнта пройти в один бік до стільця з підлокітниками і в інший бік до стільця без підлокітників. Ви можете використовувати два стільці (один з і один без підлокітників) або ліжко і стілець.)",
+                                            QuestionText = "Transfer (Place the chair(s) as a guide for transfer. Ask the patient to walk one way to a chair with armrests and the other way to a chair without armrests. You can use two chairs (one with and one without armrests) or a bed and a chair. )",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі пройти безпечно з незначним використанням рук.",
+                                                    AnswerText = "Able to walk safely with little use of hands.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Здатний пройти безпечно, необхідна допомога рук.",
+                                                    AnswerText = "Able to walk safely, hands needed.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Здатний пройти зі скигленням і/або під наглядом.",
+                                                    AnswerText = "Able to pass with a whimper and/or under supervision.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібна одна людина, щоб допомогти.",
+                                                    AnswerText = "One person is needed to help.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потрібні дві людини, щоб допомогти або контролювати безпечність.",
+                                                    AnswerText = "Two people are required to assist or monitor safety.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Стояння без підтримки із закритими очима (Будь ласка, закрийте очі і стійте на місці протягом 10 секунд)",
+                                            QuestionText = "Standing without support with eyes closed (Please close your eyes and stand still for 10 seconds)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може простояти 10 секунд безпечно.",
+                                                    AnswerText = "Can stand for 10 seconds safely.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може простояти 10 секунд під контролем.",
+                                                    AnswerText = "Can stand for 10 seconds under control.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Може простояти 3 секунди.",
+                                                    AnswerText = "Can stand for 3 seconds.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Не в змозі тримати очі закритими протягом 3 секунд, але стоїть безпечно.",
+                                                    AnswerText = "Unable to keep eyes closed for 3 seconds but standing safely.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб не впасти.",
+                                                    AnswerText = "Needs help not to fall.",
                                                     AnswerValue = 0
                                                 }
                                             }
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Стояння без підтримки із ногами разом (Поставте ноги разом і стійте без підтримки)",
+                                            QuestionText = "Standing without support with feet together (Put your feet together and stand without support)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі поставити ноги разом самостійно і простояти 1 хвилину безпечно.",
+                                                    AnswerText = "Able to put feet together independently and stand for 1 minute safely.",
                                                     AnswerValue = 4
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі поставити ноги разом самостійно і простояти 1 хвилину під контролем.",
+                                                    AnswerText = "Able to put feet together independently and stand for 1 minute under control.",
                                                     AnswerValue = 3
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "У змозі поставити ноги разом самостійно, але не в змозі стояти протягом 30 секунд.",
+                                                    AnswerText = "Able to put legs together independently but unable to stand for 30 seconds.",
                                                     AnswerValue = 2
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб досягти необхідної пози, але може стояти 15 секунд, коли ноги разом.",
+                                                    AnswerText = "Needs assistance to achieve proper posture but can stand for 15 seconds with feet together.",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Потребує допомоги, щоб досягти необхідної пози і не в змозі стояти протягом 15 секунд.",
+                                                    AnswerText = "Needs assistance to achieve proper posture and is unable to stand for 15 seconds.",
                                                     AnswerValue = 0
                                                 }
                                             }
@@ -1794,6 +1794,7 @@ namespace life_quality_back.Data
                             }
                     }
                 },
+                
                 new Models.Results
                 {
                     Date = new DateTime(2023, 8, 12),
@@ -1906,7 +1907,7 @@ namespace life_quality_back.Data
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
-                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Where(x => x.QuestionnaireName.Equals("Barthel Index (BI)"))
                             .Select(x => x.QuestionnaireId).First(),
                     ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {
@@ -2010,7 +2011,7 @@ namespace life_quality_back.Data
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
-                            .Where(x => x.QuestionnaireName.Equals("National Institutes of Health stroke scale (NIHSS)"))
+                            .Where(x => x.QuestionnaireName.Equals("Barthel Index (BI)"))
                             .Select(x => x.QuestionnaireId).First(),
                     ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {
@@ -2102,6 +2103,427 @@ namespace life_quality_back.Data
                                     QuestionText = "Urinary control",
                                     AnswerText = "The patient can control urination during the day and at night. Patients with spinal cord injuries who wear an external catheter and leg bag must independently insert, clean and empty the bag and stay dry day and night.",
                                     AnswerValue = 10
+                                }
+                            }
+                    }
+                },
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 25),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Berg Balance Test (BBS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand up from a sitting position (Please stand up. Try not to use your arm for support.)",
+                                    AnswerText = "Can stand up with hands after a few tries.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand without support (Please stand for two minutes without support.)",
+                                    AnswerText = "Able to stand for 30 seconds without support.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting without back support, but with fixed legs on the floor or a chair (Please sit with arms folded for 2 minutes)",
+                                    AnswerText = "Able to sit for 10 seconds.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting down from a standing position (Please sit down)",
+                                    AnswerText = "Sits independently, but the sitting process is uncontrolled.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Transfer (Place the chair(s) as a guide for transfer. Ask the patient to walk one way to a chair with armrests and the other way to a chair without armrests. You can use two chairs (one with and one without armrests) or a bed and a chair. )",
+                                    AnswerText = "Able to walk safely, hands needed.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with eyes closed (Please close your eyes and stand still for 10 seconds)",
+                                    AnswerText = "Can stand for 3 seconds.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with feet together (Put your feet together and stand without support)",
+                                    AnswerText = "Needs assistance to achieve proper posture and is unable to stand for 15 seconds.",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing forward bend with outstretched arm (Raise your arm at a 90-degree angle. Extend your fingers and bend as far as you can. (The examiner places a ruler near the fingertips when the arm is at a 90-degree angle. The fingers should not touch the ruler when bent. Control result is the distance reached by the fingers when the patient is in the maximum tilt position.If possible, ask the patient to use both hands when tilting to avoid rotation of the spine.))",
+                                    AnswerText = "Leans forward but needs control.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Picking up an object from the floor while standing (Pick up the shoe/slipper that is in front of your feet)",
+                                    AnswerText = "Cannot pick up, but reaches within 2–5 cm (1–2 inches) of the slipper and balances independently.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Looking over the left and right shoulder while standing (Look back to look directly over the left shoulder. Repeat to the right. (The examiner can choose any object behind the patient to look directly at the object to facilitate better rotation.))",
+                                    AnswerText = "Only turns sideways, but maintains balance.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "360 Degree Turn (Turn completely around you. Pause. Then turn in the other direction)",
+                                    AnswerText = "Careful supervision or verbal support is required.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing foot on a step or chair without support (Place each foot alternately on the step/chair. Continue until each foot touches the step/chair four times)",
+                                    AnswerText = "Able to take more than 2 steps, needs minimal assistance.",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with one foot in front ((Demonstrate to the patient) Place one foot directly in front of the other. If you feel that you cannot place the foot directly in front, try a little further so that the heel of your front foot is in front of the toes of the other foot. (For in order to score 3 points, the length of the step should not exceed the length of the other leg and the width of the posture should be close to the normal width of the patient's step.))",
+                                    AnswerText = "Able to take a small step independently and hold the pose for 30 seconds.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing on one leg (Stand on one leg as long as you can without support)",
+                                    AnswerText = "Tries to raise a leg, unable to hold for 3 seconds, but stands on his own.",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 5),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Berg Balance Test (BBS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand up from a sitting position (Please stand up. Try not to use your arm for support.)",
+                                    AnswerText = "Can stand up independently with hands.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand without support (Please stand for two minutes without support.)",
+                                    AnswerText = "Able to stand for 2 minutes under supervision.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting without back support, but with fixed legs on the floor or a chair (Please sit with arms folded for 2 minutes)",
+                                    AnswerText = "Able to sit for 2 minutes under supervision.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting down from a standing position (Please sit down)",
+                                    AnswerText = "Able to walk safely, hands needed.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Transfer (Place the chair(s) as a guide for transfer. Ask the patient to walk one way to a chair with armrests and the other way to a chair without armrests. You can use two chairs (one with and one without armrests) or a bed and a chair. )",
+                                    AnswerText = "Able to walk safely, hands needed.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with eyes closed (Please close your eyes and stand still for 10 seconds)",
+                                    AnswerText = "Can stand for 10 seconds under control.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with feet together (Put your feet together and stand without support)",
+                                    AnswerText = "Able to put feet together independently and stand for 1 minute under control.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing forward bend with outstretched arm (Raise your arm at a 90-degree angle. Extend your fingers and bend as far as you can. (The examiner places a ruler near the fingertips when the arm is at a 90-degree angle. The fingers should not touch the ruler when bent. Control result is the distance reached by the fingers when the patient is in the maximum tilt position.If possible, ask the patient to use both hands when tilting to avoid rotation of the spine.))",
+                                    AnswerText = "Can reach 5 cm (2 in).",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Picking up an object from the floor while standing (Pick up the shoe/slipper that is in front of your feet)",
+                                    AnswerText = "Able to lift shoe, but needs supervision.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Looking over the left and right shoulder while standing (Look back to look directly over the left shoulder. Repeat to the right. (The examiner can choose any object behind the patient to look directly at the object to facilitate better rotation.))",
+                                    AnswerText = "Only turns sideways, but maintains balance.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "360 Degree Turn (Turn completely around you. Pause. Then turn in the other direction)",
+                                    AnswerText = "Able to turn 360 degrees safely one way only in 4 seconds or less.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing foot on a step or chair without support (Place each foot alternately on the step/chair. Continue until each foot touches the step/chair four times)",
+                                    AnswerText = "Can stand independently and takes 8 steps in more than 20 seconds.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with one foot in front ((Demonstrate to the patient) Place one foot directly in front of the other. If you feel that you cannot place the foot directly in front, try a little further so that the heel of your front foot is in front of the toes of the other foot. (For in order to score 3 points, the length of the step should not exceed the length of the other leg and the width of the posture should be close to the normal width of the patient's step.))",
+                                    AnswerText = "Able to take a small step independently and hold the pose for 30 seconds.",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing on one leg (Stand on one leg as long as you can without support)",
+                                    AnswerText = "Able to raise a leg independently and hold for less than 3 seconds.",
+                                    AnswerValue = 2
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 15),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Berg Balance Test (BBS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand up from a sitting position (Please stand up. Try not to use your arm for support.)",
+                                    AnswerText = "Can stand up without using hands and self-stabilize.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stand without support (Please stand for two minutes without support.)",
+                                    AnswerText = "Able to stand safely for 2 minutes.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting without back support, but with fixed legs on the floor or a chair (Please sit with arms folded for 2 minutes)",
+                                    AnswerText = "Able to sit safely and securely for 2 minutes.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Sitting down from a standing position (Please sit down)",
+                                    AnswerText = "Controls sitting with hands.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Transfer (Place the chair(s) as a guide for transfer. Ask the patient to walk one way to a chair with armrests and the other way to a chair without armrests. You can use two chairs (one with and one without armrests) or a bed and a chair. )",
+                                    AnswerText = "Able to walk safely with little use of hands.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with eyes closed (Please close your eyes and stand still for 10 seconds)",
+                                    AnswerText = "Can stand for 10 seconds safely.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with feet together (Put your feet together and stand without support)",
+                                    AnswerText = "Able to put feet together independently and stand for 1 minute under control.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing forward bend with outstretched arm (Raise your arm at a 90-degree angle. Extend your fingers and bend as far as you can. (The examiner places a ruler near the fingertips when the arm is at a 90-degree angle. The fingers should not touch the ruler when bent. Control result is the distance reached by the fingers when the patient is in the maximum tilt position.If possible, ask the patient to use both hands when tilting to avoid rotation of the spine.))",
+                                    AnswerText = "Can reach 12 cm (5 in).",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Picking up an object from the floor while standing (Pick up the shoe/slipper that is in front of your feet)",
+                                    AnswerText = "Able to take a slipper easily and safely.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Looking over the left and right shoulder while standing (Look back to look directly over the left shoulder. Repeat to the right. (The examiner can choose any object behind the patient to look directly at the object to facilitate better rotation.))",
+                                    AnswerText = "It looks smaller on one side than on the other; less weight transfer.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "360 Degree Turn (Turn completely around you. Pause. Then turn in the other direction)",
+                                    AnswerText = "Can stand independently and safely and takes 8 steps within 20 seconds.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing foot on a step or chair without support (Place each foot alternately on the step/chair. Continue until each foot touches the step/chair four times)",
+                                    AnswerText = "Can stand independently and takes 8 steps in more than 20 seconds.",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing without support with one foot in front ((Demonstrate to the patient) Place one foot directly in front of the other. If you feel that you cannot place the foot directly in front, try a little further so that the heel of your front foot is in front of the toes of the other foot. (For in order to score 3 points, the length of the step should not exceed the length of the other leg and the width of the posture should be close to the normal width of the patient's step.))",
+                                    AnswerText = "Can place the feet \"goose\" independently and hold the pose for 30 seconds.",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Standing on one leg (Stand on one leg as long as you can without support)",
+                                    AnswerText = "Able to lift leg independently and hold for > 10 seconds.",
+                                    AnswerValue = 4
                                 }
                             }
                     }
