@@ -1,5 +1,6 @@
 ﻿using life_quality_back.Data.Models;
 using life_quality_back.Data.Repositories;
+using life_quality_back.Data.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -17,7 +18,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Data.Models.Results>>> GetAll()
+        public async Task<ActionResult<List<ResultsVM>>> GetAll()
         {
             return Ok(_repository.GetAll());
         }
@@ -30,7 +31,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("doctor/{doctorId}")]
-        public async Task<ActionResult<List<Data.Models.Results>>> GetAllByDoctorId(int doctorId)
+        public async Task<ActionResult<List<ResultsVM>>> GetAllByDoctorId(int doctorId)
         {
             int t = doctorId;
             var res = _repository.GetAllByDoctorId(doctorId);
