@@ -3153,7 +3153,7 @@ namespace life_quality_back.Data
                         BirthDate = new DateTime(2023, 8, 20),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
                                         .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
@@ -3175,7 +3175,7 @@ namespace life_quality_back.Data
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Diabet")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
                                         .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
@@ -3191,10 +3191,10 @@ namespace life_quality_back.Data
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 7, 20),
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Diabet")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
                                         .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
@@ -3213,7 +3213,7 @@ namespace life_quality_back.Data
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
-                                        .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
+                                        .Where(x => x.DiseaseName.Equals("Diabet")) // replace later with the name of a real disease from Diseases
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
                                         .Where(x => x.Email.Equals("john.doe@lq.com")) // replace later with the name of a real doctor from Doctors
@@ -3229,7 +3229,7 @@ namespace life_quality_back.Data
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 8, 30),
                         TreatmentStrategyId = context.TreatmentStrategies
-                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
                         DiseaseId = context.Diseases
                                         .Where(x => x.DiseaseName.Equals("Stroke")) // replace later with the name of a real disease from Diseases
