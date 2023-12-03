@@ -50,8 +50,8 @@ namespace life_quality_back.Data
                             LastName = "Doe",
                             Email = "john.doe@lq.com",
                             Education = "University of Fairview, Visteria-Lane",
-                            Gender = "Female",
-                            Speciality = "Therapist"
+                            Gender = "Male",
+                            Speciality = "Endocrinologist"
                         }
                     }
                 );
@@ -67,8 +67,8 @@ namespace life_quality_back.Data
                     },
                     new Disease
                     {
-                        DiseaseName = "Disease 2",
-                        DiseaseDescription = "A robust description for disease 2. And some additional info here."
+                        DiseaseName = "Diabet",
+                        DiseaseDescription = "Diabetes mellitus, often known simply as diabetes, is a group of common endocrine diseases characterized by sustained high blood sugar levels. Diabetes is due to either the pancreas not producing enough insulin, or the cells of the body becoming unresponsive to the hormone's effects. Untreated or poorly treated diabetes accounts for approximately 1.5 million deaths every year."
                     }
                 );
                 context.SaveChanges();
@@ -1179,8 +1179,1299 @@ namespace life_quality_back.Data
                             {
                                 Questionnaire = new Questionnaire
                                 {
-                                    QuestionnaireName = "Questionnaire 3",
-                                    QuestionnaireDescription = "Description to Questionnaire 3",
+                                    QuestionnaireName = "Problem Areas In Diabetes (PAID)",
+                                    QuestionnaireDescription = "The Problem Areas In Diabetes (PAID) scale is a well-validated, psychometrically robust questionnaire with 20 items.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling scared when you think about living with diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }                                           
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feelings of deprivation regarding food and meals?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                           Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling overwhelmed by your diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Worrying about low blood glucose reactions?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling angry when you think about living with diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling constantly concerned about food and eating?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Not accepting your diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling alone with your diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Coping with complications of diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Minor problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Diabetes Distress Scale (DDS-17)",
+                                    QuestionnaireDescription = "Living with diabetes can sometimes be tough. There may be many problems and hassles concerning diabetes and they can vary greatly in severity. Problems may range from minor hassles to major life difficulties. Listed below are 17 potential problem areas that people with diabetes may experience.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that diabetes controls my life.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not a problem",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight problem",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate problem",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Somewhat serious problem",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Serious problem",
+                                                    AnswerValue = 5
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very serious problem",
+                                                    AnswerValue = 6
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Insulin Treatment Appraisal Scale (ITAS)",
+                                    QuestionnaireDescription = "The following questions are about your perception of taking insulin for your diabetes. If you do not use insulin therapy, please answer each question from your current knowledge and thoughts about what insulin therapy would be like.",
                                     Questions = new List<Question>
                                     {
                                         new Question
@@ -1190,13 +2481,28 @@ namespace life_quality_back.Data
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 1 | Question 1 | Questionnaire 3",
+                                                    AnswerText = "Strongly disagree",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 2 | Question 1 | Questionnaire 3",
+                                                    AnswerText = "Disagree",
                                                     AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
                                                 }
                                             }
                                         },
@@ -1207,13 +2513,604 @@ namespace life_quality_back.Data
                                             {
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 1 | Question 2 | Questionnaire 3",
+                                                    AnswerText = "Strongly disagree",
                                                     AnswerValue = 1
                                                 },
                                                 new Answer
                                                 {
-                                                    AnswerText = "Answer 2 | Question 2 | Questionnaire 3",
+                                                    AnswerText = "Disagree",
                                                     AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly disagree",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Disagree",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Neither agree nor disagree",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Agree",
+                                                    AnswerValue = 4
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Strongly agree",
+                                                    AnswerValue = 5
                                                 }
                                             }
                                         }
@@ -1347,7 +3244,7 @@ namespace life_quality_back.Data
 
                 // перед додаванням результатів витягнемо собі допоміжну інформацію, щоб менше дублювати
                 context.Results.AddRange(
-                    new Models.Results
+                new Models.Results
                     {
                         Date = new DateTime(2023, 8, 11),
                         isSaved = false,
@@ -1418,7 +3315,7 @@ namespace life_quality_back.Data
                                 PatientAnswer = new PatientAnswer
                                 {
                                     QuestionText = "Assessment of the motor function of the left hand (The patient holds the hand at an angle of 90° to the body (palm down))",
-                                    AnswerText = "Рука одразу падає, немає спроб подолати силу тяжіння.",
+                                    AnswerText = "The hand immediately falls, there is no attempt to overcome the force of gravity.",
                                     AnswerValue = 3
                                 }
                             },
@@ -2528,6 +4425,8 @@ namespace life_quality_back.Data
                             }
                     }
                 }
+
+
 
                 );
                 context.SaveChanges();
