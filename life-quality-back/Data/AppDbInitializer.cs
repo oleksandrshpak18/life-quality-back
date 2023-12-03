@@ -3150,7 +3150,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "oliver.mitchell@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(2023, 8, 20),
+                        BirthDate = new DateTime(2023, 8, 10),
                         RehabilitationStartDate = DateTime.Now,
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -3227,7 +3227,7 @@ namespace life_quality_back.Data
                         Email = "sebastian.carter@lq.com",
                         Gender = "Female",
                         BirthDate = new DateTime(1990, 1, 1),
-                        RehabilitationStartDate = new DateTime(2023, 8, 30),
+                        RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -4424,10 +4424,591 @@ namespace life_quality_back.Data
                                 }
                             }
                     }
+                },
+
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 11),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 18),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 30),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
                 }
-
-
-
                 );
                 context.SaveChanges();
             }
