@@ -4432,7 +4432,7 @@ namespace life_quality_back.Data
                     Date = new DateTime(2023, 8, 11),
                     isSaved = false,
                     PatientId = context.Patients
-                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
@@ -4626,7 +4626,7 @@ namespace life_quality_back.Data
                     Date = new DateTime(2023, 8, 18),
                     isSaved = false,
                     PatientId = context.Patients
-                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
@@ -4820,7 +4820,7 @@ namespace life_quality_back.Data
                     Date = new DateTime(2023, 8, 30),
                     isSaved = false,
                     PatientId = context.Patients
-                            .Where(x => x.Email.Equals("oliver.mitchell@lq.com"))
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Problem Areas In Diabetes (PAID)"))
