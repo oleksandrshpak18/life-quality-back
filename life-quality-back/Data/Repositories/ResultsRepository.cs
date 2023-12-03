@@ -1,6 +1,8 @@
-﻿using life_quality_back.Data.Interfaces;
+﻿using life_quality_back.Data.Filtering;
+using life_quality_back.Data.Interfaces;
 using life_quality_back.Data.Models;
 using life_quality_back.Data.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace life_quality_back.Data.Repositories
@@ -36,8 +38,8 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Results
                 .Include(x => x.Patient)
-                .Include(x => x.Questionnaire)
-                    .ThenInclude(x => x.Questions)
+                //.Include(x => x.Questionnaire)
+                    //.ThenInclude(x => x.Questions)
                     //.ThenInclude(x => x.Answers)
                 .Include(x => x.ResultsPatientAnswers)
                     .ThenInclude(x => x.PatientAnswer)
@@ -47,6 +49,84 @@ namespace life_quality_back.Data.Repositories
         public IEnumerable<ResultsVM> GetAllByDoctorId(int doctorId)
         {
             return GetAll().Where(x => x.DoctorId == doctorId).ToList();
+        }
+
+        public Models.Results ToggleSavedResult (int id)
+        {
+            var result = _context.Results.Find(id);
+
+            if (result != null)
+            {
+                result.isSaved = !result.isSaved;
+                _context.SaveChanges();
+            }
+            return result;
+        }
+
+        public IEnumerable<ResultsVM> GetFiltered(FilterParameters parameters)
+        {
+            IQueryable<Models.Results> query = _context.Results;
+            
+            query = query.Where(r => r.Patient.DoctorId == parameters.DoctorId);
+
+            if (parameters.BeginDate.HasValue)
+            {
+                DateTime beginDate = parameters.BeginDate.Value;
+                query = query.Where(r => r.Date >= beginDate);
+            }
+
+            if (parameters.EndDate.HasValue)
+            {
+                DateTime endDate = parameters.EndDate.Value;
+                query = query.Where(r => r.Date <= endDate);
+            }
+
+            if (!string.IsNullOrEmpty(parameters.Gender))
+            {
+                query = query.Where(r => r.Patient.Gender == parameters.Gender);
+            }
+
+            if (!string.IsNullOrEmpty(parameters.DiseaseName))
+            {
+                query = query.Where(r => r.Patient.Disease.DiseaseName.Contains(parameters.DiseaseName));
+            }
+
+            if (parameters.MinAge.HasValue && parameters.MinAge > 0)
+            {
+                // Assuming BirthDate is a DateTime property in Patient
+                DateTime minBirthDate = DateTime.Now.AddYears(-parameters.MinAge.Value);
+                query = query.Where(r => r.Patient.BirthDate <= minBirthDate);
+            }
+
+            if (parameters.MaxAge.HasValue && parameters.MaxAge > 0)
+            {
+                DateTime maxBirthDate = DateTime.Now.AddYears(-parameters.MaxAge.Value - 1);
+                query = query.Where(r => r.Patient.BirthDate >= maxBirthDate);
+            }
+
+            if (!string.IsNullOrEmpty(parameters.QuestionnaireName))
+            {
+                query = query.Where(r => r.Questionnaire.QuestionnaireName.Contains(parameters.QuestionnaireName));
+            }
+
+            // Project the results to ResultsVM
+            var resultsVMs = query.Select(x => new ResultsVM
+            {
+                Date = x.Date,
+                isSaved = x.isSaved,
+                QuestionnaireId = x.QuestionnaireId,
+                QuestionnaireName = x.Questionnaire.QuestionnaireName,
+                PatientId = x.PatientId,
+                PatientFirstName = x.Patient.FirstName,
+                PatientLastName = x.Patient.LastName,
+                DiseaseName = x.Patient.Disease.DiseaseName,
+                DoctorId = x.Patient.DoctorId,
+                Gender = x.Patient.Gender,
+                ResultsId = x.ResultsId,
+                Age = DateTime.Today.Year - x.Patient.BirthDate.Year - (DateTime.Today.DayOfYear < x.Patient.BirthDate.DayOfYear ? 1 : 0)
+            });
+
+            return resultsVMs.ToList();
         }
     }
 }
