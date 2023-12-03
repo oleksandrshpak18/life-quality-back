@@ -1,4 +1,5 @@
-﻿using life_quality_back.Data.Models;
+﻿using life_quality_back.Data.Filtering;
+using life_quality_back.Data.Models;
 using life_quality_back.Data.Repositories;
 using life_quality_back.Data.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -43,6 +44,35 @@ namespace life_quality_back.Controllers
         {
             var res = _repository.ToggleSavedResult(id);
             return res == null ? BadRequest($"Error updating result with id = {id}") : Ok(res);
+        }
+
+        [HttpGet("filter")]
+        public async Task<ActionResult<List<ResultsVM>>> GetFiltered(
+            [FromQuery] int doctorId = -1,
+            [FromQuery] DateTime? beginTime = null,
+            [FromQuery] DateTime? endTime = null,
+            [FromQuery] string ?gender = null,
+            [FromQuery] string ?diseaseName = null,
+            [FromQuery] int? minAge = null,
+            [FromQuery] int? maxAge = null,
+            [FromQuery] string ?questionnaireName = null)
+        {
+            if(doctorId <= -1)
+            {
+                return BadRequest($"Parameter doctorId is required. Actual value is: {doctorId}");
+            }
+            FilterParameters filterParameters = new FilterParametersBuilder()
+                .SetBeginDate(beginTime)
+                .SetEndDate(endTime)
+                .SetGender(gender)
+                .SetDiseaseName(diseaseName)
+                .SetMinAge(minAge)
+                .SetMaxAge(maxAge)
+                .SetQuestionnaireName(questionnaireName)
+                .SetDoctorId(doctorId) 
+                .Build();
+            
+            return Ok(_repository.GetFiltered(filterParameters));
         }
     }
 }
