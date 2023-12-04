@@ -2476,7 +2476,7 @@ namespace life_quality_back.Data
                                     {
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2508,7 +2508,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin means my diabetes has become much worse",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2540,7 +2540,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin helps to prevent complications of diabetes",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2572,7 +2572,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin means other people see me as a sicker person",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2604,7 +2604,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin makes life less flexible",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2636,7 +2636,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "I’m afraid of injecting myself with a needle",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2668,7 +2668,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2700,7 +2700,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin helps to improve my health",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2732,7 +2732,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Insulin causes weight gain",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2764,7 +2764,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Managing insulin injections takes a lot of time and energy",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2796,7 +2796,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin means I have to give up activities I enjoy",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2828,7 +2828,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin means my health will deteriorate",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2860,7 +2860,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Injecting insulin is embarrassing",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2892,7 +2892,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Injecting insulin is painful",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2924,7 +2924,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2956,7 +2956,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -2988,7 +2988,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin helps to maintain good control of blood glucose",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -3020,7 +3020,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Being on insulin causes family and friends to be more concerned about me",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -3052,7 +3052,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 1 | Questionnaire 3",
+                                            QuestionText = "Taking insulin helps to improve my energy level",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -3084,7 +3084,7 @@ namespace life_quality_back.Data
                                         },
                                         new Question
                                         {
-                                            QuestionText = "Question 2 | Questionnaire 3",
+                                            QuestionText = "Taking insulin makes me more dependent on my doctor",
                                             Answers = new List<Answer>
                                             {
                                                 new Answer
@@ -5507,6 +5507,589 @@ namespace life_quality_back.Data
                                     QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
                                     AnswerText = "Slight problem",
                                     AnswerValue = 2
+                                }
+                            }
+                    }
+                },
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 25),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Insulin Treatment Appraisal Scale (ITAS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 5),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Insulin Treatment Appraisal Scale (ITAS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 15),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Insulin Treatment Appraisal Scale (ITAS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
                                 }
                             }
                     }
