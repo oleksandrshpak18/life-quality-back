@@ -18,7 +18,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<int>> AuthorizationDoctor(string? login, string? password)
+        public async Task<ActionResult<RespondAnswer>> AuthorizationDoctor(string? login, string? password)
         {
 
             // Створення ланцюжка обробників
@@ -36,11 +36,21 @@ namespace life_quality_back.Controllers
 
             if (respond.isOperationSuccess)
             {
-                return Ok($"Authentication successed! Id user is {respond.idUser}");
+                return Ok(new RespondAnswer
+                {
+                    idUser = respond.idUser,
+                    isOperationSuccess = respond.isOperationSuccess,
+                    outcomeMessage = respond.outcomeMessage
+                });
             }
             else
             {
-                return BadRequest(respond.outcomeMessage);
+                return BadRequest(new RespondAnswer
+                {
+                    idUser = respond.idUser,
+                    isOperationSuccess = respond.isOperationSuccess,
+                    outcomeMessage = respond.outcomeMessage
+                });
             }
         }
     }
