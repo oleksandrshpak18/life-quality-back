@@ -5008,7 +5008,510 @@ namespace life_quality_back.Data
                                 }
                             }
                     }
+                },
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 12),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Diabetes Distress Scale (DDS-17)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 20),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Diabetes Distress Scale (DDS-17)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 31),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("sebastian.carter@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Diabetes Distress Scale (DDS-17)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            }
+                    }
                 }
+
                 );
                 context.SaveChanges();
             }
