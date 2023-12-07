@@ -38,9 +38,9 @@ namespace life_quality_back.Data.Repositories
         {
             return _context.Results
                 .Include(x => x.Patient)
-                //.Include(x => x.Questionnaire)
-                    //.ThenInclude(x => x.Questions)
-                    //.ThenInclude(x => x.Answers)
+                .Include(x => x.Questionnaire)
+                //.ThenInclude(x => x.Questions)
+                //.ThenInclude(x => x.Answers)
                 .Include(x => x.ResultsPatientAnswers)
                     .ThenInclude(x => x.PatientAnswer)
                 .FirstOrDefault(x => x.ResultsId == id);
