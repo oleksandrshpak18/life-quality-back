@@ -11,7 +11,7 @@ namespace life_quality_back.Controllers.Conclusion
         public GenerateConclusion(string questionaryName, List<ResultsPatientAnswer> results)
         {
             _questionaryName = questionaryName;
-            _score = CulculationPoints(results);
+            _score = CalculationPoints(results);
         }
 
         public string GetConclusion()
@@ -161,7 +161,7 @@ namespace life_quality_back.Controllers.Conclusion
             return string.Empty;
         }
 
-        private static int CulculationPoints(List<ResultsPatientAnswer> results)
+        private static int CalculationPoints(List<ResultsPatientAnswer> results)
         {
             int totalPoints = 0;
 

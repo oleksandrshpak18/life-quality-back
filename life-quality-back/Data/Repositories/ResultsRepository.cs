@@ -4,6 +4,8 @@ using life_quality_back.Data.Models;
 using life_quality_back.Data.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Linq;
 
 namespace life_quality_back.Data.Repositories
 {
@@ -127,6 +129,44 @@ namespace life_quality_back.Data.Repositories
             });
 
             return resultsVMs.ToList();
+        }
+    
+        public IEnumerable<Dictionary<string, int>> GetDoctorSavedQuestionnaireNames(int doctorId)
+        {
+            var doctorResults = GetAllByDoctorId(doctorId).ToList();
+
+            var savedQuestionnaireNames = doctorResults
+                                                .GroupBy(result => result.QuestionnaireName)
+                                                .Select(group => new { QuestionnaireName = group.Key, Count = CountSavedResultsByQuestionnaireName(group.Key, doctorResults) })
+                                                .ToDictionary(item => item.QuestionnaireName, item => item.Count);
+
+            return new List<Dictionary<string, int>> { savedQuestionnaireNames };
+        }
+
+        private int CountSavedResultsByQuestionnaireName(string questionnaireName, List<ResultsVM> doctorResults)
+        {
+            return doctorResults.Count(result => result.isSaved && result.QuestionnaireName.Equals(questionnaireName));
+        }
+
+        public IEnumerable<Dictionary<string, int>> GetDoctorSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
+        {
+            var doctorResults = GetAllByDoctorId(doctorId)
+                                                .Where(result => result.QuestionnaireName.Equals(questionnaireName))
+                                                .ToList();
+
+            var savedPatientsResultsByQuestionnaireName = doctorResults
+                                                .GroupBy(result => result.PatientFirstName + " " + result.PatientLastName)
+                                                .Select(group => new { PatientName = group.Key, Count = CountSavedPatientResultsByQuestionnaireName(questionnaireName, group.Key, doctorResults) })
+                                                .ToDictionary(item => item.PatientName, item => item.Count);
+
+            return new List<Dictionary<string, int>> { savedPatientsResultsByQuestionnaireName };
+        }
+        private int CountSavedPatientResultsByQuestionnaireName(string questionnaireName, string patientName, List<ResultsVM> doctorResults)
+        {
+            return doctorResults.Count(result => result.isSaved &&
+                    result.QuestionnaireName.Equals(questionnaireName) &&
+                    result.PatientFirstName.Equals(patientName[..patientName.IndexOf(" ")]) &&
+                    result.PatientLastName.Equals(patientName[patientName.IndexOf(" ")..]));
         }
     }
 }

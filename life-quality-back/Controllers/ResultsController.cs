@@ -34,7 +34,6 @@ namespace life_quality_back.Controllers
         [HttpGet("doctor/{doctorId}")]
         public async Task<ActionResult<List<ResultsVM>>> GetAllByDoctorId(int doctorId)
         {
-            int t = doctorId;
             var res = _repository.GetAllByDoctorId(doctorId);
             return ((res == null) || (!res.Any())) ? BadRequest($"Results for this doctor {doctorId} not found") : Ok(res);
         }
@@ -73,6 +72,24 @@ namespace life_quality_back.Controllers
                 .Build();
             
             return Ok(_repository.GetFiltered(filterParameters));
+        }
+
+        [HttpGet("saved-results/{doctorId}")]
+        public async Task<ActionResult<List<string>>> GetTypesOfSavedResults(int doctorId)
+        {
+            var savedQuestionnaireNames = _repository.GetDoctorSavedQuestionnaireNames(doctorId);
+
+            return savedQuestionnaireNames == null ? BadRequest($"Error updating result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
+
+        }
+
+        [HttpGet("saved-results/{doctorId}/{questionnaireName}")]
+        public async Task<ActionResult<List<string>>> GetPatientsSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
+        {
+            var savedQuestionnaireNames = _repository.GetDoctorSavedResultsByQuestionnaireName(doctorId, questionnaireName);
+
+            return savedQuestionnaireNames == null ? BadRequest($"Error updating result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
+
         }
     }
 }
