@@ -1,9 +1,9 @@
 ﻿namespace life_quality_back.Controllers.Authorization
 {
-    public struct RespondAnswer
+    public class RespondAnswer
     {
-        public bool isOperationSuccess;
-        public int idUser;
-        public string outcomeMessage;
+        public bool isOperationSuccess { get; set; }
+        public int idUser { get; set; }
+        public string outcomeMessage { get; set; }
     }
 }
