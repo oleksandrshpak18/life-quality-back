@@ -53,6 +53,20 @@ namespace life_quality_back.Data
                             Gender = "Male",
                             Speciality = "Endocrinologist"
                         }
+                    },
+                    new User
+                    {
+                        Login = "olivia.reynolds@lq.com",
+                        Password = "819b0643d6b89dc9b579fdfc9094f28e",
+                        Doctor = new Doctor
+                        {
+                            FirstName = "Olivia",
+                            LastName = "Reynolds",
+                            Email = "olivia.reynolds@lq.com",
+                            Education = "Johns Hopkins University School of Medicine",
+                            Gender = "Female",
+                            Speciality = "Rheumatologist"
+                        }
                     }
                 );
 
@@ -6673,7 +6687,7 @@ namespace life_quality_back.Data
                         LastName = "Carter",
                         Anamnesis = "Some anamnesis information",
                         Email = "sebastian.carter@lq.com",
-                        Gender = "Female",
+                        Gender = "Male",
                         BirthDate = new DateTime(1990, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
@@ -6684,6 +6698,63 @@ namespace life_quality_back.Data
                                         .Select(x => x.DiseaseId).First(),
                         DoctorId = context.Doctors
                                         .Where(x => x.Email.Equals("mike.dolfino@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Daniel",
+                        LastName = "Mitchell",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "daniel.mitchell@lq.com",
+                        Gender = "Male",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = new DateTime(2023, 7, 20),
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Osteoarthritis")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("olivia.reynolds@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Alexander",
+                        LastName = "Nguyen",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "alexander.nguyen@lq.com",
+                        Gender = "Male",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = new DateTime(2023, 7, 30),
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Osteoarthritis")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("olivia.reynolds@lq.com")) // replace later with the name of a real doctor from Doctors
+                                        .Select(x => x.DoctorId).First(),
+                    },
+                    new Patient
+                    {
+                        FirstName = "Emily",
+                        LastName = "Turner",
+                        Anamnesis = "Some anamnesis information",
+                        Email = "emily.turner@lq.com",
+                        Gender = "Female",
+                        BirthDate = new DateTime(1990, 1, 1),
+                        RehabilitationStartDate = new DateTime(2023, 8, 10),
+                        TreatmentStrategyId = context.TreatmentStrategies
+                                        .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
+                                        .Select(x => x.TreatmentStrategyId).First(),
+                        DiseaseId = context.Diseases
+                                        .Where(x => x.DiseaseName.Equals("Osteoarthritis")) // replace later with the name of a real disease from Diseases
+                                        .Select(x => x.DiseaseId).First(),
+                        DoctorId = context.Doctors
+                                        .Where(x => x.Email.Equals("olivia.reynolds@lq.com")) // replace later with the name of a real doctor from Doctors
                                         .Select(x => x.DoctorId).First(),
                     }
                 );
@@ -9357,6 +9428,1675 @@ namespace life_quality_back.Data
                             .Select(x => x.PatientId).First(),
                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Insulin Treatment Appraisal Scale (ITAS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Disagree",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Strongly disagree",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 11),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("WOMAC (Western Ontario and McMaster Universities Osteoarthritis Index)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 18),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("WOMAC (Western Ontario and McMaster Universities Osteoarthritis Index)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 30),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("WOMAC (Western Ontario and McMaster Universities Osteoarthritis Index)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling scared when you think about living with diabetes?",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of deprivation regarding food and meals?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about low blood glucose reactions?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry when you think about living with diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling constantly concerned about food and eating?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not accepting your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling alone with your diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Coping with complications of diabetes?",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
+                                    AnswerText = "Minor problem",
+                                    AnswerValue = 1
+                                }
+                            }
+                    }
+                },
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 12),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Knee Injury and Osteoarthritis Outcome Score (KOOS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Serious problem",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Very serious problem",
+                                    AnswerValue = 6
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 20),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Knee Injury and Osteoarthritis Outcome Score (KOOS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Moderate problem",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Somewhat serious problem",
+                                    AnswerValue = 4
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 31),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("Knee Injury and Osteoarthritis Outcome Score (KOOS)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that diabetes controls my life.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
+                                    AnswerText = "Not a problem",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
+                                    AnswerText = "Slight problem",
+                                    AnswerValue = 2
+                                }
+                            }
+                    }
+                },
+
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 8, 25),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("HOOS (Hip disability and Osteoarthritis Outcome Score)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Strongly agree",
+                                    AnswerValue = 5
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 5),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("HOOS (Hip disability and Osteoarthritis Outcome Score)"))
+                            .Select(x => x.QuestionnaireId).First(),
+                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                    {
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my diabetes has become much worse",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means other people see me as a sicker person",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes life less flexible",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "I’m afraid of injecting myself with a needle",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my health",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Insulin causes weight gain",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin means my health will deteriorate",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is embarrassing",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Injecting insulin is painful",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
+                                    AnswerText = "Agree",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin helps to improve my energy level",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
+                                    AnswerText = "Neither agree nor disagree",
+                                    AnswerValue = 3
+                                }
+                            }
+                    }
+                },
+                new Models.Results
+                {
+                    Date = new DateTime(2023, 9, 15),
+                    isSaved = false,
+                    PatientId = context.Patients
+                            .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
+                            .Select(x => x.PatientId).First(),
+                    QuestionnaireId = context.Questionnaires
+                            .Where(x => x.QuestionnaireName.Equals("HOOS (Hip disability and Osteoarthritis Outcome Score)"))
                             .Select(x => x.QuestionnaireId).First(),
                     ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {

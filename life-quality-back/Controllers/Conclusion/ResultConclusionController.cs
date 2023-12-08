@@ -8,19 +8,19 @@ namespace life_quality_back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ResultConclusion : ControllerBase
+    public class ResultConclusionController : ControllerBase
     {
         private ResultsRepository _repository;
 
-        public ResultConclusion(ResultsRepository repository)
+        public ResultConclusionController(ResultsRepository repository)
         {
             _repository = repository;
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<string>> GetResultConclusionById(int id)
+        [HttpGet("{questionnaireId}")]
+        public async Task<ActionResult<string>> GetResultConclusionById(int questionnaireId)
         {
-            var questionnaire = _repository.GetById(id);
+            var questionnaire = _repository.GetById(questionnaireId);
 
             var questionnaireName = questionnaire.Questionnaire.QuestionnaireName;
 
