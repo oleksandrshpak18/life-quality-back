@@ -162,11 +162,11 @@ namespace life_quality_back.Data.Repositories
             return new List<Dictionary<string, int>> { savedPatientsResultsByQuestionnaireName };
         }
         private int CountSavedPatientResultsByQuestionnaireName(string questionnaireName, string patientName, List<ResultsVM> doctorResults)
-        {
+        { 
             return doctorResults.Count(result => result.isSaved &&
                     result.QuestionnaireName.Equals(questionnaireName) &&
                     result.PatientFirstName.Equals(patientName[..patientName.IndexOf(" ")]) &&
-                    result.PatientLastName.Equals(patientName[patientName.IndexOf(" ")..]));
+                    result.PatientLastName.Equals(patientName[(patientName.IndexOf(" ") + 1)..]));
         }
     }
 }
