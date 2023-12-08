@@ -84,11 +84,20 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("saved-results/{doctorId}/{questionnaireName}")]
-        public async Task<ActionResult<List<string>>> GetPatientsSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
+        public async Task<ActionResult<List<string>>> GetPatientsNameSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
         {
             var savedQuestionnaireNames = _repository.GetDoctorSavedResultsByQuestionnaireName(doctorId, questionnaireName);
 
-            return savedQuestionnaireNames == null ? BadRequest($"Error updating result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
+            return savedQuestionnaireNames == null ? BadRequest($"Error result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
+
+        }
+
+        [HttpGet("saved-results/{doctorId}/{questionnaireName}/{patientName}")]
+        public async Task<ActionResult<List<string>>> GetPatientsSavedResultsByQuestionnaireName(int doctorId, string questionnaireName, string patientName)
+        {
+            var savedQuestionnaireNames = _repository.GetPatientSavedResultsByQuestionnaireName(doctorId, questionnaireName, patientName);
+
+            return savedQuestionnaireNames == null ? BadRequest($"Error result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
 
         }
     }

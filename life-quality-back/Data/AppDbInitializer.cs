@@ -3396,7 +3396,7 @@ namespace life_quality_back.Data
                 new Models.Results
                 {
                     Date = new DateTime(2023, 8, 18),
-                    isSaved = false,
+                    isSaved = true,
                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("ethan.reynolds@lq.com"))
                             .Select(x => x.PatientId).First(),

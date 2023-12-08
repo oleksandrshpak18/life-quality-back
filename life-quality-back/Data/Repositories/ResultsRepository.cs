@@ -168,5 +168,24 @@ namespace life_quality_back.Data.Repositories
                     result.PatientFirstName.Equals(patientName[..patientName.IndexOf(" ")]) &&
                     result.PatientLastName.Equals(patientName[(patientName.IndexOf(" ") + 1)..]));
         }
+
+        public IEnumerable<Models.Results> GetPatientSavedResultsByQuestionnaireName(int doctorId, string questionnaireName, string patientName) 
+        {
+            var patientSavedResultsByQuestionnaireName = GetAllByDoctorId(doctorId)
+                                                                            .Where(results => results.isSaved &&
+                                                                                results.QuestionnaireName.Equals(questionnaireName) &&
+                                                                                results.PatientFirstName.Equals(patientName[..patientName.IndexOf(" ")]) &&
+                                                                                results.PatientLastName.Equals(patientName[(patientName.IndexOf(" ") + 1)..]))
+                                                                            .Select(results => results.ResultsId)
+                                                                            .ToList();
+
+            var savedResults = patientSavedResultsByQuestionnaireName
+                    .Select(id => GetById(id))
+                    .Where(result => result != null)
+                    .ToList();
+
+
+            return savedResults;
+        }
     }
 }
