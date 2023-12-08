@@ -67,6 +67,11 @@ namespace life_quality_back.Data
                     },
                     new Disease
                     {
+                        DiseaseName = "Osteoarthritis",
+                        DiseaseDescription = "Osteoarthritis (OA) is a joint disease characterized by the gradual wear and tear of the cartilage tissue that covers the bones in the joint. It is the most common type of arthritis and one of the most common causes of joint pain."
+                    },
+                    new Disease
+                    {
                         DiseaseName = "Diabet",
                         DiseaseDescription = "Diabetes mellitus, often known simply as diabetes, is a group of common endocrine diseases characterized by sustained high blood sugar levels. Diabetes is due to either the pancreas not producing enough insulin, or the cells of the body becoming unresponsive to the hormone's effects. Untreated or poorly treated diabetes accounts for approximately 1.5 million deaths every year."
                     }
@@ -3118,7 +3123,3450 @@ namespace life_quality_back.Data
                                 }
                             }
                         }
-                     }
+                    },
+                    new TreatmentStrategy
+                    {
+                        TreatmentStrategyName = "Strategy 3",
+                        TreatmentStrategyDescription = "Another treatment strategy description for strategy 2.",
+                        QuestionnaireTreatmentStrategy = new List<QuestionnaireTreatmentStrategy>
+                        {
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "WOMAC (Western Ontario and McMaster Universities Osteoarthritis Index)",
+                                    QuestionnaireDescription = "It assesses pain, stiffness, and physical function in individuals with hip or knee osteoarthritis.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Pain while Walking",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Pain while Stair Climbing",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Pain while Nocturnal",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Pain while Rest",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Pain while Weight bearing",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        
+                                        new Question
+                                        {
+                                            QuestionText = "Stiffness while Morning stiffness",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Stiffness while Stiffness occurring later in the day",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Descending stairs",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Ascending stairs",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Rising from sitting",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Standing",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Bending to floor",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Walking on flat surface",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Getting in / out of car",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Going shopping",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Putting on socks",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Lying in bed",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Taking off socks",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Rising from bed",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Getting in/out of bath",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Sitting",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Getting on/off toilet",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Heavy domestic duties",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Physical Function while Light domestic duties ",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Slight",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Very",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extremely",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "Knee Injury and Osteoarthritis Outcome Score (KOOS)",
+                                    QuestionnaireDescription = "The Knee Injury and Osteoarthritis Outcome Score (KOOS) is a questionnaire designed to assess short and long-term patient-relevant outcomes following knee injury.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "How often is your knee painful?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Monthly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Weekly",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Daily",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Twisting/pivoting on your knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Straightening knee fully?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Bending knee fully?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Walking on flat surface?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Going up or down stairs?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when At night while in bed?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Sitting or lying?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What degree of pain have you experienced the last week when Standing upright?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "How severe is your knee stiffness after first wakening in the morning?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "How severe is your knee stiffness after sitting, lying, or resting later in the day?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Do you have swelling in your knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Do you feel grinding, hear clicking or any other type of noise when your knee moves?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Does your knee catch or hang up when moving?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Can you straighten your knee fully?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Can you bend your knee fully?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Descending?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Ascending stairs?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Rising from sitting?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Standing?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Bending to floor/picking up an object?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Walking on flat surface?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question    
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Getting in/out of car?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Going shopping?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Putting on socks/stockings?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Rising from bed?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Taking off socks/stockings?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week  Lying in bed (turning over, maintaining knee position)?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Getting in/out of bath?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Sitting?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Getting on/off toilet?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Heavy domestic duties (shovelling, scrubbing floors, etc)?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Light domestic duties (cooking, dusting, etc)?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Running?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Jumping?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Turning/twisting on your injured knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Kneeling?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "How often are you aware of your knee problems?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Monthly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Weekly",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Daily",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Have you modified your lifestyle to avoid potentially damaging activities to your knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not at all",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mildly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderately",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Totally",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "How troubled are you with lack of confidence in your knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not at all",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mildly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderately",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Totally",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "In general, how much difficulty do you have with your knee?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            new QuestionnaireTreatmentStrategy
+                            {
+                                Questionnaire = new Questionnaire
+                                {
+                                    QuestionnaireName = "HOOS (Hip disability and Osteoarthritis Outcome Score)",
+                                    QuestionnaireDescription = "HOOS designed for individuals with hip osteoarthritis, it assesses symptoms, pain, daily living function, sport and recreational function, and hip-related quality of life.",
+                                    Questions = new List<Question>
+                                    {
+                                        new Question
+                                        {
+                                            QuestionText = "Do you feel grinding, hear clicking, or any other type of noise from your hip?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Difficulties spreading legs wide apart",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Difficulties to stride out when walking",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "How severe is your hip joint stiffness after first wakening in the morning?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "How severe is your hip stiffness after sitting, lying, or resting later in the day?\r\n",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question    
+                                        {
+                                            QuestionText = "How often is your hip painful?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Monthly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Weekly",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Daily",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Straightening your hip fully",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Bending your hip fully",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a flat surface",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Going up or down stairs\r\n",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the At night while in bed",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Sitting or lying",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Standing upright",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a hard surface (asphalt, concrete, etc.)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What amount of hip pain have you experienced the last week during the Walking on an uneven surface",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Rarely",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Sometimes",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Often",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Descending stairs",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Ascending stairs",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from sitting",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question    
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Standing",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Bending to the floor/pick up an object",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Walking on a flat surface",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of car",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Going shopping",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Putting on socks/stockings",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from bed",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Taking off socks/stockings",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Lying in bed (turning over, maintaining hip position)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of bath",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Sitting",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting on/off toilet",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Light domestic duties (cooking, dusting, etc)",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Running?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Twisting/pivoting on loaded leg?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "What difficulty have you experienced the last week Walking on uneven surface?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+
+                                        new Question
+                                        {
+                                            QuestionText = "How often are you aware of your hip problems?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Never",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Monthly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Weekly",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Daily",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Always",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "Have you modified your lifestyle to avoid potentially damaging to your hip?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not at all",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mildly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderately",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Totally",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "How troubled are you with lack of confidence in your hip?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "Not at all",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mildly",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderately",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severely",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Totally",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        },
+                                        new Question
+                                        {
+                                            QuestionText = "In general, how much difficulty do you have with your hip?",
+                                            Answers = new List<Answer>
+                                            {
+                                                new Answer
+                                                {
+                                                    AnswerText = "None",
+                                                    AnswerValue = 0
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Mild",
+                                                    AnswerValue = 1
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Moderate",
+                                                    AnswerValue = 2
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Severe",
+                                                    AnswerValue = 3
+                                                },
+                                                new Answer
+                                                {
+                                                    AnswerText = "Extreme",
+                                                    AnswerValue = 4
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 );
 
                 context.SaveChanges();
