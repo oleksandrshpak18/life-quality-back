@@ -1,6 +1,7 @@
 ﻿using life_quality_back.Controllers.Authorization;
 using life_quality_back.Data.Models;
 using life_quality_back.Data.Repositories;
+using life_quality_back.Data.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,8 +18,8 @@ namespace life_quality_back.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<RespondAnswer>> AuthorizationDoctor(string? login, string? password)
+        [HttpPost]
+        public async Task<ActionResult<RespondAnswer>> AuthorizationDoctor([FromBody]UserCredentialsVM credentials)
         {
 
             // Створення ланцюжка обробників
@@ -32,7 +33,7 @@ namespace life_quality_back.Controllers
             var processor = new AuthenticationProcessor(handlers);
 
             // Виклик процесу автентифікації
-            var respond = processor.ProcessAuthentication(login, password);
+            var respond = processor.ProcessAuthentication(credentials.Login, credentials.Password);
 
             if (respond.isOperationSuccess)
             {
