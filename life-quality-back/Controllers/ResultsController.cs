@@ -19,7 +19,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<ResultsVM>>> GetAll()
+        private async Task<ActionResult<List<ResultsVM>>> GetAll()
         {
             return Ok(_repository.GetAll());
         }
@@ -32,7 +32,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("doctor/{doctorId}")]
-        public async Task<ActionResult<List<ResultsVM>>> GetAllByDoctorId(int doctorId)
+        private async Task<ActionResult<List<ResultsVM>>> GetAllByDoctorId(int doctorId)
         {
             var res = _repository.GetAllByDoctorId(doctorId);
             return ((res == null) || (!res.Any())) ? BadRequest($"Results for this doctor {doctorId} not found") : Ok(res);
@@ -75,7 +75,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("saved-results/{doctorId}")]
-        public async Task<ActionResult<List<string>>> GetTypesOfSavedResults(int doctorId)
+        public async Task<ActionResult<Dictionary<string, int>>> GetTypesOfSavedResults(int doctorId)
         {
             var savedQuestionnaireNames = _repository.GetDoctorSavedQuestionnaireNames(doctorId);
 
@@ -84,7 +84,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("saved-results/{doctorId}/{questionnaireName}")]
-        public async Task<ActionResult<List<string>>> GetPatientsNameSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
+        public async Task<ActionResult<Dictionary<string, int>>> GetPatientsNameSavedResultsByQuestionnaireName(int doctorId, string questionnaireName)
         {
             var savedQuestionnaireNames = _repository.GetDoctorSavedResultsByQuestionnaireName(doctorId, questionnaireName);
 
@@ -93,7 +93,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet("saved-results/{doctorId}/{questionnaireName}/{patientName}")]
-        public async Task<ActionResult<List<string>>> GetPatientsSavedResultsByQuestionnaireName(int doctorId, string questionnaireName, string patientName)
+        public async Task<ActionResult<List<Data.Models.Results>>> GetPatientsSavedResultsByQuestionnaireName(int doctorId, string questionnaireName, string patientName)
         {
             var savedQuestionnaireNames = _repository.GetPatientSavedResultsByQuestionnaireName(doctorId, questionnaireName, patientName);
 

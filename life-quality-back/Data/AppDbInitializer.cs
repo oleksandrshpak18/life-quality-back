@@ -34,10 +34,13 @@ namespace life_quality_back.Data
                         {
                             FirstName = "Mike",
                             LastName = "Dolfino",
+                            MiddleName = "Sebastian",
+                            TypeOfDoctor = "Adults only",
                             Email = "mike.dolfino@lq.com",
                             Education = "Lviv National Medical University",
                             Gender = "Male",
-                            Speciality = "Cardiologist"
+                            Speciality = "Cardiologist",
+                            Phone = "380000000000"
                         }
                     },
                     new User
@@ -48,10 +51,13 @@ namespace life_quality_back.Data
                         {
                             FirstName = "John",
                             LastName = "Doe",
+                            MiddleName = "Mariam",
+                            TypeOfDoctor = "Adults only",
                             Email = "john.doe@lq.com",
                             Education = "University of Fairview, Visteria-Lane",
                             Gender = "Male",
-                            Speciality = "Endocrinologist"
+                            Speciality = "Endocrinologist",
+                            Phone = "380000000000"
                         }
                     },
                     new User
@@ -62,10 +68,13 @@ namespace life_quality_back.Data
                         {
                             FirstName = "Olivia",
                             LastName = "Reynolds",
+                            MiddleName = "Kathleen",
+                            TypeOfDoctor = "Adults only",
                             Email = "olivia.reynolds@lq.com",
                             Education = "Johns Hopkins University School of Medicine",
                             Gender = "Female",
-                            Speciality = "Rheumatologist"
+                            Speciality = "Rheumatologist",
+                            Phone = "380000000000"
                         }
                     }
                 );

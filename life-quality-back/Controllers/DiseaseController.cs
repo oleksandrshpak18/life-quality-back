@@ -17,13 +17,13 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Disease>>> GetAll()
+        private async Task<ActionResult<List<Disease>>> GetAll()
         {
             return Ok(_repository.GetAll());
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<List<Disease>>> GetById(int id)
+        private async Task<ActionResult<List<Disease>>> GetById(int id)
         {
             var res = _repository.GetById(id);
             return res == null ? BadRequest($"Disease with id {id} not found") : Ok(res);
