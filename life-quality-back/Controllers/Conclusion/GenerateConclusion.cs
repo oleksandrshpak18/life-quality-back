@@ -7,7 +7,6 @@ namespace life_quality_back.Controllers.Conclusion
     {
         private readonly string _questionaryName;
         private readonly List<ResultsPatientAnswer> _results;
-        private readonly string conclusion = "The conclusion for this result is: ";
 
         public GenerateConclusion(string questionaryName, List<ResultsPatientAnswer> results)
         {
@@ -63,23 +62,23 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score == 0)
             {
-                return conclusion + "No stroke symptoms!";
+                return "No stroke symptoms!";
             }
             if (score >= 1 && score <= 4)
             {
-                return conclusion + "Mild stroke!";
+                return "Mild stroke!";
             }
             if (score >= 5 && score <= 15)
             {
-                return conclusion + "Moderate stroke!";
+                return "Moderate stroke!";
             }
             if (score >= 16 && score <= 20)
             {
-                return conclusion + "Moderate to severe stroke!";
+                return "Moderate to severe stroke!";
             }
             if (score >= 21 && score <= 42)
             {   
-                return conclusion + "Severe stroke!";
+                return "Severe stroke!";
             }
 
             return string.Empty;
@@ -90,23 +89,23 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score == 100)
             {
-                return conclusion + "The patient is considered completely independent and able to perform all daily activities without assistance!";
+                return "The patient is considered completely independent and able to perform all daily activities without assistance!";
             }
             if (score >= 90 && score <= 99)
             {
-                return conclusion + "Mild to moderate limitations in performing some daily tasks, but the patient remains fairly independent!";
+                return "Mild to moderate limitations in performing some daily tasks, but the patient remains fairly independent!";
             }
             if (score >= 60 && score <= 89)
             {
-                return conclusion + "Moderate limitations in performing many daily tasks. The patient may need help!";
+                return "Moderate limitations in performing many daily tasks. The patient may need help!";
             }
             if (score >= 40 && score <= 59)
             {
-                return conclusion + "Significant limitations in independence. The patient needs a lot of help!";
+                return "Significant limitations in independence. The patient needs a lot of help!";
             }
             if (score >= 0 && score <= 39)
             {
-                return conclusion + "High level of dependence. The patient finds it difficult or impossible to perform many daily activities without assistance!";
+                return "High level of dependence. The patient finds it difficult or impossible to perform many daily activities without assistance!";
             }
 
             return string.Empty;
@@ -117,15 +116,15 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score >= 0 && score <= 20)
             {
-                return conclusion + "Uses a wheelchair!";
+                return "Uses a wheelchair!";
             }
             if (score > 20 && score <= 40)
             {
-                return conclusion + "Walks with help!";
+                return "Walks with help!";
             }
             if (score > 40 && score <= 56)
             {
-                return conclusion + "Independent!";
+                return "Independent!";
             }
 
             return string.Empty;
@@ -136,11 +135,11 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score >= 40)
             {
-                return conclusion + "Severe diabetes distress!";
+                return "Severe diabetes distress!";
             }
             if (score < 40)
             {
-                return conclusion + "Moderate to severe distress!";
+                return "Moderate to severe distress!";
             }
 
             return string.Empty;
@@ -151,15 +150,15 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score >= 17 && score <= 45)
             {
-                return conclusion + "Low level of distress. The patient is probably coping well with the emotional aspects of diabetes!";
+                return "Low level of distress. The patient is probably coping well with the emotional aspects of diabetes!";
             }
             if (score >= 46 && score <= 74)
             {
-                return conclusion + "Average level of distress. May indicate a certain level of emotional discomfort and stress, but the patient can still practice managing emotions!";
+                return "Average level of distress. May indicate a certain level of emotional discomfort and stress, but the patient can still practice managing emotions!";
             }
             if (score >= 75 && score <= 102)
             {
-                return conclusion + "High level of distress. Signals a high level of emotional pressure associated with diabetes. The patient may need additional psychological support and stress management!";
+                return "High level of distress. Signals a high level of emotional pressure associated with diabetes. The patient may need additional psychological support and stress management!";
             }
 
             return string.Empty;
@@ -170,15 +169,15 @@ namespace life_quality_back.Controllers.Conclusion
 
             if (score >= 20 && score <= 46)
             {
-                return conclusion + "Low levels of distress or negative attitudes!";
+                return "Low levels of distress or negative attitudes!";
             }
             if (score >= 47 && score <= 73)
             {
-                return conclusion + "Average level of distress or negative attitude!";
+                return "Average level of distress or negative attitude!";
             }
             if (score >= 74 && score <= 100)
             {
-                return conclusion + "High levels of distress or negative attitudes!";
+                return "High levels of distress or negative attitudes!";
             }
 
             return string.Empty;
@@ -211,7 +210,7 @@ namespace life_quality_back.Controllers.Conclusion
 
             string physicalFunctionConclusion = culculateNultiplesConcusion(physicalFunctionScore, physicalFunctionLimits, physicalFunctionPossibleConclusions);
 
-            return conclusion + painConclusion + " " + stiffnessConclusion + " " + physicalFunctionConclusion;
+            return painConclusion + " " + stiffnessConclusion + " " + physicalFunctionConclusion;
         }
 
         private string ConclusionKOOS()
@@ -246,7 +245,7 @@ namespace life_quality_back.Controllers.Conclusion
 
             string qqlConclusion = culculateNultiplesConcusion(qqlScore, qqlLimits, qqlPossibleConclusions);
 
-            return conclusion + painConclusion + " " + symptomsConclusion + " " + activityConclusion + " " + sportConclusion + " " + qqlConclusion;
+            return painConclusion + " " + symptomsConclusion + " " + activityConclusion + " " + sportConclusion + " " + qqlConclusion;
         }
 
         private string ConclusionHOOS()
@@ -281,7 +280,7 @@ namespace life_quality_back.Controllers.Conclusion
 
             string qqlConclusion = culculateNultiplesConcusion(qqlScore, qqlLimits, qqlPossibleConclusions);
 
-            return conclusion + painConclusion + " " + symptomsConclusion + " " + activityConclusion + " " + sportConclusion + " " + qqlConclusion;
+            return painConclusion + " " + symptomsConclusion + " " + activityConclusion + " " + sportConclusion + " " + qqlConclusion;
         }
 
         private string culculateNultiplesConcusion(int score, int[] limits, string[] possibleConclusions)
