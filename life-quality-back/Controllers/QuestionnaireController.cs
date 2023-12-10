@@ -17,7 +17,7 @@ namespace life_quality_back.Controllers
         }
 
         [HttpGet]
-        private async Task<ActionResult<List<Questionnaire>>> GetAll()
+        public async Task<ActionResult<List<Questionnaire>>> GetAll()
         {
             return Ok(_repository.GetAll());
         }
