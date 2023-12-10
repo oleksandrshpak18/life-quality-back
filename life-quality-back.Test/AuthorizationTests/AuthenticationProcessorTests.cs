@@ -13,22 +13,9 @@ namespace life_quality_back.Test.AuthorizationTests
 {
     public class AuthenticationProcessorTests
     {
-        AuthenticationProcessor processor;
-
-        public AuthenticationProcessorTests()
-        {
-            AppDbContext context = GetDataBaseContext();
-
-            UserRepository userRepository = new UserRepository(context);
-
-            List<IAuthenticationHandler> handlers = new List<IAuthenticationHandler>()
-            {
-                new InputValidationHandler(),
-                new DatabaseAuthenticationHandler(userRepository)
-            };
-
-            processor = new AuthenticationProcessor(handlers);
-        }
+        //public AuthenticationProcessorTests()
+        //{
+        //}
 
         private AppDbContext GetDataBaseContext()
         {
@@ -56,20 +43,128 @@ namespace life_quality_back.Test.AuthorizationTests
                     }
                 }
             );
+            databaseContext.Users.Add(
+                new User
+                {
+                    Login = "user2@lq.com",
+                    // testpassword2
+                    Password = "c4d8a57e2ca5dc5d71d2cf3dbbbbaabe",
+                    Doctor = new Doctor
+                    {
+                        FirstName = "TestUser2",
+                        LastName = "TestUser2",
+                        Email = "user2@lq.com",
+                        Education = "TestUniversity",
+                        Gender = "Male",
+                        Speciality = "TestSpeciality"
+                    }
+                }
+            );
+            databaseContext.Users.Add(
+                new User
+                {
+                    Login = "user3@lq.com",
+                    // testpassword3
+                    Password = "cb310eace3f52787ab5fc2cddf73bd2d",
+                    Doctor = new Doctor
+                    {
+                        FirstName = "TestUser3",
+                        LastName = "TestUser3",
+                        Email = "user3@lq.com",
+                        Education = "TestUniversity",
+                        Gender = "Male",
+                        Speciality = "TestSpeciality"
+                    }
+                }
+            );
+            databaseContext.Users.Add(
+                new User
+                {
+                    Login = "user4@lq.com",
+                    // testpassword4
+                    Password = "6707ab0bacfb0ed824d2cb94b3ddd258",
+                    Doctor = new Doctor
+                    {
+                        FirstName = "TestUser4",
+                        LastName = "TestUser4",
+                        Email = "user4@lq.com",
+                        Education = "TestUniversity",
+                        Gender = "Male",
+                        Speciality = "TestSpeciality"
+                    }
+                }
+            );
+            databaseContext.Users.Add(
+                new User
+                {
+                    Login = "user5@lq.com",
+                    // testpassword5
+                    Password = "e9ee57647c13c700bbfb69611955cb02",
+                    Doctor = new Doctor
+                    {
+                        FirstName = "TestUser5",
+                        LastName = "TestUser5",
+                        Email = "user5@lq.com",
+                        Education = "TestUniversity",
+                        Gender = "Male",
+                        Speciality = "TestSpeciality"
+                    }
+                }
+            );
 
             databaseContext.SaveChanges();
             return databaseContext;
         }
 
-        [Fact]
-        public void ProcessAuthentication_ReturnsSuccessDoctorId()
+        [Theory]
+        [InlineData("user1@lq.com", "testpassword1", 1)]
+        [InlineData("user2@lq.com", "testpassword2", 2)]
+        [InlineData("user3@lq.com", "testpassword3", 3)]
+        [InlineData("user4@lq.com", "testpassword4", 4)]
+        [InlineData("user5@lq.com", "testpassword5", 5)]
+        public void ProcessAuthentication_ReturnsSuccessDoctorId(string login, string password, int expectedId)
         {
-            RespondAnswer result = processor.ProcessAuthentication("user1@lq.com", "testpassword1");
+            //ARRANGE
+            AppDbContext context = GetDataBaseContext();
+            UserRepository userRepository = new UserRepository(context);
+            List<IAuthenticationHandler> handlers = new List<IAuthenticationHandler>()
+            {
+                new InputValidationHandler(),
+                new DatabaseAuthenticationHandler(userRepository)
+            };
+            AuthenticationProcessor processor = new AuthenticationProcessor(handlers);
 
+            //ACT
+            RespondAnswer result = processor.ProcessAuthentication(login, password);
+
+            //ASSERT
             Assert.True(result.isOperationSuccess);
-            Assert.Equal(1, result.idUser);
+            Assert.Equal(expectedId, result.idUser);
             Assert.Equal("Authorization complete successfully!", result.outcomeMessage);
         }
+
+        [Fact]
+        public void ProcessAuthentication_ThrowArgumentNullException_ZeroHanderls()
+        {
+            //ARRANGE
+            AppDbContext context = GetDataBaseContext();
+            UserRepository userRepository = new UserRepository(context);
+
+            //ACT + ASSERT
+            Assert.Throws<ArgumentNullException>(() => new AuthenticationProcessor(new List<IAuthenticationHandler>(){ }));
+        }
+
+        [Fact]
+        public void ProcessAuthentication_ThrowArgumentNullException_NullHanderls()
+        {
+            //ARRANGE
+            AppDbContext context = GetDataBaseContext();
+            UserRepository userRepository = new UserRepository(context);
+
+            //ACT + ASSERT
+            Assert.Throws<ArgumentNullException>(() => new AuthenticationProcessor(null));
+        }
+
 
         //Додати більше однакових тестів
     }

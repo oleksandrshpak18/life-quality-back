@@ -6,7 +6,12 @@
 
         public AuthenticationProcessor(List<IAuthenticationHandler> handlers)
         {
-            this.handlers = handlers ?? throw new ArgumentNullException(nameof(handlers));
+            if (handlers == null || handlers.Count == 0)
+            {
+                throw new ArgumentNullException(nameof(handlers));
+            }
+
+            this.handlers = handlers;
         }
 
         public RespondAnswer ProcessAuthentication(string? username, string? password)
