@@ -6602,7 +6602,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "ethan.reynolds@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1997, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6621,8 +6621,8 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "oliver.mitchell@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(2023, 8, 10),
-                        RehabilitationStartDate = DateTime.Now,
+                        BirthDate = new DateTime(2000, 8, 10),
+                        RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
                                         .Select(x => x.TreatmentStrategyId).First(),
@@ -6640,7 +6640,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "ethan.harris@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1995, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 9, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6678,7 +6678,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "sophia.rodriguez@lq.com",
                         Gender = "Female",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1985, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 7, 30),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 2")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6697,7 +6697,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "sebastian.carter@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1980, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 1")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6716,7 +6716,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "daniel.mitchell@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1975, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 7, 20),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6735,7 +6735,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "alexander.nguyen@lq.com",
                         Gender = "Male",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1970, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 7, 30),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
@@ -6754,7 +6754,7 @@ namespace life_quality_back.Data
                         Anamnesis = "Some anamnesis information",
                         Email = "emily.turner@lq.com",
                         Gender = "Female",
-                        BirthDate = new DateTime(1990, 1, 1),
+                        BirthDate = new DateTime(1965, 1, 1),
                         RehabilitationStartDate = new DateTime(2023, 8, 10),
                         TreatmentStrategyId = context.TreatmentStrategies
                                         .Where(x => x.TreatmentStrategyName.Equals("Strategy 3")) // replace later with the name of a real TreamentStrategy from TreatmentStrategies
