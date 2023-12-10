@@ -9640,62 +9640,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "Pain while Walking",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling scared when you think about living with diabetes?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feelings of deprivation regarding food and meals?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Pain while Stair Climbing",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -9703,35 +9658,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling overwhelmed by your diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Worrying about low blood glucose reactions?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling angry when you think about living with diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling constantly concerned about food and eating?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Pain while Nocturnal",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -9739,17 +9667,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Pain while Rest",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
                                 }
                             },
@@ -9757,8 +9676,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not accepting your diabetes?",
-                                    AnswerText = "Serious problem",
+                                    QuestionText = "Pain while Weight bearing",
+                                    AnswerText = "Extremely",
                                     AnswerValue = 4
                                 }
                             },
@@ -9766,17 +9685,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Stiffness while Morning stiffness",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
                                 }
                             },
@@ -9784,17 +9694,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling alone with your diabetes?",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Stiffness while Stiffness occurring later in the day",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -9802,8 +9703,26 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Coping with complications of diabetes?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Physical Function while Descending stairs",
+                                    AnswerText = "Extremely",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Ascending stairs",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Rising from sitting",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
                                 }
                             },
@@ -9811,9 +9730,126 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Physical Function while Standing",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Bending to floor",
+                                    AnswerText = "Extremely",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Walking on flat surface",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting in / out of car",
+                                    AnswerText = "Extremely",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Going shopping",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Putting on socks",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Lying in bed",
+                                    AnswerText = "Extremely",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Taking off socks",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Rising from bed",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting in/out of bath",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Sitting",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting on/off toilet",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Heavy domestic duties",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Light domestic duties",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
                                 }
                             }
                     }
@@ -9834,71 +9870,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling scared when you think about living with diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feelings of deprivation regarding food and meals?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling overwhelmed by your diabetes?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Pain while Walking",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -9906,89 +9879,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Worrying about low blood glucose reactions?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling angry when you think about living with diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling constantly concerned about food and eating?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not accepting your diabetes?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling alone with your diabetes?",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Pain while Stair Climbing",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -9996,8 +9888,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Coping with complications of diabetes?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Pain while Nocturnal",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Pain while Rest",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
                                 }
                             },
@@ -10005,31 +9906,202 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Pain while Weight bearing",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stiffness while Morning stiffness",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stiffness while Stiffness occurring later in the day",
+                                    AnswerText = "Slight",
                                     AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Descending stairs",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Ascending stairs",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Rising from sitting",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Standing",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Bending to floor",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Walking on flat surface",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting in / out of car",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Going shopping",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Putting on socks",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Lying in bed",
+                                    AnswerText = "Very",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Taking off socks",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Rising from bed",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting in/out of bath",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Sitting",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting on/off toilet",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Heavy domestic duties",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Light domestic duties",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
                                 }
                             }
                     }
                 },
                 new Models.Results
-                {
-                    Date = new DateTime(2023, 8, 30),
-                    isSaved = false,
-                    PatientId = context.Patients
+               {
+                   Date = new DateTime(2023, 8, 30),
+                   isSaved = false,
+                   PatientId = context.Patients
                             .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
                             .Select(x => x.PatientId).First(),
-                    QuestionnaireId = context.Questionnaires
+                   QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("WOMAC (Western Ontario and McMaster Universities Osteoarthritis Index)"))
                             .Select(x => x.QuestionnaireId).First(),
-                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                   ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not having clear and concrete goals for your diabetes care?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Pain while Walking",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -10037,17 +10109,116 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling discouraged with your diabetes treatment plan?",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 0
+                                    QuestionText = "Pain while Stair Climbing",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling scared when you think about living with diabetes?",
-                                    AnswerText = "Somewhat serious problem",
+                                    QuestionText = "Pain while Nocturnal",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Pain while Rest",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Pain while Weight bearing",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stiffness while Morning stiffness",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Stiffness while Stiffness occurring later in the day",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Descending stairs",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Ascending stairs",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Rising from sitting",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Standing",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Bending to floor",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Walking on flat surface",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Getting in / out of car",
+                                    AnswerText = "Very",
                                     AnswerValue = 3
                                 }
                             },
@@ -10055,26 +10226,26 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Uncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?",
-                                    AnswerText = "Minor problem",
-                                    AnswerValue = 1
+                                    QuestionText = "Physical Function while Going shopping",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feelings of deprivation regarding food and meals?",
-                                    AnswerText = "Minor problem",
-                                    AnswerValue = 1
+                                    QuestionText = "Physical Function while Putting on socks",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling depressed when you think about living with diabetes?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Physical Function while Lying in bed",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -10082,17 +10253,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not knowing if your mood or feelings are related to your diabetes?",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 0
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling overwhelmed by your diabetes?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Physical Function while Taking off socks",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -10100,8 +10262,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Worrying about low blood glucose reactions?",
-                                    AnswerText = "Not a problem",
+                                    QuestionText = "Physical Function while Rising from bed",
+                                    AnswerText = "None",
                                     AnswerValue = 0
                                 }
                             },
@@ -10109,8 +10271,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling angry when you think about living with diabetes?",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "Physical Function while Getting in/out of bath",
+                                    AnswerText = "Slight",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Physical Function while Sitting",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -10118,35 +10289,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling constantly concerned about food and eating?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Worrying about the future and the possibility of serious complications?",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 0
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feelings of guilt or anxiety when you get off track with your diabetes management?",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 0
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not accepting your diabetes?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Physical Function while Getting on/off toilet",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -10154,8 +10298,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling unsatisfied with your diabetes physician?",
-                                    AnswerText = "Minor problem",
+                                    QuestionText = "Physical Function while Heavy domestic duties",
+                                    AnswerText = "Slight",
                                     AnswerValue = 1
                                 }
                             },
@@ -10163,49 +10307,13 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes is taking up too much of your mental and physical energy every day?",
-                                    AnswerText = "Not a problem",
+                                    QuestionText = "Physical Function while Light domestic duties",
+                                    AnswerText = "None",
                                     AnswerValue = 0
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling alone with your diabetes?",
-                                    AnswerText = "Minor problem",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that your friends and family are not supportive of your diabetes management efforts?",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 0
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Coping with complications of diabetes?",
-                                    AnswerText = "Moderate problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling burned out by the constant effort needed to manage diabetes?",
-                                    AnswerText = "Minor problem",
-                                    AnswerValue = 1
                                 }
                             }
                     }
-                },
+               },
 
                 new Models.Results
                 {
@@ -10223,175 +10331,400 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "How often is your knee painful?",
+                                    AnswerText = "Weekly",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "What degree of pain have you experienced the last week when Twisting/pivoting on your knee?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "What degree of pain have you experienced the last week when Straightening knee fully?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "What degree of pain have you experienced the last week when Bending knee fully?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "What degree of pain have you experienced the last week when Walking on flat surface?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "What degree of pain have you experienced the last week when Going up or down stairs?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "What degree of pain have you experienced the last week when At night while in bed?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "What degree of pain have you experienced the last week when Sitting or lying?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "What degree of pain have you experienced the last week when Standing upright?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes controls my life.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "How severe is your knee stiffness after first wakening in the morning?",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "How severe is your knee stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "Do you have swelling in your knee?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "Do you feel grinding, hear clicking or any other type of noise when your knee moves?",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "Does your knee catch or hang up when moving?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "Can you straighten your knee fully?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 1
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
-                                    AnswerText = "Serious problem",
-                                    AnswerValue = 5
+                                    QuestionText = "Can you bend your knee fully?",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
-                                    AnswerText = "Very serious problem",
-                                    AnswerValue = 6
+                                    QuestionText = "What difficulty have you experienced the last week Descending?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
-                            }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Ascending stairs?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from sitting?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Standing?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Bending to floor/picking up an object?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on flat surface?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of car?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Going shopping?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Putting on socks/stockings?",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from bed?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Taking off socks/stockings?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week  Lying in bed (turning over, maintaining knee position)?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of bath?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Sitting?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting on/off toilet?",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Heavy domestic duties (shovelling, scrubbing floors, etc)?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Light domestic duties (cooking, dusting, etc)?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Jumping?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Turning/twisting on your injured knee?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Kneeling?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often are you aware of your knee problems?",
+                                    AnswerText = "Weekly",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging activities to your knee?",
+                                    AnswerText = "Mildly",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How troubled are you with lack of confidence in your knee?",
+                                    AnswerText = "Not at all",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "In general, how much difficulty do you have with your knee?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
                     }
                 },
                 new Models.Results
-                {
-                    Date = new DateTime(2023, 8, 20),
-                    isSaved = false,
-                    PatientId = context.Patients
+                 {
+                     Date = new DateTime(2023, 8, 20),
+                     isSaved = false,
+                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
                             .Select(x => x.PatientId).First(),
-                    QuestionnaireId = context.Questionnaires
+                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Knee Injury and Osteoarthritis Outcome Score (KOOS)"))
                             .Select(x => x.QuestionnaireId).First(),
-                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                     ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "How often is your knee painful?",
+                                    AnswerText = "Daily",
                                     AnswerValue = 3
                                 }
                             },
@@ -10399,26 +10732,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Twisting/pivoting on your knee?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10426,8 +10741,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Straightening knee fully?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10435,17 +10750,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Bending knee fully?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10453,26 +10759,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "What degree of pain have you experienced the last week when Walking on flat surface?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that diabetes controls my life.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Going up or down stairs?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10480,8 +10777,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when At night while in bed?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10489,17 +10786,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "What degree of pain have you experienced the last week when Sitting or lying?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Standing upright?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10507,17 +10804,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "How severe is your knee stiffness after first wakening in the morning?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
-                                    AnswerText = "Moderate problem",
+                                    QuestionText = "How severe is your knee stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10525,58 +10822,346 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "Do you have swelling in your knee?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
-                                    AnswerText = "Somewhat serious problem",
-                                    AnswerValue = 4
+                                    QuestionText = "Do you feel grinding, hear clicking or any other type of noise when your knee moves?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
                                 }
-                            }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Does your knee catch or hang up when moving?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Can you straighten your knee fully?",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Can you bend your knee fully?",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Descending?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Ascending stairs?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from sitting?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Standing?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Bending to floor/picking up an object?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on flat surface?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of car?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Going shopping?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Putting on socks/stockings?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from bed?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Taking off socks/stockings?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week  Lying in bed (turning over, maintaining knee position)?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of bath?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Sitting?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting on/off toilet?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Heavy domestic duties (shovelling, scrubbing floors, etc)?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Light domestic duties (cooking, dusting, etc)?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Jumping?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Turning/twisting on your injured knee?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Kneeling?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often are you aware of your knee problems?",
+                                    AnswerText = "Daily",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging activities to your knee?",
+                                    AnswerText = "Severly",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How troubled are you with lack of confidence in your knee?",
+                                    AnswerText = "Moderately",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "In general, how much difficulty do you have with your knee?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
                     }
-                },
+                 },
                 new Models.Results
-                {
-                    Date = new DateTime(2023, 8, 31),
-                    isSaved = false,
-                    PatientId = context.Patients
+                 {
+                     Date = new DateTime(2023, 8, 31),
+                     isSaved = false,
+                     PatientId = context.Patients
                             .Where(x => x.Email.Equals("daniel.mitchell@lq.com"))
                             .Select(x => x.PatientId).First(),
-                    QuestionnaireId = context.Questionnaires
+                     QuestionnaireId = context.Questionnaires
                             .Where(x => x.QuestionnaireName.Equals("Knee Injury and Osteoarthritis Outcome Score (KOOS)"))
                             .Select(x => x.QuestionnaireId).First(),
-                    ResultsPatientAnswers = new List<ResultsPatientAnswer>
+                     ResultsPatientAnswers = new List<ResultsPatientAnswer>
                     {
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes is taking up too much of my mental and physical energy every day.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "How often is your knee painful?",
+                                    AnswerText = "Daily",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t know enough about diabetes and diabetes care.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "What degree of pain have you experienced the last week when Twisting/pivoting on your knee?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Not feeling confident in my day-to-day ability to manage diabetes.",
-                                    AnswerText = "Slight problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Straightening knee fully?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What degree of pain have you experienced the last week when Bending knee fully?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What degree of pain have you experienced the last week when Walking on flat surface?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What degree of pain have you experienced the last week when Going up or down stairs?",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -10584,17 +11169,242 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling angry, scared, and/or depressed when I think about living with diabetes.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "What degree of pain have you experienced the last week when At night while in bed?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t give me clear enough directions on how to manage my diabetes.",
-                                    AnswerText = "Slight problem",
+                                    QuestionText = "What degree of pain have you experienced the last week when Sitting or lying?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What degree of pain have you experienced the last week when Standing upright?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your knee stiffness after first wakening in the morning?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your knee stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Do you have swelling in your knee?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Do you feel grinding, hear clicking or any other type of noise when your knee moves?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Does your knee catch or hang up when moving?",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Can you straighten your knee fully?",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Can you bend your knee fully?",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Descending?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Ascending stairs?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from sitting?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Standing?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Bending to floor/picking up an object?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on flat surface?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of car?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Going shopping?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Putting on socks/stockings?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Rising from bed?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Taking off socks/stockings?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week  Lying in bed (turning over, maintaining knee position)?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting in/out of bath?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Sitting?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Getting on/off toilet?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Heavy domestic duties (shovelling, scrubbing floors, etc)?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Light domestic duties (cooking, dusting, etc)?",
+                                    AnswerText = "Moderate",
                                     AnswerValue = 2
                                 }
                             },
@@ -10602,112 +11412,87 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not testing my blood sugars frequently enough.",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I will end up with serious long-term complications, no matter what I do.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am often failing with my diabetes routine.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "What difficulty have you experienced the last week Jumping?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family are not supportive enough of self-care efforts (e.g., planning activities that conflict with my schedule, encouraging me to eat the “wrong” foods).",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
+                                    QuestionText = "What difficulty have you experienced the last week Turning/twisting on your injured knee?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that diabetes controls my life.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "What difficulty have you experienced the last week Kneeling?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that my doctor doesn’t take my concerns seriously enough.",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
+                                    QuestionText = "How often are you aware of your knee problems?",
+                                    AnswerText = "Always",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that I am not sticking closely enough to a good meal plan.",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging activities to your knee?",
+                                    AnswerText = "Totally",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling that friends or family don’t appreciate how difficult living with diabetes can be.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "How troubled are you with lack of confidence in your knee?",
+                                    AnswerText = "Totally",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Feeling overwhelmed by the demands of living with diabetes.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
+                                    QuestionText = "In general, how much difficulty do you have with your knee?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that I don’t have a doctor who I can see regularly enough about my diabetes.",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Not feeling motivated to keep up my diabetes self management.",
-                                    AnswerText = "Not a problem",
-                                    AnswerValue = 1
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Feeling that friends or family don’t give me the emotional support that I would like.",
-                                    AnswerText = "Slight problem",
-                                    AnswerValue = 2
-                                }
-                            }
                     }
-                },
+                 },
+
+
 
                 new Models.Results
                 {
@@ -10725,26 +11510,62 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Do you feel grinding, hear clicking, or any other type of noise from your hip?",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means my diabetes has become much worse",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Difficulties spreading legs wide apart",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Difficulties to stride out when walking",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your hip joint stiffness after first wakening in the morning?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your hip stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often is your hip painful?",
+                                    AnswerText = "Daily",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Straightening your hip fully",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10752,8 +11573,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means other people see me as a sicker person",
-                                    AnswerText = "Agree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Bending your hip fully",
+                                    AnswerText = "Always",
                                     AnswerValue = 4
                                 }
                             },
@@ -10761,17 +11582,62 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin makes life less flexible",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a flat surface",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "I’m afraid of injecting myself with a needle",
-                                    AnswerText = "Agree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Going up or down stairs",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the At night while in bed",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "TWhat amount of hip pain have you experienced the last week during the Sitting or lying",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Standing upright",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a hard surface (asphalt, concrete, etc.)",
+                                    AnswerText = "Often",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on an uneven surface",
+                                    AnswerText = "Always",
                                     AnswerValue = 4
                                 }
                             },
@@ -10779,26 +11645,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Descending stairs",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to improve my health",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Insulin causes weight gain",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Ascending stairs\"",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10806,8 +11663,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from sitting",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Standing",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10815,17 +11681,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Bending to the floor/pick up an object",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means my health will deteriorate",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Walking on a flat surface",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10833,26 +11699,17 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Injecting insulin is embarrassing",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of car",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Injecting insulin is painful",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Going shopping",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10860,8 +11717,26 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Putting on socks/stockings",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from bed",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Taking off socks/stockings",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10869,17 +11744,35 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Lying in bed (turning over, maintaining hip position)",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of bath",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Sitting",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting on/off toilet",
+                                    AnswerText = "Extreme",
                                     AnswerValue = 4
                                 }
                             },
@@ -10887,21 +11780,93 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to improve my energy level",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
-                                    AnswerText = "Strongly agree",
-                                    AnswerValue = 5
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Light domestic duties (cooking, dusting, etc)",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Twisting/pivoting on loaded leg?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on uneven surface?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often are you aware of your hip problems?",
+                                    AnswerText = "Always",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging to your hip?",
+                                    AnswerText = "Totally",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How troubled are you with lack of confidence in your hip?",
+                                    AnswerText = "Totally",
+                                    AnswerValue = 4
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "In general, how much difficulty do you have with your hip?",
+                                    AnswerText = "Extreme",
+                                    AnswerValue = 4
                                 }
                             }
-                    }
+                    }       
                 },
                 new Models.Results
                 {
@@ -10919,8 +11884,62 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
-                                    AnswerText = "Neither agree nor disagree",
+                                    QuestionText = "Do you feel grinding, hear clicking, or any other type of noise from your hip?",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Difficulties spreading legs wide apart",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Difficulties to stride out when walking",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your hip joint stiffness after first wakening in the morning?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How severe is your hip stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often is your hip painful?",
+                                    AnswerText = "Weekly",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Straightening your hip fully",
+                                    AnswerText = "Severe",
                                     AnswerValue = 3
                                 }
                             },
@@ -10928,8 +11947,71 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means my diabetes has become much worse",
-                                    AnswerText = "Neither agree nor disagree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Bending your hip fully",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a flat surface",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Going up or down stairs",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the At night while in bed",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "TWhat amount of hip pain have you experienced the last week during the Sitting or lying",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Standing upright",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a hard surface (asphalt, concrete, etc.)",
+                                    AnswerText = "Sometimes",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on an uneven surface",
+                                    AnswerText = "Often",
                                     AnswerValue = 3
                                 }
                             },
@@ -10937,8 +12019,206 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
-                                    AnswerText = "Agree",
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Descending stairs",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Ascending stairs\"",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from sitting",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Standing",
+                                    AnswerText = "Moderate",        
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Bending to the floor/pick up an object",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Walking on a flat surface",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of car",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Going shopping",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Putting on socks/stockings",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from bed",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Taking off socks/stockings",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Lying in bed (turning over, maintaining hip position)",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of bath",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Sitting",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting on/off toilet",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Light domestic duties (cooking, dusting, etc)",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Twisting/pivoting on loaded leg?",
+                                    AnswerText = "Severe",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on uneven surface?",
+                                    AnswerText = "Moderate",
+                                    AnswerValue = 2
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often are you aware of your hip problems?",
+                                    AnswerText = "Daily",
+                                    AnswerValue = 3
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging to your hip?",
+                                    AnswerText = "Totally",
                                     AnswerValue = 4
                                 }
                             },
@@ -10946,157 +12226,23 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means other people see me as a sicker person",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
+                                    QuestionText = "How troubled are you with lack of confidence in your hip?",
+                                    AnswerText = "Mildly",
+                                    AnswerValue = 2
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin makes life less flexible",
-                                    AnswerText = "Agree",
+                                    QuestionText = "In general, how much difficulty do you have with your hip?",
+                                    AnswerText = "Severe",
                                     AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "I’m afraid of injecting myself with a needle",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin helps to improve my health",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Insulin causes weight gain",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin means my health will deteriorate",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Injecting insulin is embarrassing",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Injecting insulin is painful",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
-                                    AnswerText = "Agree",
-                                    AnswerValue = 4
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin helps to improve my energy level",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
-                                    AnswerText = "Neither agree nor disagree",
-                                    AnswerValue = 3
                                 }
                             }
                     }
                 },
+
                 new Models.Results
                 {
                     Date = new DateTime(2023, 9, 15),
@@ -11113,17 +12259,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means I have failed to manage my diabetes with diet and pills",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin means my diabetes has become much worse",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "Do you feel grinding, hear clicking, or any other type of noise from your hip?",
+                                    AnswerText = "Rarely",
                                     AnswerValue = 1
                                 }
                             },
@@ -11131,26 +12268,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to prevent complications of diabetes",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin means other people see me as a sicker person",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin makes life less flexible",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "Difficulties spreading legs wide apart",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             },
@@ -11158,8 +12277,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "I’m afraid of injecting myself with a needle",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "Difficulties to stride out when walking",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             },
@@ -11167,17 +12286,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin increases the risk of low blood glucose levels (hypoglycemia) ",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin helps to improve my health",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "How severe is your hip joint stiffness after first wakening in the morning?",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             },
@@ -11185,26 +12295,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Insulin causes weight gain",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Managing insulin injections takes a lot of time and energy",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin means I have to give up activities I enjoy",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "How severe is your hip stiffness after sitting, lying, or resting later in the day?",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             },
@@ -11212,8 +12304,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin means my health will deteriorate",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "How often is your hip painful?",
+                                    AnswerText = "Monthly",
                                     AnswerValue = 1
                                 }
                             },
@@ -11221,17 +12313,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Injecting insulin is embarrassing",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Injecting insulin is painful",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Straightening your hip fully",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             },
@@ -11239,26 +12322,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "It is difficult to inject the right amount of insulin correctly at the right time every day",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin makes it more difficult to fulfill my responsibilities (at work, at home)",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
-                                }
-                            },
-                            new ResultsPatientAnswer
-                            {
-                                PatientAnswer = new PatientAnswer
-                                {
-                                    QuestionText = "Taking insulin helps to maintain good control of blood glucose",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Bending your hip fully",
+                                    AnswerText = "Rarely",
                                     AnswerValue = 1
                                 }
                             },
@@ -11266,8 +12331,8 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Being on insulin causes family and friends to be more concerned about me",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a flat surface",
+                                    AnswerText = "Rarely",
                                     AnswerValue = 1
                                 }
                             },
@@ -11275,17 +12340,278 @@ namespace life_quality_back.Data
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin helps to improve my energy level",
-                                    AnswerText = "Disagree",
-                                    AnswerValue = 2
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Going up or down stairs",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 1
                                 }
                             },
                             new ResultsPatientAnswer
                             {
                                 PatientAnswer = new PatientAnswer
                                 {
-                                    QuestionText = "Taking insulin makes me more dependent on my doctor",
-                                    AnswerText = "Strongly disagree",
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the At night while in bed",
+                                    AnswerText = "Often",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "TWhat amount of hip pain have you experienced the last week during the Sitting or lying",
+                                    AnswerText = "Often",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Standing upright",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on a hard surface (asphalt, concrete, etc.)",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What amount of hip pain have you experienced the last week during the Walking on an uneven surface",
+                                    AnswerText = "Rarely",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Descending stairs",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Ascending stairs\"",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from sitting",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Standing",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Bending to the floor/pick up an object",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Walking on a flat surface",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of car",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Going shopping",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Putting on socks/stockings",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Rising from bed",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Taking off socks/stockings",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Lying in bed (turning over, maintaining hip position)",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting in/out of bath",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Sitting",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Getting on/off toilet",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Indicate the degree of difficulty you have experienced in the last week due to your hip, while Light domestic duties (cooking, dusting, etc)",
+                                    AnswerText = "None",
+                                    AnswerValue = 0
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Squatting?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Running?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Twisting/pivoting on loaded leg?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "What difficulty have you experienced the last week Walking on uneven surface?",
+                                    AnswerText = "Mild",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How often are you aware of your hip problems?",
+                                    AnswerText = "Monthly",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "Have you modified your lifestyle to avoid potentially damaging to your hip?",
+                                    AnswerText = "Mildly",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "How troubled are you with lack of confidence in your hip?",
+                                    AnswerText = "Middly",
+                                    AnswerValue = 1
+                                }
+                            },
+                            new ResultsPatientAnswer
+                            {
+                                PatientAnswer = new PatientAnswer
+                                {
+                                    QuestionText = "In general, how much difficulty do you have with your hip?",
+                                    AnswerText = "Mild",
                                     AnswerValue = 1
                                 }
                             }
