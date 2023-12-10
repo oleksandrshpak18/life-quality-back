@@ -55,7 +55,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
 
         [Theory]
@@ -82,7 +82,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
 
         [Theory]
@@ -105,7 +105,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
 
         [Theory]
@@ -125,7 +125,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
 
         [Theory]
@@ -149,7 +149,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
 
         [Theory]
@@ -173,7 +173,7 @@ namespace life_quality_back.Test
             string result = conclusion.GetConclusion();
 
             //ASSERT
-            Assert.Equal("The conclusion for this result is: " + expectedResult, result);
+            Assert.Equal(expectedResult, result);
         }
     }
 }

@@ -22,11 +22,16 @@ namespace life_quality_back.Controllers
         {
             var questionnaire = _repository.GetById(questionnaireId);
 
+            if (questionnaire == null)
+            {
+                return BadRequest($"Results with id {questionnaireId} not found");
+            }
+
             var questionnaireName = questionnaire.Questionnaire.QuestionnaireName;
 
             var results = questionnaire.ResultsPatientAnswers.ToList();
 
-            GenerateConclusion conclusion = new GenerateConclusion(questionnaireName, results);
+            GenerateConclusion conclusion = new(questionnaireName, results);
 
             return Ok(conclusion.GetConclusion());
         }

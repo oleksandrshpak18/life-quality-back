@@ -13,10 +13,6 @@ namespace life_quality_back.Test.AuthorizationTests
 {
     public class AuthenticationProcessorTests
     {
-        //public AuthenticationProcessorTests()
-        //{
-        //}
-
         private AppDbContext GetDataBaseContext()
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
