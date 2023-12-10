@@ -50,13 +50,13 @@ namespace life_quality_back.Controllers
             [FromQuery] int doctorId = -1,
             [FromQuery] DateTime? beginTime = null,
             [FromQuery] DateTime? endTime = null,
-            [FromQuery] string ?gender = null,
-            [FromQuery] string ?diseaseName = null,
+            [FromQuery] string? gender = null,
+            [FromQuery] string? diseaseName = null,
             [FromQuery] int? minAge = null,
             [FromQuery] int? maxAge = null,
-            [FromQuery] string ?questionnaireName = null)
+            [FromQuery] string? questionnaireName = null)
         {
-            if(doctorId <= -1)
+            if (doctorId <= -1)
             {
                 return BadRequest($"Parameter doctorId is required. Actual value is: {doctorId}");
             }
@@ -68,9 +68,9 @@ namespace life_quality_back.Controllers
                 .SetMinAge(minAge)
                 .SetMaxAge(maxAge)
                 .SetQuestionnaireName(questionnaireName)
-                .SetDoctorId(doctorId) 
+                .SetDoctorId(doctorId)
                 .Build();
-            
+
             return Ok(_repository.GetFiltered(filterParameters));
         }
 
@@ -99,6 +99,14 @@ namespace life_quality_back.Controllers
 
             return savedQuestionnaireNames == null ? BadRequest($"Error result with doctor id = {doctorId}") : Ok(savedQuestionnaireNames);
 
+        }
+
+        [HttpGet("total-results-saved/{doctorId}")]
+        public async Task<ActionResult<int>> GetTotalCountSavedResultForDoctor(int doctorId)
+        {
+            var result = _repository.GetTotalCountSavedResultForDoctor(doctorId);
+
+            return result == null ? BadRequest($"Error total saved result for doctor witt id:{doctorId}") : Ok(result);
         }
     }
 }

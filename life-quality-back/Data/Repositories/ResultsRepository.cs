@@ -187,5 +187,10 @@ namespace life_quality_back.Data.Repositories
 
             return savedResults;
         }
+
+        public int GetTotalCountSavedResultForDoctor(int doctorId)
+        {
+            return GetAllByDoctorId(doctorId).Where(result => result.isSaved).Count();
+        }
     }
 }
