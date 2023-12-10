@@ -11,85 +11,105 @@ namespace life_quality_back.Test.AuthorizationTests
     {
         InputValidationHandler handler = new InputValidationHandler();
 
-        [Fact]
-        public void Authenticate_ReturnsTrue()
+        [Theory]
+        [InlineData("name.surname@lq.com", "password")]
+        [InlineData("n.s@lq.com", "password")]
+        [InlineData("name@lq.c", "passw")]
+        [InlineData("name2.surname@lq.com", "password")]
+        [InlineData("name3.surnamesurnamesurnamesurnamesurnamesurname@lq.com", "passwordpasswordpasswordpasswordpasswordpassword")]
+        public void Authenticate_ReturnsTrue(string login, string password)
         {
             //Act
-            RespondAnswer result = handler.Authenticate("name.surname@lq.com", "password");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.True(result.isOperationSuccess);
-        }
-
-        [Fact]
-        public void Authenticate_ReturnsSuccessMessage()
-        {
-            RespondAnswer result = handler.Authenticate("name.surname@lq.com", "password");
-
             Assert.Equal("Input validation success!", result.outcomeMessage);
-        }
-
-        [Fact]
-        public void Authenticate_ReturnsSuccessId()
-        {
-            RespondAnswer result = handler.Authenticate("name.surname@lq.com", "password");
-
             Assert.Equal(-1, result.idUser);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessageEpmtyLoginString()
+        [Theory]
+        [InlineData("", "password")]
+        [InlineData(null, "password")]
+        [InlineData("", "")]
+        [InlineData("", null)]
+        [InlineData(null, null)]
+        public void Authenticate_ReturnsFailedMessageEpmtyLoginString(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("", "password");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);
             Assert.Equal("Login string is empty!", result.outcomeMessage);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessageEpmtyPasswordString()
+        [Theory]
+        [InlineData("name.surname@lq.com", "")]
+        [InlineData("name.surname@lq.com", null)]
+
+        public void Authenticate_ReturnsFailedMessageEpmtyPasswordString(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("name.surname@lq.com", "");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);
             Assert.Equal("Password string is empty!", result.outcomeMessage);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessageLoginWithDomain()
+        [Theory]
+        [InlineData("name.surname.com", "password")]
+        [InlineData("name.surname@gmail.com", "password")]
+        [InlineData("name.surname.lq.com", "password")]
+        [InlineData("name.surname@llq.com", "password")]
+        [InlineData("name.surname@lq", "password")]
+        [InlineData("name.surname@lqlq.com", "password")]
+
+        public void Authenticate_ReturnsFailedMessageLoginWithDomain(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("name.surnamelq.com", "password");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);
             Assert.Equal("Login string is incorrect! It doesn't contain '@lq'", result.outcomeMessage);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessageLoginWithManyAt()
+        [Theory]
+        [InlineData("name.surname@lq@lq.com", "password")]
+        [InlineData("name.surname@lq.@gmail.com", "password")]
+        [InlineData("name.surname@gmail@lq.com", "password")]
+        [InlineData("n@me.surname@lq.com", "password")]
+        [InlineData("name.surname@@lq.com", "password")]
+        public void Authenticate_ReturnsFailedMessageLoginWithManyAt(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("name.surname@lq@gmail.com", "password");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);
             Assert.Equal("Login string is incorrect! It contains more than 1 '@'!", result.outcomeMessage);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessageLoginContainsNotOnlyASKII()
+        [Theory]
+        [InlineData("імя.прізвище@lq.com", "password")]
+        [InlineData("ስም.የአያትስም@lq.com", "password")]
+        [InlineData("اسماللقب@lq.com", "password")]
+        [InlineData("নাম.উতি@lq.com", "password")]
+        [InlineData("tɔgɔ.tɔgɔ@lq.com", "password")]
+        public void Authenticate_ReturnsFailedMessageLoginContainsNotOnlyASKII(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("імя.прізвище@lq.com", "password");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);
             Assert.Equal("Login string is incorrect! It contains not only ASKII symbols!", result.outcomeMessage);
         }
 
-        [Fact]
-        public void Authenticate_ReturnsFailedMessagePasswordLenghtTooShort()
+        [Theory]
+        [InlineData("name.surname@lq.com", "p")]
+        [InlineData("name.surname@lq.com", "pa")]
+        [InlineData("name.surname@lq.com", "pas")]
+        [InlineData("name.surname@lq.com", "pass")]
+        public void Authenticate_ReturnsFailedMessagePasswordLenghtTooShort(string login, string password)
         {
-            RespondAnswer result = handler.Authenticate("name.surname@lq.com", "pas");
+            RespondAnswer result = handler.Authenticate(login, password);
 
             Assert.False(result.isOperationSuccess);
             Assert.Equal(-1, result.idUser);

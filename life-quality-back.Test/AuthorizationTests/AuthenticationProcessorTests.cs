@@ -143,6 +143,33 @@ namespace life_quality_back.Test.AuthorizationTests
             Assert.Equal("Authorization complete successfully!", result.outcomeMessage);
         }
 
+        [Theory]
+        [InlineData("user100@lq.com", "testpassword100", -1)]
+        [InlineData("user200@lq.com", "testpassword200", -1)]
+        [InlineData("user300@lq.com", "testpassword300", -1)]
+        [InlineData("user400@lq.com", "testpassword400", -1)]
+        [InlineData("user500@lq.com", "testpassword500", -1)]
+        public void ProcessAuthentication_ReturnsFalseDoctorId(string login, string password, int expectedId)
+        {
+            //ARRANGE
+            AppDbContext context = GetDataBaseContext();
+            UserRepository userRepository = new UserRepository(context);
+            List<IAuthenticationHandler> handlers = new List<IAuthenticationHandler>()
+            {
+                new InputValidationHandler(),
+                new DatabaseAuthenticationHandler(userRepository)
+            };
+            AuthenticationProcessor processor = new AuthenticationProcessor(handlers);
+
+            //ACT
+            RespondAnswer result = processor.ProcessAuthentication(login, password);
+
+            //ASSERT
+            Assert.False(result.isOperationSuccess);
+            Assert.Equal(expectedId, result.idUser);
+            Assert.Equal("Incorrect login or password!", result.outcomeMessage);
+        }
+
         [Fact]
         public void ProcessAuthentication_ThrowArgumentNullException_ZeroHanderls()
         {

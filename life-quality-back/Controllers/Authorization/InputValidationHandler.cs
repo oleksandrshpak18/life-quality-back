@@ -65,7 +65,7 @@
 
         private RespondAnswer LoginCheck(string? login)
         {
-            if (login != null && !login.Contains("@lq"))
+            if (login != null && !login.Contains("@lq."))
             {
                 return new RespondAnswer
                 {
