@@ -40,7 +40,8 @@ namespace life_quality_back.Data
                             Education = "Lviv National Medical University",
                             Gender = "Male",
                             Speciality = "Cardiologist",
-                            Phone = "380000000000"
+                            Phone = "380982544444",
+                            BirthDate = new DateTime(1985, 05, 02)
                         }
                     },
                     new User
@@ -57,7 +58,8 @@ namespace life_quality_back.Data
                             Education = "University of Fairview, Visteria-Lane",
                             Gender = "Male",
                             Speciality = "Endocrinologist",
-                            Phone = "380000000000"
+                            Phone = "380673647895",
+                            BirthDate = new DateTime(1978, 2, 1)
                         }
                     },
                     new User
@@ -74,7 +76,8 @@ namespace life_quality_back.Data
                             Education = "Johns Hopkins University School of Medicine",
                             Gender = "Female",
                             Speciality = "Rheumatologist",
-                            Phone = "380000000000"
+                            Phone = "380934748596",
+                            BirthDate = new DateTime(1980, 4, 3)
                         }
                     }
                 );

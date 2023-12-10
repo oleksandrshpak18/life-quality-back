@@ -12,5 +12,6 @@
         public string Speciality { get; set; }
         public string ?TypeOfDoctor { get; set; }
         public string ?Education { get; set; }
+        public DateTime? BirthDate { get; set; }
     }
 }
