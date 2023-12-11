@@ -5,6 +5,7 @@ using life_quality_back.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -188,7 +189,33 @@ namespace life_quality_back.Test.AuthorizationTests
             Assert.Throws<ArgumentNullException>(() => new AuthenticationProcessor(null));
         }
 
+        [Theory]
+        [InlineData("", "password", "Login string is empty!")]
+        [InlineData("name.surname@lq.com", "", "Password string is empty!")]
+        [InlineData("name.surname.com", "password", "Login string is incorrect! It doesn't contain '@lq'")]
+        [InlineData("name.surname@lq@lq.com", "password", "Login string is incorrect! It contains more than 1 '@'!")]
+        [InlineData("імя.прізвище@lq.com", "password", "Login string is incorrect! It contains not only ASKII symbols!")]
+        [InlineData("name.surname@lq.com", "p", "Password lenth is incorrect!")]
+        public void ProcessAuthentication_ReturnValidationErrors(string login, string password, string expectedOutcomeMessage)
+        {
+            //ARRANGE
+            AppDbContext context = GetDataBaseContext();
+            UserRepository userRepository = new UserRepository(context);
+            List<IAuthenticationHandler> handlers = new List<IAuthenticationHandler>()
+            {
+                new InputValidationHandler(),
+                new DatabaseAuthenticationHandler(userRepository)
+            };
+            AuthenticationProcessor processor = new AuthenticationProcessor(handlers);
 
-        //Додати більше однакових тестів
+            //ACT
+            RespondAnswer result = processor.ProcessAuthentication(login, password);
+
+            //ASSERT
+            Assert.False(result.isOperationSuccess);
+            Assert.Equal(-1, result.idUser);
+            Assert.Equal(expectedOutcomeMessage, result.outcomeMessage);
+
+        }
     }
 }
